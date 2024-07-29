@@ -1,0 +1,1042 @@
+{
+    "\\backupDB.sql": {
+        "hash": "ffa89d1e7b2424871f32ae47216677ecba44cbcfa91047914e3141467bc2d2cd",
+        "tamanho": 62435,
+        "dataModificacao": "2023-12-07 19:30:11"
+    },
+    "\\BackupSistemaSGPadrao.sh": {
+        "hash": "c70f66c68b384d9ef93613e9026d63c1b2955959fd64f1e27c07b69c6d61ca7d",
+        "tamanho": 568,
+        "dataModificacao": "2021-05-12 14:23:01"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.alterar.acao.bin.php": {
+        "hash": "dac7d57c049a1dc1c379833a84c33f8393e956b6a84805aa21862e6a9958c51d",
+        "tamanho": 1516,
+        "dataModificacao": "2018-02-20 17:41:57"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.consultar.acao.bin.php": {
+        "hash": "cf6625cacc214dc39c5098fc49fbdddd996e9ac0c983a349cb30612ade5afef9",
+        "tamanho": 962,
+        "dataModificacao": "2018-02-20 16:18:50"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.consultar.entidade.bin.php": {
+        "hash": "18f09cad32a549ea9512a8beb91329b51bf2215677bc235707484cad0b5fe60b",
+        "tamanho": 922,
+        "dataModificacao": "2018-02-19 23:32:25"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.criar.arquivo.bin.php": {
+        "hash": "c7c46e69002402ed9fd2f7faf019d500d91d21641c331a1faa4295adc9332114",
+        "tamanho": 765,
+        "dataModificacao": "2018-02-21 20:44:53"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.criar.diretorio.bin.php": {
+        "hash": "6ac46cef8d5ca063696934c76fcb039913022f3c54ad381a0935c695e851c029",
+        "tamanho": 681,
+        "dataModificacao": "2018-02-21 23:11:36"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.editar.arquivo.bin.php": {
+        "hash": "923270d557e5025470b114bd23ff5aeb826d8a6da9c747263f1e4f3d188124c3",
+        "tamanho": 826,
+        "dataModificacao": "2018-02-21 02:08:39"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.importar.modelo.bin.php": {
+        "hash": "9980c4aa6bc4bd33ad3a7df113bd488eb8fcf5e29502de279b726e3fb478f0e0",
+        "tamanho": 18442,
+        "dataModificacao": "2021-05-12 19:38:44"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.incluir.acao.bin.php": {
+        "hash": "d9932828bdf2fce7299cb000d6fdc475786e50686c53decd7d667df7780c6a43",
+        "tamanho": 1955,
+        "dataModificacao": "2018-02-21 20:30:25"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.incluir.entidade.bin.php": {
+        "hash": "df685eaf7a9268fe5ecaceedd05fd064d6cd53c0460fe3db40ff901ec07b5c8c",
+        "tamanho": 1324,
+        "dataModificacao": "2018-02-22 00:50:28"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.listar.acao.bin.php": {
+        "hash": "b7a65f78348319d1051e93a3cd2924d90d72c454a1272f2a9f2d9e61c33c1783",
+        "tamanho": 958,
+        "dataModificacao": "2018-02-20 15:36:31"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.pesquisar.bin.php": {
+        "hash": "5c50573e9c9a66f29c1e3db4da5fbc62db73ec472703ce34a97358c6fc8e10f4",
+        "tamanho": 779,
+        "dataModificacao": "2018-02-19 16:50:20"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.salvar.arquivo.bin.php": {
+        "hash": "2568cfa8a66d0a5b13f1640d33fff558a0fdcfaef5b3f2c2b2f74f0f5622ea8e",
+        "tamanho": 886,
+        "dataModificacao": "2024-03-06 19:25:58"
+    },
+    "\\bin\\entidadeacao\\entidadeacao.visualizar.arquivo.bin.php": {
+        "hash": "464e8acde5bc546b01695d305bee36355f5d539bb5d8351a5149aec35bb33bb4",
+        "tamanho": 830,
+        "dataModificacao": "2018-02-21 01:47:08"
+    },
+    "\\bin\\entidadeacao\\modelos\\class.padrao.lib.php": {
+        "hash": "5833ff35cf430bbfbfddd572957db9a0c125bac38129ae646ec74c7076427030",
+        "tamanho": 9540,
+        "dataModificacao": "2021-05-12 23:00:04"
+    },
+    "\\bin\\entidadeacao\\modelos\\modelos.montar.alterar.layout.html.bin.php": {
+        "hash": "f120fa1332a08caf06159da5357e941e094a23ed159ffaa8781a83ad009fa13e",
+        "tamanho": 5774,
+        "dataModificacao": "2021-05-12 22:32:45"
+    },
+    "\\bin\\entidadeacao\\modelos\\modelos.montar.consultar.layout.html.bin.php": {
+        "hash": "88dc85d8c361c38ea5a779facc73c41bd45fa893db523e103e13a60520bd831e",
+        "tamanho": 2462,
+        "dataModificacao": "2021-05-12 22:32:33"
+    },
+    "\\bin\\entidadeacao\\modelos\\modelos.montar.def.bin.php": {
+        "hash": "bb1e124076f6f4acd2072f4c68524cd48615e27fe0f55bf896c9bcb1159826db",
+        "tamanho": 1831,
+        "dataModificacao": "2021-05-12 22:19:11"
+    },
+    "\\bin\\entidadeacao\\modelos\\modelos.montar.defIdioma.bin.php": {
+        "hash": "f5549bb6cb866652a1d7b7017dbcd92684ccecf44ec7fee091137c8487ce019e",
+        "tamanho": 1646,
+        "dataModificacao": "2021-05-12 22:27:23"
+    },
+    "\\bin\\entidadeacao\\modelos\\modelos.montar.incluir.layout.html.bin.php": {
+        "hash": "ba8d4397b913c9edfa1837ec931037ec15394b525c4cb2ecf78546e8738b0764",
+        "tamanho": 4860,
+        "dataModificacao": "2021-05-12 22:32:15"
+    },
+    "\\bin\\entidadeacao\\modelos\\modelos.montar.pesquisar.layout.html.bin.php": {
+        "hash": "56229615ae4bc1077d190504b3886999a80df5f4e0905c07351d07f466bd6d50",
+        "tamanho": 1712,
+        "dataModificacao": "2021-05-12 22:32:04"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.alterar.bin.php": {
+        "hash": "4e52a0a787f1749617bb98573dde20a67e05f654b39213d3a86670155743c21f",
+        "tamanho": 1314,
+        "dataModificacao": "2018-03-03 16:47:20"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.alterar.layout.html.php": {
+        "hash": "1ef40952f49e06832f6ec43013effc9e05ae2304c8ede213f8b802b729554cdc",
+        "tamanho": 6726,
+        "dataModificacao": "2018-03-09 13:22:54"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.ativar.bin.php": {
+        "hash": "03c5efcbb11e8a0d3d5bc2dec22fe1277e0ff2c849e03993ddc20f7c7782724a",
+        "tamanho": 821,
+        "dataModificacao": "2018-02-26 20:03:31"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.consultar.bin.php": {
+        "hash": "ca88408da8084838f3bc001cf3cabb1f409d041733a280d88ed08e7f47e0a05a",
+        "tamanho": 836,
+        "dataModificacao": "2018-02-26 20:04:49"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.consultar.layout.html.php": {
+        "hash": "7ee4de291f4995cb1aecc42adb15b778fad9b949f5f8b3fa6f0fadba17c632ca",
+        "tamanho": 7471,
+        "dataModificacao": "2018-03-09 21:30:19"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.def.php": {
+        "hash": "4ef2d592031d2e069f582ce7d88ee0fc9dcccb59c58a4732aaf416ee7dd41956",
+        "tamanho": 1736,
+        "dataModificacao": "2018-03-02 18:57:19"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.desativar.bin.php": {
+        "hash": "c8bc34e6325746cf8a78f55156d498d78d00b503beffd216f4b06d26c44cde16",
+        "tamanho": 812,
+        "dataModificacao": "2018-02-26 20:02:30"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.excluir.bin.php": {
+        "hash": "adf3e7b06350e283c4bb7a4f9cea9cecae6cbb6804ffa0b441db10f0a932d5a6",
+        "tamanho": 740,
+        "dataModificacao": "2018-02-26 20:01:36"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.idioma.brasil.def.php": {
+        "hash": "89df02ffee6df33efcfad87e1ec9df106c04bde24ce11b774d6b0975845fe20c",
+        "tamanho": 3147,
+        "dataModificacao": "2018-03-03 07:18:48"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.incluir.bin.php": {
+        "hash": "e0f8356e4e0dfeb76361b46875848676acbd7caddbbe36ccca07fa3b27081466",
+        "tamanho": 1102,
+        "dataModificacao": "2018-03-03 17:03:08"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.incluir.layout.html.php": {
+        "hash": "5609be13606dde4dae52b6aea10b0c586d69670e60b32fe5e1dc86c66f599009",
+        "tamanho": 3125,
+        "dataModificacao": "2018-03-09 21:20:02"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.incluir.layout.php": {
+        "hash": "23f53047648ef7dd087097a74a0bae00325debedd127ae3fa3f8532210937b23",
+        "tamanho": 5777,
+        "dataModificacao": "2018-02-27 01:32:23"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.pesquisa.layout.html.php": {
+        "hash": "abc39e99bd2c17ab8a58561537ff9587ca747d573fd420ae5a1d1bdc5249f20b",
+        "tamanho": 2779,
+        "dataModificacao": "2018-03-08 07:32:52"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.pesquisar.bin.php": {
+        "hash": "e8a169be02dd0af6a4955e9d46dfedb2444f61f8df64b29f4eeecb4c537913f8",
+        "tamanho": 1193,
+        "dataModificacao": "2018-02-26 23:18:07"
+    },
+    "\\bin\\entidadeacao\\modelos\\padrao.pesquisar.layout.html.php": {
+        "hash": "cd018fc0110759bd142188f18b5ff7c471384ec85dcf85d05de00411f9d5c9f7",
+        "tamanho": 7637,
+        "dataModificacao": "2018-03-08 06:28:45"
+    },
+    "\\bin\\geral\\sgpadrao.menuMontar.bin.php": {
+        "hash": "bac7974623e076e77067968c8bc73036ff87a0eaec46b8ad3e3cc1cbef5c4345",
+        "tamanho": 1977,
+        "dataModificacao": "2024-03-06 19:27:11"
+    },
+    "\\bin\\geral\\sgpadrao.principal.bin.php": {
+        "hash": "832ee7b8d0e3dc7bf535d77fe3b7ac858cc3bfc600b404f7c1c2b111b909f4c3",
+        "tamanho": 2184,
+        "dataModificacao": "2018-01-16 17:56:17"
+    },
+    "\\bin\\menu\\menu.alterar.bin.php": {
+        "hash": "06c5d094bf06234ad260f0688b753a39f3806da805d3382db53122271bd9c0d7",
+        "tamanho": 1995,
+        "dataModificacao": "2024-03-06 19:20:02"
+    },
+    "\\bin\\menu\\menu.consultar.bin.php": {
+        "hash": "4f4ea9cdcff43606e5c868a2f333924be89781dd95ab849076e46293181390c7",
+        "tamanho": 1608,
+        "dataModificacao": "2018-02-21 02:28:30"
+    },
+    "\\bin\\menu\\menu.editar.bin.php": {
+        "hash": "7740f82e17b3ad197ade4cdb11aedfa3fb5b575816f7ea65d599933f8bef728e",
+        "tamanho": 4415,
+        "dataModificacao": "2024-03-07 20:31:01"
+    },
+    "\\bin\\menu\\menu.exibir.bin.php": {
+        "hash": "cb93e2a70669f9c29834e4d0d10238c47402e2630f32f86385626fb5e89374e4",
+        "tamanho": 4271,
+        "dataModificacao": "2024-03-06 19:22:49"
+    },
+    "\\bin\\menu\\menu.incluir.bin.php": {
+        "hash": "f1f7c57bfee324943660876a463d26f14acb864457edeec617edf09f9cfd0d86",
+        "tamanho": 1995,
+        "dataModificacao": "2024-03-06 19:22:26"
+    },
+    "\\bin\\menu\\menu.montar.bin.php": {
+        "hash": "908ad630a40c888929ec1563b5590d99345dda9015a8fbf97342ca2854a560aa",
+        "tamanho": 4626,
+        "dataModificacao": "2024-03-06 19:21:35"
+    },
+    "\\bin\\menu\\menu.montar.bin.php.ANTIGO": {
+        "hash": "47e8ddfc21c9a121feb718236153299fa1be36b32a79954686bc23692281227c",
+        "tamanho": 1951,
+        "dataModificacao": "2018-02-07 15:17:32"
+    },
+    "\\bin\\menu\\menu.ordem.mudar.bin.php": {
+        "hash": "7076a5cef70522c68e8b21242daf4ed810ed18c6b29bdb4e5f03bbb166463587",
+        "tamanho": 1068,
+        "dataModificacao": "2018-02-19 00:54:54"
+    },
+    "\\bin\\menu\\menu.reload.bin.php": {
+        "hash": "c8029af4785b56408b46f73dbb4abecaf326d45de5f3bd90c16b6c5f031c70c6",
+        "tamanho": 4048,
+        "dataModificacao": "2024-03-06 19:24:36"
+    },
+    "\\bin\\menu\\new 1.txt": {
+        "hash": "fcd1785fe69489000db8deaa5f826931ed41ea5104771331ad6ace06ca7cd36f",
+        "tamanho": 15758,
+        "dataModificacao": "2018-02-14 15:04:48"
+    },
+    "\\bin\\padrao\\padrao.alterar.bin.php": {
+        "hash": "68febf780998ad66bb8a910779eb7d41dc08e251c7ce22adde01d3fc1746069e",
+        "tamanho": 1270,
+        "dataModificacao": "2018-02-27 01:53:35"
+    },
+    "\\bin\\padrao\\padrao.ativar.bin.php": {
+        "hash": "03c5efcbb11e8a0d3d5bc2dec22fe1277e0ff2c849e03993ddc20f7c7782724a",
+        "tamanho": 821,
+        "dataModificacao": "2018-02-26 20:03:31"
+    },
+    "\\bin\\padrao\\padrao.consultar.bin.php": {
+        "hash": "ca88408da8084838f3bc001cf3cabb1f409d041733a280d88ed08e7f47e0a05a",
+        "tamanho": 836,
+        "dataModificacao": "2018-02-26 20:04:49"
+    },
+    "\\bin\\padrao\\padrao.desativar.bin.php": {
+        "hash": "c8bc34e6325746cf8a78f55156d498d78d00b503beffd216f4b06d26c44cde16",
+        "tamanho": 812,
+        "dataModificacao": "2018-02-26 20:02:30"
+    },
+    "\\bin\\padrao\\padrao.excluir.bin.php": {
+        "hash": "adf3e7b06350e283c4bb7a4f9cea9cecae6cbb6804ffa0b441db10f0a932d5a6",
+        "tamanho": 740,
+        "dataModificacao": "2018-02-26 20:01:36"
+    },
+    "\\bin\\padrao\\padrao.incluir.bin.php": {
+        "hash": "2c712f2dc333fe5c3dc9bfcbd9814b5fc303e7e470072cc5ccb4420b65bdb1cc",
+        "tamanho": 1073,
+        "dataModificacao": "2018-02-27 00:29:03"
+    },
+    "\\bin\\padrao\\padrao.pesquisar.bin.php": {
+        "hash": "e9662579e945127633fa073323aeb8408c1b627179adab720c29174e118db8fe",
+        "tamanho": 1237,
+        "dataModificacao": "2024-03-07 20:47:01"
+    },
+    "\\bin\\permissao\\permissao.incluir.bin.php": {
+        "hash": "8cb45ea1a67db85e6fa79c352a7ab4ba85e41e3c59fa3af9396565b4b0e8396e",
+        "tamanho": 2078,
+        "dataModificacao": "2018-02-19 00:05:35"
+    },
+    "\\bin\\permissao\\permissao.pesquisar.bin.php": {
+        "hash": "1e386ec6bf89635a23156ce9dab12100101221f640ba2517212997065252c675",
+        "tamanho": 1938,
+        "dataModificacao": "2018-02-20 02:58:25"
+    },
+    "\\bin\\scripts\\scripts.alterar.bin.php": {
+        "hash": "af6acf37ee758f80ef7283713482c09d9113054f83d50e11d5b6e5c6f4bca692",
+        "tamanho": 1329,
+        "dataModificacao": "2018-04-06 17:08:44"
+    },
+    "\\bin\\scripts\\scripts.ativar.bin.php": {
+        "hash": "b2a912be61988354c49afcccb90c0991c87a2ae46ebfbde8b612df02ea4bf646",
+        "tamanho": 833,
+        "dataModificacao": "2018-04-06 17:09:42"
+    },
+    "\\bin\\scripts\\scripts.consultar.bin.php": {
+        "hash": "8734c8acc1328a095c691e8731a71e2a74ad8e4ae60eea159d9f8136f76fddbc",
+        "tamanho": 848,
+        "dataModificacao": "2018-04-06 17:08:16"
+    },
+    "\\bin\\scripts\\scripts.desativar.bin.php": {
+        "hash": "53cf6a24ec7ad5d7d0ff9b25a7c5aaa22c716b2c588a89fb59c230b280c28aad",
+        "tamanho": 824,
+        "dataModificacao": "2018-04-06 17:10:00"
+    },
+    "\\bin\\scripts\\scripts.excluir.bin.php": {
+        "hash": "5f5570fbd4cb1c2d84e381d984bf02637d2431a2848ad2a5f2f467070e9a51c4",
+        "tamanho": 750,
+        "dataModificacao": "2018-04-06 17:10:16"
+    },
+    "\\bin\\scripts\\scripts.executar.bin.php": {
+        "hash": "694f144d242bc4ac821998ca659799a61db34bf0cc10943d48e4f2a302609927",
+        "tamanho": 876,
+        "dataModificacao": "2018-07-13 22:17:04"
+    },
+    "\\bin\\scripts\\scripts.incluir.bin.php": {
+        "hash": "fba402a165aac1a1915dc88e8c81d46ae48b72ca76c6ef8e3e8540b3d7c06068",
+        "tamanho": 1117,
+        "dataModificacao": "2018-04-06 17:07:28"
+    },
+    "\\bin\\scripts\\scripts.pesquisar.bin.php": {
+        "hash": "9f95f26ea48efba22cefc582429fed27aa7063fd99f21839fc156b51fc52fb7d",
+        "tamanho": 1210,
+        "dataModificacao": "2018-04-06 17:00:26"
+    },
+    "\\bin\\sistema\\sistema.backup.alterar.bin.php": {
+        "hash": "312266fa16e2c2fcf93b84190ec6f9d7d547bbf03268cb6d8d81293cef079116",
+        "tamanho": 2669,
+        "dataModificacao": "2018-04-05 22:27:23"
+    },
+    "\\bin\\sistema\\sistema.backup.consultar.bin.php": {
+        "hash": "54e8608737d05607b0476e8602606e62d58de44e85307072b0badaf84e37ac4e",
+        "tamanho": 1581,
+        "dataModificacao": "2018-04-03 23:29:28"
+    },
+    "\\bin\\sistema\\sistema.backup.executar.bin.php": {
+        "hash": "a858e47b0ee9d63d2569d50962266b0736ed21788c8cc8087574f0a0a16b3b6d",
+        "tamanho": 3885,
+        "dataModificacao": "2018-07-15 16:15:37"
+    },
+    "\\bin\\sistema\\sistema.backup.incluir.bin.php": {
+        "hash": "723005d423fc5d5204056ac0c6dca7e9eaf7932501132fd6e3bcc4c11228bbd9",
+        "tamanho": 2524,
+        "dataModificacao": "2018-04-03 23:18:32"
+    },
+    "\\bin\\sistema\\sistema.backup.restore.bin.php": {
+        "hash": "a295460c1b19a603ca3f99612afb980451e16d911ba630fce769085ee955ead7",
+        "tamanho": 1421,
+        "dataModificacao": "2018-04-02 22:12:22"
+    },
+    "\\bin\\sistema\\sistema.criar.tabela.bin.php": {
+        "hash": "7a4d739817faf5b291d34070eee5b60bf4f2e0f4d61286cd3dbaf17a85f5dee1",
+        "tamanho": 477,
+        "dataModificacao": "2018-02-27 19:03:59"
+    },
+    "\\bin\\sistema\\sistema.criar.tabela.sql.bin.php": {
+        "hash": "0916204791ad51a9c11531c0b487d2eac6c42d318b7bd2fe35ac9ba3d8f7d2d1",
+        "tamanho": 1764,
+        "dataModificacao": "2018-03-01 16:50:09"
+    },
+    "\\bin\\sistema\\sistema.debug.bin.php": {
+        "hash": "fa9efb3f11f1c1b8715eef2d2c6ca014290aeff21ad7fb26a99f187551f9c21a",
+        "tamanho": 598,
+        "dataModificacao": "2023-01-05 19:19:03"
+    },
+    "\\bin\\sistema\\sistema.exibir.erro.bin.php": {
+        "hash": "5b3f7569a39b1779cc4147455ce914d604ca54904aa508a61550df6e534c5f8d",
+        "tamanho": 738,
+        "dataModificacao": "2020-12-05 21:29:36"
+    },
+    "\\bin\\sistema\\sistema.principal.bin.php": {
+        "hash": "6ef61e0555daf95f0b528eb5569dd6202614c0195c9ce059d6a35a79cfa08eee",
+        "tamanho": 1698,
+        "dataModificacao": "2018-02-19 14:51:49"
+    },
+    "\\bin\\sistema\\sistema.tabela.carregar.csv.bin.php": {
+        "hash": "a22f00a34c9588689d62d559b91395e814f3789c4b1c238b82a96df80c42b0da",
+        "tamanho": 1509,
+        "dataModificacao": "2018-02-28 19:41:02"
+    },
+    "\\bin\\sistema\\sistema.tabela.csv.gerar.sql.bin.php": {
+        "hash": "b94f3d89088eeb1c2dc739a7884d9ed71458f2e3aae136c341067156c5ca611e",
+        "tamanho": 2958,
+        "dataModificacao": "2018-03-01 20:28:59"
+    },
+    "\\bin\\sistema\\sistema.tabelas.bin.php": {
+        "hash": "eb6e107c209c1e940365b666d9bdc4adcaf70815cc2bb0317527b7d3983384ed",
+        "tamanho": 873,
+        "dataModificacao": "2018-02-27 16:41:20"
+    },
+    "\\bin\\tarefas\\tarefas.agente.bin.php": {
+        "hash": "d07905b54266e6ae0b06455d833ee26c8fa5e2ebf40d8a6117f92ce3e6e38195",
+        "tamanho": 701,
+        "dataModificacao": "2018-07-29 22:30:14"
+    },
+    "\\bin\\tarefas\\tarefas.agente.bin.sh": {
+        "hash": "485c2f3da5014a216e82ffa765b2cae0abd741e30edb3373b514258f7b167605",
+        "tamanho": 89,
+        "dataModificacao": "2018-07-22 23:24:42"
+    },
+    "\\bin\\tarefas\\tarefas.alterar.bin.php": {
+        "hash": "658f7efd38a763cb404726c0a7ba23ebd0664590cd0ecbae220fc8ef49679a35",
+        "tamanho": 2687,
+        "dataModificacao": "2018-07-31 00:53:16"
+    },
+    "\\bin\\tarefas\\tarefas.ativar.bin.php": {
+        "hash": "0a1b67a2f97d3f578f7d46df7cfff28fd08a3bdb27cd5dd265a883280f7fafa6",
+        "tamanho": 833,
+        "dataModificacao": "2018-07-30 22:15:49"
+    },
+    "\\bin\\tarefas\\tarefas.consultar.bin.php": {
+        "hash": "89965763ff1f4e30a0bf866055e2f4f7371ccde07bcc4f62e52e9c9061a27adc",
+        "tamanho": 848,
+        "dataModificacao": "2018-07-15 19:38:54"
+    },
+    "\\bin\\tarefas\\tarefas.incluir.bin.php": {
+        "hash": "f62121414204b5578b5c795e01d3d4a2fd4967a83230cc59d852acf8e70af869",
+        "tamanho": 2562,
+        "dataModificacao": "2018-07-31 20:56:05"
+    },
+    "\\bin\\tarefas\\tarefas.pesquisar.bin.php": {
+        "hash": "8e913ef54889d6e7e4f0f049d9ab03ee8ea7fa822e2bd2b537ff36e7121fb0b0",
+        "tamanho": 1210,
+        "dataModificacao": "2018-03-11 17:45:36"
+    },
+    "\\bin\\tarefas\\tarefas.tabela.registros.bin.php": {
+        "hash": "2c85307b94396071913bd0661db37ad9589767e688f626dbf42798b14d4d3bfa",
+        "tamanho": 787,
+        "dataModificacao": "2018-07-22 20:19:58"
+    },
+    "\\bin\\usuario\\usuario.alterar.bin.php": {
+        "hash": "3171870d34ef8dd705b265b362b65129846eec18509c05314e04fed8ee358fe1",
+        "tamanho": 2537,
+        "dataModificacao": "2024-03-06 19:28:14"
+    },
+    "\\bin\\usuario\\usuario.alterar.imagem.bin.php": {
+        "hash": "5c4ffe4ffc4101925c1385ade9f983952a0591228c5e7382803444b326fa6c5b",
+        "tamanho": 656,
+        "dataModificacao": "2018-02-13 21:43:01"
+    },
+    "\\bin\\usuario\\usuario.alterar.perfil.bin.php": {
+        "hash": "a815ed890818166c7f4a522ceeecf601700bbd47465f6d1a2b39f193f8366076",
+        "tamanho": 2491,
+        "dataModificacao": "2018-02-19 00:33:43"
+    },
+    "\\bin\\usuario\\usuario.alterar.senha.bin.php": {
+        "hash": "0c2fefe6cacdc331bb4e5ba0b9cc50499a77750172d9dc61eb233a54a90bfd6e",
+        "tamanho": 1649,
+        "dataModificacao": "2018-02-19 00:34:20"
+    },
+    "\\bin\\usuario\\usuario.ativar.bin.php": {
+        "hash": "53fa7dd2f6ab7ef50140507e8384caaa7080c4b24de19848d1c7ef5150ae2a2e",
+        "tamanho": 2123,
+        "dataModificacao": "2018-02-18 23:55:02"
+    },
+    "\\bin\\usuario\\usuario.bloquear.bin.php": {
+        "hash": "a196f4ed1849701f3c4361b9a295e577a7cf1d15407d25e5a32c8450841aa2ef",
+        "tamanho": 2006,
+        "dataModificacao": "2018-02-18 23:55:14"
+    },
+    "\\bin\\usuario\\usuario.consulta.bin.php": {
+        "hash": "23a41feeb203b8b2dc74a347c1612758cf1656114caa111dcb7cd5e244930df8",
+        "tamanho": 1777,
+        "dataModificacao": "2018-08-11 21:10:20"
+    },
+    "\\bin\\usuario\\usuario.consultar.bin.php": {
+        "hash": "0409c6c21f4d78d4f20d8ed70330cbb8fc2a73e99c0929047d91ff29a34253fa",
+        "tamanho": 1611,
+        "dataModificacao": "2018-02-18 23:42:50"
+    },
+    "\\bin\\usuario\\usuario.incluir.bin.php": {
+        "hash": "983f0bb84f052306d78a8e7f617dffcd5ce927578af7098dcda1e1bc83f81e38",
+        "tamanho": 2985,
+        "dataModificacao": "2018-02-21 20:31:34"
+    },
+    "\\bin\\usuario\\usuario.perfil.bin.php": {
+        "hash": "f54fa604dc06344c323a3106a51533d006bc6ec5075d6d3aba01e607a451ad7d",
+        "tamanho": 1514,
+        "dataModificacao": "2018-02-13 22:38:52"
+    },
+    "\\bin\\usuario\\usuario.pesquisar.bin.php": {
+        "hash": "ac292162bf55d31ecc690eb8a81c8a41c0a68c3c8d857c1152106e22fafa0281",
+        "tamanho": 1245,
+        "dataModificacao": "2018-02-23 00:49:17"
+    },
+    "\\bin\\usuario\\usuario.redefinir.senha.bin.php": {
+        "hash": "c3033f68a8900ef210fc00e0157cdedc5da70a90705951f817d965eb4e7f7529",
+        "tamanho": 1611,
+        "dataModificacao": "2018-02-19 00:01:28"
+    },
+    "\\datafiles\\6df99651272ba9416efa3147f7b44189f341f0d8": {
+        "hash": "d6381e09da056f647426153eee89555e5d7be7e67a2471d849496581f2304c2c",
+        "tamanho": 96735,
+        "dataModificacao": "2018-02-13 22:46:16"
+    },
+    "\\datafiles\\ae87d197922a8db12716ffebcb8a6ae9e65a5d4a": {
+        "hash": "422a4c638559069693c3ded8f10b241daa5ce1bf833962114e60f10394f16e47",
+        "tamanho": 430119,
+        "dataModificacao": "2018-02-19 14:33:59"
+    },
+    "\\datafiles\\dce5cc7b5360709d0a64f7a3bc74aceaa36752e7": {
+        "hash": "622b92d14aeaa4f1ca193a039d3c80ea931eec68f007996f3882e56f6446459f",
+        "tamanho": 381467,
+        "dataModificacao": "2018-02-13 23:00:55"
+    },
+    "\\datafiles\\ef8f676558d6db760c04ce8cc736c315af9d6ea5": {
+        "hash": "f8f191d562ef90b01ac6657bfff39687fcb3ab69e68515aca05b814d1e2a7ac4",
+        "tamanho": 27260,
+        "dataModificacao": "2018-02-13 23:00:41"
+    },
+    "\\def\\corte\\corte.def.php": {
+        "hash": "934e1ae49590dbee8deb3fa8fc873339697ff1160e83760b80bcf707af27c466",
+        "tamanho": 2791,
+        "dataModificacao": "2018-03-02 17:49:49"
+    },
+    "\\def\\corte\\corte.idioma.brasil.def.php": {
+        "hash": "6037eb684a8b71e0f3309fe3e90c2773e293999688b0ebc4d1609b5bad2f9471",
+        "tamanho": 3339,
+        "dataModificacao": "2018-03-03 07:20:02"
+    },
+    "\\def\\idioma.brasil.def.php": {
+        "hash": "c31e3c5d3643d3b89bec2bc18c717bac626b81212a2f56d7afb04d5aefd892a1",
+        "tamanho": 460,
+        "dataModificacao": "2018-02-26 16:09:02"
+    },
+    "\\def\\logatividade\\logatividade.def.php": {
+        "hash": "9490eb486dc7ba1ee488b028ccca181a2a3a7dffaf4295be94d6a313b5eabd99",
+        "tamanho": 322,
+        "dataModificacao": "2018-02-17 23:40:36"
+    },
+    "\\def\\padrao\\padrao.def.php": {
+        "hash": "809ce95b27ed0b7323511920a3effa2421f3b3dcf0b7524d8030d1041d3dbc10",
+        "tamanho": 2780,
+        "dataModificacao": "2018-02-27 01:29:42"
+    },
+    "\\def\\padrao\\padrao.idioma.brasil.def.php": {
+        "hash": "fd946e89e3aea8c0e7dff0477054a7a693c29384fb4749d1f38b3909539152de",
+        "tamanho": 3281,
+        "dataModificacao": "2024-03-07 20:47:05"
+    },
+    "\\def\\scripts\\scripts.def.php": {
+        "hash": "a7b195cc7c00c9ff4c6e33d7983cb9558f35979fa91148d2c9ec7ddeed5037f1",
+        "tamanho": 2421,
+        "dataModificacao": "2018-07-12 22:19:21"
+    },
+    "\\def\\scripts\\scripts.idioma.brasil.def.php": {
+        "hash": "edaa542d5f940c57463e934970427b5cdf6c7dfc75be372df769226c8ae31212",
+        "tamanho": 3766,
+        "dataModificacao": "2018-07-10 05:09:33"
+    },
+    "\\def\\scripts\\_scripts.def.php.bkp": {
+        "hash": "9e551d0123aabe7845ac60cc65e2833a139ab2e33149494108bdc8d64f3b99e0",
+        "tamanho": 2236,
+        "dataModificacao": "2018-04-06 16:58:38"
+    },
+    "\\def\\scripts\\_scripts.idioma.brasil.def.php.bkp": {
+        "hash": "2b48c3f378b58dad4d71ee6d84d53bf02c5cf36d921713b21c44012a0bac60e7",
+        "tamanho": 3295,
+        "dataModificacao": "2018-07-10 05:07:11"
+    },
+    "\\def\\sgpadrao.menu.geral.def.php": {
+        "hash": "3fcc32e28552c2dd6e2db2d66b40ce9e3acdd08189381321f6b5c3d4faad75f9",
+        "tamanho": 7131,
+        "dataModificacao": "2018-02-16 15:13:50"
+    },
+    "\\def\\sistema\\sistema.def.php": {
+        "hash": "089c15b0d2a2311a34cc1c2231c5511dccac647eba8d01d6291dd3f267e30b63",
+        "tamanho": 3381,
+        "dataModificacao": "2018-04-02 22:19:47"
+    },
+    "\\def\\sistema\\sistema.idioma.brasil.def.php": {
+        "hash": "81487be99dbefb8ec00b17d1c830250da8a152be036402c99ff03e33685b035d",
+        "tamanho": 3817,
+        "dataModificacao": "2024-03-07 20:58:35"
+    },
+    "\\def\\tarefas\\tarefas.def.php": {
+        "hash": "45cfbb3654786275fdd017acc52e72dcc3755ff07a6666da9e40e21e8d907768",
+        "tamanho": 3854,
+        "dataModificacao": "2018-03-27 14:17:57"
+    },
+    "\\def\\tarefas\\tarefas.idioma.brasil.def.php": {
+        "hash": "d03e6af61738bc4ea11ef4f5cdfd538d35b43aac56ffa5b7c9fb098efe93dc80",
+        "tamanho": 4432,
+        "dataModificacao": "2018-07-21 19:15:39"
+    },
+    "\\doc\\sgpadrao.drawio": {
+        "hash": "16cbb77e573200779e011ef5fc97aa6a6b45a6b8839cd1a9fb75815f3a114f59",
+        "tamanho": 911,
+        "dataModificacao": "2024-02-12 22:15:32"
+    },
+    "\\install\\config.json": {
+        "hash": "21722ebcc3666872c4cc1ed5cdf98acf138e3f4a58f210fa449b1e1e7cb98f21",
+        "tamanho": 230,
+        "dataModificacao": "2024-03-08 18:03:26"
+    },
+    "\\install\\install.php": {
+        "hash": "6e008d8075342eafe27ae8b2dcbb5fb81c4602742aec19ff6d65b3799081155c",
+        "tamanho": 5556,
+        "dataModificacao": "2024-03-08 22:39:46"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.consultar.acao.layout.php": {
+        "hash": "f71683701bcb386dc2a699ddb799eee120a72263eff40cb1dbf88e4471022975",
+        "tamanho": 10609,
+        "dataModificacao": "2018-02-24 22:00:48"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.consultar.entidade.layout.php": {
+        "hash": "8cef326c87bccf18c53c4fecae6efe8d34fd4593a66c49dbf428b2f91e9ecc0e",
+        "tamanho": 16335,
+        "dataModificacao": "2018-03-03 07:03:25"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.criar.arquivo.layout.php": {
+        "hash": "ad7b8ca10bcf673613e7e03fe739836dafffc46912824389de1e877b61394c6e",
+        "tamanho": 4763,
+        "dataModificacao": "2018-03-09 21:30:51"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.editar.arquivo.layout.php": {
+        "hash": "d609cd1c31bd3127da31ae65172df0520fe54b840897de62a6c524324aeaff3d",
+        "tamanho": 2657,
+        "dataModificacao": "2018-03-08 22:52:33"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.importar.modelo.layout.php": {
+        "hash": "26a04b2791b5a73672c325e65348b510034a335c60d841f8c0b514b23b215c0d",
+        "tamanho": 859,
+        "dataModificacao": "2018-03-09 11:50:32"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.incluir.acao.layout.php": {
+        "hash": "1c28ce6542bba03898747b56031b3dda424b34bf12e9f2eda602c08cd669b1a5",
+        "tamanho": 3159,
+        "dataModificacao": "2018-02-24 21:50:49"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.incluir.entidade.layout.php": {
+        "hash": "d29b2cc22703547306132e797bade8ced0d0557c8c704b36f8232336db3ae490",
+        "tamanho": 3467,
+        "dataModificacao": "2018-02-24 21:53:13"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.listar.acao.layout.php": {
+        "hash": "0149962f57f403077ce41b9617dbd779df1d5c543b050fa1073d02a379775c8b",
+        "tamanho": 8909,
+        "dataModificacao": "2018-02-24 22:02:16"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.pesquisar.layout.php": {
+        "hash": "8296327865a624e42d8ea529243a913861412d766f4d5040090c9470855a0a59",
+        "tamanho": 2851,
+        "dataModificacao": "2018-02-27 16:44:24"
+    },
+    "\\layout\\html\\entidadeacao\\entidadeacao.visualizar.arquivo.layout.php": {
+        "hash": "d05763fef15ee59fa6c67801c887b71bff121f7a20e78f8a47e261e2ff8aaa42",
+        "tamanho": 1995,
+        "dataModificacao": "2018-02-24 21:53:13"
+    },
+    "\\layout\\html\\layout\\layout.configuracao.layout.php": {
+        "hash": "b5a281562a4ebf907a932e154e7b5242740bed1076d60658a91c4e3bfd3db49f",
+        "tamanho": 1021,
+        "dataModificacao": "2018-02-01 22:58:54"
+    },
+    "\\layout\\html\\layout\\layout.saida.alerta.layout.php": {
+        "hash": "0d71f5edd60d31c0362d803b2a72e63a969d1aed8486cfd5e7b15695406bc114",
+        "tamanho": 382,
+        "dataModificacao": "2018-02-10 02:13:09"
+    },
+    "\\layout\\html\\layout\\layout.saida.error.layout.php": {
+        "hash": "a7655824311b6887e262e31bbc3e1ba6fecc5da48864649934ed3c7c567ab7ed",
+        "tamanho": 381,
+        "dataModificacao": "2018-02-10 02:12:56"
+    },
+    "\\layout\\html\\layout\\layout.saida.informacao.layout.php": {
+        "hash": "8ed024fec593706855f7797fe5b5a26fa96566769bf93337f46cf32a189f0091",
+        "tamanho": 379,
+        "dataModificacao": "2018-02-10 02:12:47"
+    },
+    "\\layout\\html\\layout\\layout.saida.mensagem.layout.php": {
+        "hash": "4162af23e71de267e218a7c9ad71c8652e0421a3d3f70288707865e2e78103ad",
+        "tamanho": 382,
+        "dataModificacao": "2018-02-10 02:12:41"
+    },
+    "\\layout\\html\\layout.def.php": {
+        "hash": "42323e1cbaf08e32369d0a8132d604115eda5e8ced244e771deeb6aca4aba458",
+        "tamanho": 1434,
+        "dataModificacao": "2018-02-26 22:16:14"
+    },
+    "\\layout\\html\\mapa.icones.def.php": {
+        "hash": "fa7b2f0d1ad07fbc5900be0b2fa98995d64e5ef4a6f600e0ee9efb21e2329f02",
+        "tamanho": 55953,
+        "dataModificacao": "2018-02-19 14:06:41"
+    },
+    "\\layout\\html\\menu\\menu.consultar.layout.php": {
+        "hash": "3caf4b20a97679bc81fcd771efea4bc8451df472a8d9ea939f25b03d18716e5b",
+        "tamanho": 9228,
+        "dataModificacao": "2018-02-24 21:53:12"
+    },
+    "\\layout\\html\\menu\\menu.editar.layout.php": {
+        "hash": "4eda2a520a3e6f1947f60e7c8541858c4996ff93df1d10a20231e6bb205251de",
+        "tamanho": 7370,
+        "dataModificacao": "2018-02-24 21:53:13"
+    },
+    "\\layout\\html\\menu\\menu.exibir.layout.php": {
+        "hash": "9212526d568faea5b81bfd58a72dbb2e6365492a9232ba32df1eeb50062f97eb",
+        "tamanho": 543,
+        "dataModificacao": "2018-02-19 00:48:00"
+    },
+    "\\layout\\html\\menu\\menu.montar.layout.php": {
+        "hash": "b38eb4f3b0fdafa51b1e38f8c91199e83c5045f0b858d6471414ba7b7ce07106",
+        "tamanho": 608,
+        "dataModificacao": "2018-02-08 15:56:31"
+    },
+    "\\layout\\html\\padrao\\padrao.alterar.layout.php": {
+        "hash": "9b357b56e173c532628cf106ff10d46e888f233e26746f26a571d2c32edd06d2",
+        "tamanho": 9973,
+        "dataModificacao": "2018-02-27 14:33:07"
+    },
+    "\\layout\\html\\padrao\\padrao.consultar.layout.php": {
+        "hash": "7221f847a893a6fb6cfbb48d142842cdaefac59d76b073c08ed28358c049abf7",
+        "tamanho": 9423,
+        "dataModificacao": "2018-02-27 14:34:09"
+    },
+    "\\layout\\html\\padrao\\padrao.incluir.layout.php": {
+        "hash": "237bbd12f14f7d345eab99065dab68590c04b8695037ec530a9e0b5612711065",
+        "tamanho": 5783,
+        "dataModificacao": "2024-03-07 20:52:58"
+    },
+    "\\layout\\html\\padrao\\padrao.pesquisa.layout.php": {
+        "hash": "ae84e721c05cde362a25bf677c3a4d856c97cc1a352321099c33e3edc3d301a0",
+        "tamanho": 3149,
+        "dataModificacao": "2018-02-27 01:07:26"
+    },
+    "\\layout\\html\\padrao\\padrao.pesquisar.layout.php": {
+        "hash": "4db468f8dfbe37a5b049e8fd0d85f8c96c76bcd67ef6d5402593cefbd0055eb5",
+        "tamanho": 7785,
+        "dataModificacao": "2018-02-27 00:17:36"
+    },
+    "\\layout\\html\\permissao\\permissao.montar.layout.php": {
+        "hash": "dfd8977c9861fc37d7aec7b37ddedc7348257dc604a14380559898976ec4e8e9",
+        "tamanho": 2050,
+        "dataModificacao": "2018-02-24 21:53:10"
+    },
+    "\\layout\\html\\permissao\\permissao.pesquisar.layout.php": {
+        "hash": "2676e3fc1f15902c52bfa928724d2d042c56807ae446ba5259f5dde70f22a5cc",
+        "tamanho": 2496,
+        "dataModificacao": "2020-12-08 12:40:28"
+    },
+    "\\layout\\html\\scripts\\scripts.alterar.layout.php": {
+        "hash": "986679420e68339df760cf211b892f7c88720dd3e489808f055f1dcfa2f304ab",
+        "tamanho": 8743,
+        "dataModificacao": "2018-07-10 05:10:01"
+    },
+    "\\layout\\html\\scripts\\scripts.consultar.layout.php": {
+        "hash": "8646ec4428ac1c6ddc3e0ae4b365654c279c11c279b4f885f0c61f822feb6fbe",
+        "tamanho": 9080,
+        "dataModificacao": "2018-07-12 22:55:00"
+    },
+    "\\layout\\html\\scripts\\scripts.executar.layout.php": {
+        "hash": "5db0707ef1fb7ee25ba8b251d3bed0ccc6d64314c99a4640d890d9f7bf72fac1",
+        "tamanho": 8580,
+        "dataModificacao": "2018-07-10 21:05:49"
+    },
+    "\\layout\\html\\scripts\\scripts.incluir.layout.php": {
+        "hash": "d75f3375a8a11892d8c5c1dba2060c8f06ef6880a44722484fa78a14de33d3fb",
+        "tamanho": 4965,
+        "dataModificacao": "2018-07-10 05:09:51"
+    },
+    "\\layout\\html\\scripts\\scripts.pesquisa.layout.php": {
+        "hash": "23d87300042401d7ae5266b8b711e40ad8fc07795b88cf2587cf7b7dbf97afda",
+        "tamanho": 3055,
+        "dataModificacao": "2018-07-12 22:49:20"
+    },
+    "\\layout\\html\\scripts\\scripts.pesquisar.layout.php": {
+        "hash": "9b8a2545b3431efa589ee33ca4359b7f4864ae994215194fe3911c22ba705892",
+        "tamanho": 7989,
+        "dataModificacao": "2018-07-12 22:47:35"
+    },
+    "\\layout\\html\\sistema\\sistema.backup.alterar.layout.php": {
+        "hash": "4cd1d0d1c4f1e5fbf21d39232bc34fb53f0b6a2b3536e951f659f9769c54e095",
+        "tamanho": 11062,
+        "dataModificacao": "2018-07-14 00:54:26"
+    },
+    "\\layout\\html\\sistema\\sistema.backup.consultar.layout.php": {
+        "hash": "fac0b5caa505ea02c26872271b16d4fd90863c4bdb316f3f9801bcc45bffb846",
+        "tamanho": 10620,
+        "dataModificacao": "2018-07-14 00:57:43"
+    },
+    "\\layout\\html\\sistema\\sistema.backup.incluir.layout.php": {
+        "hash": "ad2bdb72eece64d9ecd75b79dfb0b0ac5b4b09925ea0df0f0bebffc20a9cf067",
+        "tamanho": 7021,
+        "dataModificacao": "2018-07-14 00:55:47"
+    },
+    "\\layout\\html\\sistema\\sistema.backup.restore.layout.php": {
+        "hash": "8e1674dc78eeb1192f085c6d928f0be99bbcfa554674fc233f418595bead4dff",
+        "tamanho": 5669,
+        "dataModificacao": "2018-04-03 23:45:20"
+    },
+    "\\layout\\html\\sistema\\sistema.conteudo.layout.php": {
+        "hash": "1bac85c117dec33c2f6594e5d7d40eaf02d9f13add5953c2321cdd484e318936",
+        "tamanho": 518,
+        "dataModificacao": "2018-02-22 22:58:43"
+    },
+    "\\layout\\html\\sistema\\sistema.criar.tabela.layout.php": {
+        "hash": "a9709b9b198864f68538e3d3911228c67dd07c91a2d3b3b6d7dceacc10ce1a33",
+        "tamanho": 2015,
+        "dataModificacao": "2018-02-28 00:07:20"
+    },
+    "\\layout\\html\\sistema\\sistema.debug.layout.php": {
+        "hash": "1d7ecc7684579fa2e26cf949cf73055c5adfe2b9f8253971a1ccb0a4e480669a",
+        "tamanho": 979,
+        "dataModificacao": "2018-02-27 15:23:00"
+    },
+    "\\layout\\html\\sistema\\sistema.menu.layout.php": {
+        "hash": "1b4fef9381064f81955bc6b0af7ac1bfe7a6d3fe4d1b3a874dfcb5e86c05d47d",
+        "tamanho": 683,
+        "dataModificacao": "2018-02-18 22:50:30"
+    },
+    "\\layout\\html\\sistema\\sistema.principal.layout.php": {
+        "hash": "0c4279faabf367ce08bd7a4367e7b967cb71b78816bed98c4037c2cefdee1970",
+        "tamanho": 5846,
+        "dataModificacao": "2021-05-19 16:06:03"
+    },
+    "\\layout\\html\\sistema\\sistema.tabela.carregar.csv.layout.php": {
+        "hash": "0901d46441119af9f9c48a64a21d1fca8bfaa133b64154a5cd55ea52bc5ad8ab",
+        "tamanho": 9206,
+        "dataModificacao": "2018-02-28 23:48:23"
+    },
+    "\\layout\\html\\sistema\\sistema.tabela.csv.gerar.sql.layout.php": {
+        "hash": "c058019e2c96f956365a3093f1b98458ef299da125f497c28c4c8a6b8d4ffe44",
+        "tamanho": 3568,
+        "dataModificacao": "2018-03-01 20:14:47"
+    },
+    "\\layout\\html\\sistema\\sistema.tabelas.layout.php": {
+        "hash": "deb330ecfbc1116f1af6dd80602793fc72c6e92f8e863073852c268c7c1aaeb2",
+        "tamanho": 2650,
+        "dataModificacao": "2018-07-03 22:07:49"
+    },
+    "\\layout\\html\\sistema\\sistema.topo.layout.php": {
+        "hash": "4a14a1d2fe04bef368bab0acefa882df2344bfd1d58a44c218d00792e611874a",
+        "tamanho": 4918,
+        "dataModificacao": "2024-03-07 22:32:39"
+    },
+    "\\layout\\html\\tarefas\\tarefas.alterar.layout.php": {
+        "hash": "cac8ef94280f0b0d46cf5258d9b8fd851e4d030f5040a26ad50b9884d8145c5f",
+        "tamanho": 16392,
+        "dataModificacao": "2018-07-31 01:12:26"
+    },
+    "\\layout\\html\\tarefas\\tarefas.consultar.layout.php": {
+        "hash": "4263f15eccad7de9dc6b63c49a563efeedb0f4ccdc80a12fa60313250008a55b",
+        "tamanho": 12225,
+        "dataModificacao": "2018-07-31 20:48:44"
+    },
+    "\\layout\\html\\tarefas\\tarefas.incluir.layout.php": {
+        "hash": "285a3eeb6466e01a5b0af19df82140cf93ef92c4bebcd38c96cf4ab2f7519a99",
+        "tamanho": 10287,
+        "dataModificacao": "2018-07-31 20:51:32"
+    },
+    "\\layout\\html\\tarefas\\tarefas.pesquisa.layout.php": {
+        "hash": "3ec9a53dded19099ee552521cca155557281598f492082520c201454fb849c73",
+        "tamanho": 4187,
+        "dataModificacao": "2018-07-30 22:59:51"
+    },
+    "\\layout\\html\\tarefas\\tarefas.pesquisar.layout.php": {
+        "hash": "925ee816c8be2ebca10fb43d0b56f4edaf2441ee76253fbd28cf2bde62de814b",
+        "tamanho": 9348,
+        "dataModificacao": "2018-07-30 22:59:36"
+    },
+    "\\layout\\html\\tarefas\\tarefas.tabela.registros.layout.php": {
+        "hash": "b19b52476fa95b41de038c33ce454d180588b8cd1a9c2b8445a664d7b871b2f9",
+        "tamanho": 1293,
+        "dataModificacao": "2018-07-22 20:23:16"
+    },
+    "\\layout\\html\\usuario\\usuario.consultar.layout.php": {
+        "hash": "b89c87778f9d02f00d9d6acf1a0663ea74534063cfc1852dfa4bd3b8ea98b143",
+        "tamanho": 7540,
+        "dataModificacao": "2018-02-24 21:53:11"
+    },
+    "\\layout\\html\\usuario\\usuario.incluir.layout.php": {
+        "hash": "4ba646f3e9cf2613273da5434c273f8a08cf80e482d1521bd7d757f6ec0b1168",
+        "tamanho": 3650,
+        "dataModificacao": "2018-02-24 21:53:11"
+    },
+    "\\layout\\html\\usuario\\usuario.perfil.imagem.layout.php": {
+        "hash": "130d00906b65de2847eba9a49432e0cde91938e413daade68a48b118b9d126d4",
+        "tamanho": 998,
+        "dataModificacao": "2018-02-13 21:41:16"
+    },
+    "\\layout\\html\\usuario\\usuario.perfil.layout.php": {
+        "hash": "68bec34b9d8a3f03ce285a592db5d6e7c6603c239eb5cb36c68cdde022f1ea2c",
+        "tamanho": 9254,
+        "dataModificacao": "2018-02-24 21:53:11"
+    },
+    "\\layout\\html\\usuario\\usuario.pesquisa.layout.php": {
+        "hash": "a876508f49cc529eade8fd5fd55d355d32a9a550f1104caa09a7615f1c8ab2b7",
+        "tamanho": 1275,
+        "dataModificacao": "2018-02-26 15:48:17"
+    },
+    "\\layout\\html\\usuario\\usuario.pesquisar.layout.php": {
+        "hash": "acc85e00b41b3a3c286461cd06e52d12f4979b3ede803e4abbc41c0b8a509b11",
+        "tamanho": 4379,
+        "dataModificacao": "2018-02-24 22:07:43"
+    },
+    "\\lib\\class.arquivo.lib.php": {
+        "hash": "3335f143be30cb4f19f3d0717f8c25ef3b899ae347e53c8b933e4da5b435a156",
+        "tamanho": 14562,
+        "dataModificacao": "2020-12-04 22:40:34"
+    },
+    "\\lib\\class.conexao.lib.php": {
+        "hash": "c88c62eb2ec39700c4f33b57fb0b8f8343f5b534165dc378635355dc03e64490",
+        "tamanho": 18287,
+        "dataModificacao": "2024-03-03 12:44:16"
+    },
+    "\\lib\\class.debug.lib.php": {
+        "hash": "9aa71f5001171a398c5561c00249512995c1738ae1c2b96d4c06eb877e9829ae",
+        "tamanho": 590,
+        "dataModificacao": "2024-02-13 00:39:33"
+    },
+    "\\lib\\class.entidadeacao.lib.php": {
+        "hash": "238e0aa9afc289405009146aaf5de441bb1804778d54a4f11931760bfba2c0e8",
+        "tamanho": 7729,
+        "dataModificacao": "2020-12-08 14:12:14"
+    },
+    "\\lib\\class.formulario.lib.php": {
+        "hash": "06297839bd35eec8230c1c824d31a00b3e3376a9d386fe6a92b159d1e367db6e",
+        "tamanho": 5467,
+        "dataModificacao": "2018-08-07 23:10:53"
+    },
+    "\\lib\\class.menu.lib.php": {
+        "hash": "71d033bb9b0503374a3c2124c9b049d99da7505f495df3e52c519e6bb85227ed",
+        "tamanho": 12853,
+        "dataModificacao": "2024-03-06 19:28:53"
+    },
+    "\\lib\\class.padrao.lib.php": {
+        "hash": "a4a5ae838bc8e995e4837ae85e9c879a8a5a32dde528acb1ea8f01f2cb48faa7",
+        "tamanho": 9928,
+        "dataModificacao": "2024-03-07 20:47:01"
+    },
+    "\\lib\\class.permissao.lib.php": {
+        "hash": "2635e8853bacf8cc4b0eaddffec12e8b0fc94d7c624009a23dd8eeeeb1d107a1",
+        "tamanho": 15198,
+        "dataModificacao": "2024-02-12 19:05:39"
+    },
+    "\\lib\\class.scripts.lib.php": {
+        "hash": "93bb871d53bfcdeee4d621c2cc163db4aaa253e1c4006c0388dd906a2984a460",
+        "tamanho": 10617,
+        "dataModificacao": "2018-07-14 23:24:51"
+    },
+    "\\lib\\class.sessao.lib.php": {
+        "hash": "6f93e9a843c1e22cec5dda71ad0c735a21716996452975485e42a26f3e20a8f8",
+        "tamanho": 34194,
+        "dataModificacao": "2024-03-07 20:52:58"
+    },
+    "\\lib\\class.sessao.lib.php.bkp": {
+        "hash": "f80b0102cf1974c216e08ebaf0bfadfc4a33eb0a7da4798ca08077b698ec50de",
+        "tamanho": 37556,
+        "dataModificacao": "2023-11-10 17:09:00"
+    },
+    "\\lib\\class.sistema.lib.php": {
+        "hash": "b207ad2a5d0a51426e638ba74cc6488d4072631262c71db3bf9e93462b98d107",
+        "tamanho": 8644,
+        "dataModificacao": "2024-03-07 17:23:25"
+    },
+    "\\lib\\class.tarefas.lib.php": {
+        "hash": "b12d9d118ef04640ee7dd00ca84a4e00f5fc7c0fdcd611f97588cf67a6feb772",
+        "tamanho": 13795,
+        "dataModificacao": "2018-07-30 22:22:20"
+    },
+    "\\lib\\class.usuario.lib.php": {
+        "hash": "923fa3a01d23c2bf99b8f28ce9e7bc3c0e4378902afb5881ad01ccea704fb380",
+        "tamanho": 15573,
+        "dataModificacao": "2024-03-07 20:46:39"
+    },
+    "\\lib\\funcoes.lib.php": {
+        "hash": "eda9e9f3be0ba625451b2f1691406dc4249a19f5dc16b647687bb6c2aa3d07fd",
+        "tamanho": 27004,
+        "dataModificacao": "2024-03-07 20:52:58"
+    },
+    "\\LICENSE": {
+        "hash": "3dd4e0cc9bffe44252537a8354af686e9ef7d51eaeaee4469f39c3b8fad78054",
+        "tamanho": 1085,
+        "dataModificacao": "2024-03-08 22:10:17"
+    },
+    "\\README.md": {
+        "hash": "8b35053891c81c8adee341222d5614049b90130e32d4eb4a84b0c535ffdc6b9b",
+        "tamanho": 13,
+        "dataModificacao": "2024-02-17 22:31:45"
+    },
+    "\\sbin\\padrao\\padrao.acao.sbin.php": {
+        "hash": "3b14e900c19a9625f4e7be5b09e57ef63abf3d0491599aeb3232eb897f703256",
+        "tamanho": 730,
+        "dataModificacao": "2021-05-21 00:58:45"
+    },
+    "\\sbin\\sgpadrao.sbin.php": {
+        "hash": "cb91e4a3eefa6cfae495ecfccb5ae4dde39cabcbfa93d988198f65a1c642cb0f",
+        "tamanho": 831,
+        "dataModificacao": "2021-05-21 00:59:49"
+    },
+    "\\SGPadrao.debug": {
+        "hash": "8bd88807e2768d351d123d33c6642ab0126da2c32abc08d72d6f65175bdee483",
+        "tamanho": 301,
+        "dataModificacao": "2024-03-03 18:39:29"
+    },
+    "\\sh\\syncPadraoAtualizarArquivosLayoutWEB.sh": {
+        "hash": "17ab825b4f4ad96208812a0de0067130bda1d675c0a928b311ca19cea20f8771",
+        "tamanho": 925,
+        "dataModificacao": "2018-12-31 13:08:52"
+    },
+    "\\sistema.debug.json": {
+        "hash": "f0032a1f2ee0eafd0315e06c290ec50e0098f4ef353ff4a2eb77c7fddf261c7a",
+        "tamanho": 820,
+        "dataModificacao": "2024-03-05 19:44:36"
+    },
+    "\\sistema.php": {
+        "hash": "bfab63e48a32d1acf6de131ac1432258511287f3b91e8cf8816155994358f6e3",
+        "tamanho": 1805,
+        "dataModificacao": "2024-03-05 15:40:38"
+    },
+    "\\sistema.sql": {
+        "hash": "6bc7db9a44666252cb96501e993bde610f5277220907ef1d9c293d5e41941741",
+        "tamanho": 36380,
+        "dataModificacao": "2020-12-04 17:08:36"
+    },
+    "\\sqlStart.sql": {
+        "hash": "9a79453ebaeb2d60c79ec72fab858f79fd3c88fbbe85f0a7e9b4dd6e245953a7",
+        "tamanho": 24295,
+        "dataModificacao": "2018-08-11 23:34:53"
+    },
+    "\\tmp\\sessions\\sess_a0kjil6v573trc6pvo0u6o2jdj": {
+        "hash": "1b0c9f1c24cd118587a57bca10752f03b9033fca56d9bf439d1ef66606845b1b",
+        "tamanho": 116,
+        "dataModificacao": "2024-03-03 14:16:47"
+    },
+    "\\tmp\\sessions\\sess_tgjocldgtilufofgsdj8gpdnbn": {
+        "hash": "9f851b7df6b7358894be9aabf2b65df8521ba481cf205385d1a2a4e11de1c74d",
+        "tamanho": 66,
+        "dataModificacao": "2024-03-05 09:52:40"
+    },
+    "\\update\\update.php": {
+        "hash": "a0f8cddd0bc20a6e8bc2d1300a081d8ccc632ed44a8e8c1e3444a33a8f0769a1",
+        "tamanho": 1961,
+        "dataModificacao": "2024-03-09 10:21:20"
+    }
+}

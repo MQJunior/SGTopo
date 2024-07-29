@@ -1,0 +1,31 @@
+array(1) {
+    [
+        0
+    ]=> array(12) {
+        [
+            0
+        ]=> string(32) "a052e097e97478a3a13d9f4fb94ea8b2"[
+            "SESSAO_UID"
+        ]=> string(32) "a052e097e97478a3a13d9f4fb94ea8b2"[
+            1
+        ]=> string(2) "11"[
+            "CODIGO"
+        ]=> string(2) "11"[
+            2
+        ]=> string(19) "2024-03-05 19:39:27"[
+            "DATAINICIO"
+        ]=> string(19) "2024-03-05 19:39:27"[
+            3
+        ]=> string(19) "2024-03-05 19:39:27"[
+            "DATAMODIFICACAO"
+        ]=> string(19) "2024-03-05 19:39:27"[
+            4
+        ]=> string(9) "127.0.0.1"[
+            "IPCLIENTE"
+        ]=> string(9) "127.0.0.1"[
+            5
+        ]=> string(20) "SUPERVISOR@127.0.0.1"[
+            "CLIENTENOME"
+        ]=> string(20) "SUPERVISOR@127.0.0.1"
+    }
+}

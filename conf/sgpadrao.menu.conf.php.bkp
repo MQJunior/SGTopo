@@ -1,0 +1,30 @@
+<?php
+/**
+* sgpadrao.menu.conf.php
+*
+* Sistema - Configuração de menus
+*
+* Definições para a classe menu
+*
+* @date   2018-02-13
+*
+* @author       Marcio Queiroz Jr <mqjunior@gmail.com>
+* @version      1.0
+* @copyright    Copyright © 2006, Marcio Queiroz Jr.
+* @package      SGPadrao
+* @subpackage   Config
+* @category     Arquivo
+*/
+
+
+/** @var string $SISTEMA['INCLUDES']['MENU']['MENU'] - Define a LIB que gerencia menu; */
+$SISTEMA['INCLUDES']['CLASSES']['MENU'] = $SISTEMA['INCLUDES']['DIR']['LIB'].'class.menu.lib.php';
+
+$SISTEMA['CONFIG']['MENU']['DATABASE'] = $SISTEMA['CONFIG']['SISTEMA']['DATABASE'];
+
+$SISTEMA['CONFIG']['MENU']['DATABASE']['ENTIDADE_DB']['TBL_MENU'] = 'TBL_SYS_MENUS';
+$SISTEMA['CONFIG']['MENU']['DATABASE']['ENTIDADE_DB']['TBL_ENTIDADE_ACAO'] = 'TBL_SYS_ACOES';
+
+//$SISTEMA['CONFIG']['LOG']['LOCAL']['SALVAR_MENU'] = true;
+
+?>

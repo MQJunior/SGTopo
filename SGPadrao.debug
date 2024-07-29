@@ -1,0 +1,24 @@
+Array
+(
+    [REQUEST] => Array
+        (
+        )
+
+    [SESSION] => Array
+        (
+            [SESSAO_SGPADRAO] => Array
+                (
+                    [Autenticado] => 
+                )
+
+        )
+
+    [COOKIE] => Array
+        (
+        )
+
+    [SESSAO_CODIGO] => 
+)
+
+2024-03-03 21:39:29
+

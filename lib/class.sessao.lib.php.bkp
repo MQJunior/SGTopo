@@ -1,0 +1,922 @@
+<?php
+/**
+* @file class.sessao.lib.php
+* @name Sessao
+* @desc
+*   Gerenciador de Sessões
+*
+* @author     Marcio Queiroz Jr <mqjunior@gmail.com>
+* @version    1.0.0 
+* @copyright  Copyright © 2006, Marcio Queiroz Jr.
+* @package    sistema
+* @subpackage Sessao
+* @todo       
+*
+*
+* @date 2010-10-26  v. 0.0.0
+* @update 2017-09-30  v. 0.1.0
+*   - Modificacao do Layout de Comentarios
+* @update 2018-01-11  v. 1.0.0
+*   - Refazendo uma nova biblioteca
+*
+*/
+
+class Sessao
+{ 
+/**
+ * @var	array $Config Configuracoes da sessao
+ * @access public
+ */
+  public $Config=null;
+/**
+ * @var	array $SISTEMA_ Variavel Sistema
+ * @access private
+ */
+  protected  $SISTEMA_=null;
+/**
+ * @var	string $Nome Nome da Sessão
+ * @access private
+ */
+  private $Nome='';
+/**
+ * @var	int $TempoExpiracao Tempo de Expiração da Sessão em minutos
+ * @access private
+ */
+  private $TempoExpiracao=100;  // padrao 100 minutos ou 1 hora e 40 minutos
+/**
+ * @var	string $TempoExpiracao Limitação  Opções: [nocache|private|public;] + info: http://www.php.net - função: session_cache_limiter()
+ * @access private
+ */
+  private $Limitacao='private';
+/**
+ * @var	boolean $SessaoIniciada Variavel de controle, define o status da sessao
+ * @access private
+ */ 
+	private $SessaoIniciada = false;
+/**
+ * @var	boolean $Autenticacao Indica se a Sessão é autenticada (Protegida por senha)
+ * @access private
+ */ 
+	private $Autenticacao=true;
+/**
+ * @var	string $ComandoAutenticacao Indica o comando a ser chamando para efetuar a autenticacao
+ * @access private
+ */ 
+  private $ComandoAutenticacao = 'Logar';
+/**
+ * @var	string $EntidadeDB Nome da Tabela no Banco de Dados
+ * @access private
+ */   
+	private $EntidadeDB = 'TBL_SESSOES';
+/**
+ * @var	array $DataBaseConfig Vetor com as configuracoes de acesso ao banco de dados
+ * @access private
+ */   
+	private $DataBaseConfig = null;
+/**
+ * @var	link $DataBaseLink Link de acesso ao Banco de Dados
+ * @access private
+ */   
+	private $DataBaseLink = null;
+/**
+ * @var	string $DirSaveSessoes Local onde será salvo os arquivos de sessão caso não seja setado, 
+ *                              sera o diretório Definido no PHP.ini
+ * @access private
+ */   
+	private $DirSaveSessoes='';
+/**
+ * @var	int $ID ID da Sessão (Implementar)
+ * @access protected
+ */
+	protected $ID=""; 
+/**
+ * @var	int $DataCriacao Data/Hora de Inicio da Sessão
+ * @access protected
+ */  
+	protected $DataCriacao=0;
+/**
+ * @var	int $IPCliente IP do Cliente
+ * @access protected
+ */  
+	protected $IPCliente="";
+/**
+ * @var	int $UltimoEvento Data/Hora do último evento na Sessão
+ * @access protected
+ */
+	protected $UltimoEvento=0;
+/**
+ * @var	int $DataFechamento Data/Hora do encerramento da Sessão
+ * @access protected
+ */
+	protected $DataFechamento=0;
+/**
+ * @var	boolean $Autenticado Indicador se está autenticado ou não (Logado)
+ * @access public
+ */  
+  public $Autenticado=false;
+/**
+ * Metodo Construtor, executado ao ser instanciado.
+ * @param array $p_Config Configuracoes da sessao
+ * access public
+ */
+  public function __construct ($p_Sistema) { 
+    $this->SISTEMA_ = $p_Sistema;
+    $this->SISTEMA_['SESSAO']['CLIENTE']['DATAHORA_ULTIMOEVENTO']=date($this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['DATA_HORA_ARMAZENAMENTO_FORMATO']);
+    $this->Config = $this->SISTEMA_['CONFIG']['SESSAO'];
+    $this->IdentificarUserAgent();
+    $this->getIP();
+	
+	       
+	  $this->Nome = $this->Config['GERAL']['NOME'];
+      $this->TempoExpiracaoNome = $this->Config['GERAL']['TEMPO_EXPIRACAO'];
+      $this->Limitacao = $this->Config['GERAL']['LIMITACAO'];
+      $this->Autenticacao = $this->Config['GERAL']['SESSAO_AUTENTICACAO'];
+      //$this->ComandoAutenticacao = $this->Config['GERAL']['COMANDO_AUTENTICACAO'];
+      $this->EntidadeDB = $this->Config['DATABASE']['ENTIDADE_DB'];
+      $this->DataBaseConfig = $this->Config['DATABASE'];
+      $this->DirSaveSessoes = $this->Config['GERAL']['LOCAL_DIR'];
+      $this->setNome();
+      $this->setDirSaveSessoes();                          # Seta o Local Dir onde será salvo os arquivos da sessão
+      
+      
+      $this->setLimiter();                                 # Seta o Limiter
+      
+      $this->setTempoExpiracao();                          # Seta o Tempo de Expiração 
+      
+	  $tmpSID = $this->VerificaSID();
+	 
+	
+	
+      session_start();
+	  
+		
+		
+	/* VERIFICA SE A SESSAO EXISTE */
+	  
+	  /* VERIFICA SE FOI ENVIADO UMA SESSAO ID */
+      /* CASO NÃO FOI ENVIADO SESSAO ID */
+	
+	if ($tmpSID == NULL){
+        unset($this->SISTEMA_['EXECUTAR']['COMANDO']['PARAMETROS']);
+        $this->SISTEMA_['EXECUTAR']['COMANDO']['ENTIDADE']= $this->SISTEMA_['CONFIG']['SISTEMA']['ENTIDADEPADRAO'];
+        $this->SISTEMA_['EXECUTAR']['COMANDO']['ACAO'] = $this->SISTEMA_['CONFIG']['SISTEMA']['ACAOPADRAO'];
+        if ((isset($_REQUEST['SysEntidade']))&&(isset($_REQUEST['SysEntidadeAcao']))){
+          if(($_REQUEST['SysEntidade']==$this->SISTEMA_['CONFIG']['SISTEMA']['ENTIDADELOGIN'])&&
+              ($_REQUEST['SysEntidadeAcao']==$this->SISTEMA_['CONFIG']['SISTEMA']['ACAOLOGIN'])){
+                $this->SISTEMA_['EXECUTAR']['COMANDO']['ENTIDADE']= $_REQUEST['SysEntidade'];
+                $this->SISTEMA_['EXECUTAR']['COMANDO']['ACAO'] = $_REQUEST['SysEntidadeAcao'];
+				
+              }else{
+                unset($_REQUEST);
+              }
+        }else{
+          unset($_REQUEST);
+        }
+	}else{
+        //var_dump($this->SISTEMA_); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+        //($this->Config['GERAL']['COMANDO_LOGIN'])
+        // VERIFICAR A VALIDADE DO SID
+        // CARREGAR AS INFORMAÇOES DA SESSAO DE ACORDO COM O SID
+        $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID']=$tmpSID;
+        $this->setID();
+        $this->getDadosSessao();
+        $this->set('ULTIMOEVENTO',date("Y-m-d H:i:s"));
+		
+		
+	}
+	  
+		
+    
+	
+  }
+/**
+ * metodo chamado no encerramento da classe
+ * access private
+ */   
+	function __destruct() {
+		if ($this->get('Autenticado')==false)
+			$this->destroy();
+       //$this->logout();
+  }
+/**
+ * Imprime String quando a classe for convertida para uma String
+ * @return String Retorna a String desejada
+ * access public
+ */
+  public function __toString() {
+    return ""; 
+  }
+/**
+ * Retorna o Vetor Sistema apos processa-lo
+ * @return array Array Sistema
+ * access public
+ */  
+  public function getSISTEMA(){
+    //print_r($_REQUEST); print_r($_SESSION); print_r($this->SISTEMA_); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+    //$this->SISTEMA_['SESSAO']['STATUS']['AUTENTICADO'] = $this->Autenticado;
+    //sprint_r($_REQUEST); print_r($_SESSION); print_r($this->SISTEMA_); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+    return $this->SISTEMA_;
+  }
+
+/**
+ * Inicializa uma nova sessão, ou restaura a anterior
+ * @return String Retorna a String desejada
+ * access public
+ */
+  public function Inicializar ($p_Sistema = null){ 
+    if ($p_Sistema != null)$this->SISTEMA_ = $p_Sistema;
+    
+    $this->SISTEMA_['SESSAO']['STATUS']['AUTENTICADO'] = $this->getAutenticado();
+    
+    if (isset($this->SISTEMA_['SESSAO']['STATUS']['AUTENTICADO'])){
+      if ($this->SISTEMA_['SESSAO']['STATUS']['AUTENTICADO']==1){
+        // BUSCAR  ULTIMA SESSAO ABERTA
+        //$this->getIDSessaoAbertaUsuario();
+        //$this->getDadosSessao();
+        $this->Liberar();
+		
+
+        if (!isset($this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_CODIGO'])){
+          $this->set("USUARIO_ID",$this->SISTEMA_['SESSAO']['USUARIO']['CODIGO']);
+		  
+		  
+		  
+          //$this->set("USUARIO_NOME",$this->SISTEMA_['SESSAO']['USUARIO']['NOME']);
+          //$this->GravaSessao();
+          
+          
+        }
+		
+		
+       // var_dump($this); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+	   setcookie('SESSAO_ID',$this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID']);
+      }
+/*       
+	   echo "\n"; print_r($this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID']);
+		die(__LINE__ ." : ". __FILE__ . "\n ");	
+		*/
+    }
+    
+		
+		$this->SessaoIniciada = true;
+		$this->setTempoExpiracao();                          # Seta o Tempo de Expiração 
+    /* Bloqueio a ser analisado */
+    /*
+		if (isset($_GET['logar'])){                       # Verifica se "logar" foi passada como parametro GET
+			if($_GET['logar']=="off"){                    # Caso tenha sido e seu valor seja "off"	
+				$this->Bloquear();                       # Então, bloquear e encerrar Sessão Atual
+			}
+		}
+    */
+		if ($this->getExpirado()){
+			$this->Bloquear();
+		}
+		if ($this->Autenticacao){                             # Verifica se a Sessão é de Autenticação
+			$this->checkAutenticacao();                      # Caso seja, então Checar a Autenticação
+		}
+	  if ( $this->is_set($this->Nome)  ){                   # Verifica se a Sessão já existe
+			if ($this->getExpirado()){
+				$this->Bloquear();
+			}
+		}else{
+		  $this->set($this->Nome, TRUE);                   # Caso não exista, então seta a Nova Sessão
+			$this->setDataCriacao();                         # Seta a Data de Criação
+			$this->setID();                                  # Seta o ID da Sessão
+	  }
+		$this->getID();                                      # Obtém-se o ID da Sessão
+		$this->setTempoExpiracao();                          # Seta o Tempo de Expiração 
+		$this->getDataCriacao();                             # Obtém-se a data de Inicialização da Sessão
+		$this->setUltimoEvento();                            # Seta o Time/Date do ultimo evento ocorrido na sessão	
+    
+  } 
+/**
+ * Retorna se a chave fornecida foi setada.
+ * param string Chave para verificacao
+ * return boolean 
+ * access public
+ */
+	public function is_set ( $p_chave ) { 
+		return isset( $_SESSION[$this->Nome][$p_chave] );          # Retorna True ou False caso a variavel tenha sido setada
+	}   
+/**
+ * Obtém-se o ID da sessao aberta pelo Usuario
+ * access private
+ */
+  private function getIDSessaoAbertaUsuario(){
+    $tmp_cfg_bd = $this->SISTEMA_['CONFIG']['SESSAO']['DATABASE'];
+   	$tmp_ConexaoDB = new ConexaoDB($tmp_cfg_bd['HOSTNAME']
+                                 ,$tmp_cfg_bd['USERNAME']
+                                 ,$tmp_cfg_bd['PASSWORD']
+                                 ,$tmp_cfg_bd['DATABASENAME']
+                                 ,$tmp_cfg_bd['TIPODB']);
+								 
+	$tmp_SQL_IDSessaoAbertaUsuario = 
+    "select
+     ".$tmp_cfg_bd['ENTIDADE_DB'].".sessao_uid,
+     ".$tmp_cfg_bd['ENTIDADE_DB'].".CODIGO,
+     ".$tmp_cfg_bd['ENTIDADE_DB'].".DATAINICIO,
+     ".$tmp_cfg_bd['ENTIDADE_DB'].".DATAFIM
+    from
+        ".$tmp_cfg_bd['ENTIDADE_DB']."
+    where
+        ".$tmp_cfg_bd['ENTIDADE_DB'].".usuario=".$this->SISTEMA_['SESSAO']['USUARIO']['CODIGO']." and ".$tmp_cfg_bd['ENTIDADE_DB'].".datafim is null
+        order by ".$tmp_cfg_bd['ENTIDADE_DB'].".datainicio desc limit 1";
+	
+	
+		
+	$tmp_ConexaoDB->Executar($tmp_SQL_IDSessaoAbertaUsuario);
+    $tmp_ConexaoDB->ResultConsult();
+    if (is_array($tmp_ConexaoDB->Data)){
+      if ($tmp_ConexaoDB->Data != ""){
+        if ($tmp_ConexaoDB->Data[0]['SESSAO_UID'] == !null){
+          $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'] = $tmp_ConexaoDB->Data[0]['SESSAO_UID'];
+          $this->SISTEMA_['SESSAO']['CLIENTE']['DATAINICIO'] = $tmp_ConexaoDB->Data[0]['DATAINICIO'];
+          $this->SISTEMA_['SESSAO']['CLIENTE']['DATAFIM'] = $tmp_ConexaoDB->Data[0]['DATAFIM'];
+          //var_dump($this->SISTEMA_); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+        }
+        if ($tmp_ConexaoDB->Data[0]['CODIGO'] == !null)
+          $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_CODIGO'] = $tmp_ConexaoDB->Data[0]['CODIGO'];
+        
+      }
+    }
+    if (!isset($this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'])){
+      if (!isset($_SESSION['ID'])){
+        //die('teste');
+          $this->setNome();                                    # Seta o Nome da Sessão
+          //session_start();                                     # Inicia a Sessão
+        }
+        $this->setID();
+    }
+    
+    unset($tmp_ConexaoDB);
+  }
+  /**
+ * Obtém-se o ID da sessao aberta pelo Usuario
+ * access private
+ */
+  private function getDadosSessao(){
+    if (isset($this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'])  ){
+      $tmp_cfg_bd = $this->SISTEMA_['CONFIG']['SESSAO']['DATABASE'];
+      $tmp_ConexaoDB = new ConexaoDB($tmp_cfg_bd['HOSTNAME']
+                                   ,$tmp_cfg_bd['USERNAME']
+                                   ,$tmp_cfg_bd['PASSWORD']
+                                   ,$tmp_cfg_bd['DATABASENAME']
+                                   ,$tmp_cfg_bd['TIPODB']);
+
+	  $tmp_SQL = "select
+      
+       ".$tmp_cfg_bd['ENTIDADE_DB'].".CODIGO,
+       ".$tmp_cfg_bd['ENTIDADE_DB'].".USUARIO,
+       ".$tmp_cfg_bd['ENTIDADE_DB'].".SESSAO_UID,
+       ".$tmp_cfg_bd['ENTIDADE_DB'].".IPCLIENTE,
+       ".$tmp_cfg_bd['ENTIDADE_DB'].".DATAINICIO,
+       ".$tmp_cfg_bd['ENTIDADE_DB'].".DATAFIM
+      from
+          ".$tmp_cfg_bd['ENTIDADE_DB']."
+      where
+          ".$tmp_cfg_bd['ENTIDADE_DB'].".sessao_uid='".$this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID']."'".
+	  " limit 1";
+	  
+      $tmp_ConexaoDB->Executar($tmp_SQL);
+      $tmp_ConexaoDB->ResultConsult();
+      if (is_array($tmp_ConexaoDB->Data)){
+        if ($tmp_ConexaoDB->Data != ""){
+          if ($tmp_ConexaoDB->Data[0]['CODIGO'] == !null){
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['SESSAO_UID'] = $tmp_ConexaoDB->Data[0]['SESSAO_UID'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['SESSAO_ID'] = $tmp_ConexaoDB->Data[0]['SESSAO_UID'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['CODIGO'] = $tmp_ConexaoDB->Data[0]['CODIGO'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['USUARIO'] = $tmp_ConexaoDB->Data[0]['USUARIO'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['SISTEMANOME'] = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['NOME'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['USUARIOLOGIN'] = $this->SISTEMA_['SESSAO']['USUARIO']['NOME'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['IPCLIENTE'] = $tmp_ConexaoDB->Data[0]['IPCLIENTE'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['DATAINICIO'] = $tmp_ConexaoDB->Data[0]['DATAINICIO'];
+            $this->SISTEMA_['SESSAO']['DATABASE']['DATA']['DATAFIM'] = $tmp_ConexaoDB->Data[0]['DATAFIM'];
+            //var_dump($this->SISTEMA_); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+            $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'] = $tmp_ConexaoDB->Data[0]['SESSAO_UID'];
+            $this->SISTEMA_['SESSAO']['CLIENTE']['DATAINICIO'] = $tmp_ConexaoDB->Data[0]['DATAINICIO'];
+            $this->SISTEMA_['SESSAO']['CLIENTE']['DATAFIM'] = $tmp_ConexaoDB->Data[0]['DATAFIM'];
+            $this->SISTEMA_['SESSAO']['USUARIO']['CODIGO']= $tmp_ConexaoDB->Data[0]['USUARIO'];
+            $this->set('CODIGO',$this->SISTEMA_['SESSAO']['DATABASE']['DATA']['CODIGO']);
+            $this->set('DATAINICIO',$this->SISTEMA_['SESSAO']['DATABASE']['DATA']['DATAINICIO']);
+			
+          }
+          
+        }
+      }
+      unset($tmp_ConexaoDB);
+    }
+  }
+
+
+/**
+* Verifica se a Sessao Existe
+
+*/
+protected function SessaoExiste($p_SESSAO_UID){
+	$tmp_ConexaoDB = new ConexaoDB($this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['HOSTNAME']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['USERNAME']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['PASSWORD']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['DATABASENAME']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['TIPODB']);
+	
+	$tmp_SQL_SessaoExiste = "select
+      
+       ".$tmp_cfg_bd['ENTIDADE_DB'].".CODIGO
+      from
+          ".$tmp_cfg_bd['ENTIDADE_DB']."
+      where
+          ".$tmp_cfg_bd['ENTIDADE_DB'].".sessao_uid='".$p_SESSAO_UID."'";
+		  
+	$tmp_ConexaoDB->Executar($tmp_SQL_SessaoExiste);
+	$tmp_ConexaoDB->ResultConsult();
+	$tmp_Result=null;
+	if (is_array($tmp_ConexaoDB->Data))
+		if ($tmp_ConexaoDB->Data != "")
+			if ($tmp_ConexaoDB->Data[0]['CODIGO'] != null)
+				$tmp_Result=$tmp_ConexaoDB->Data[0]['CODIGO'];
+	return $tmp_Result;
+}
+
+
+ /**
+ * CGrava a sessao com as informações de data inicial, usuario e UID; 
+ * access private
+ */  
+  public function GravaSessao(){
+    /*
+    include_once($this->CaminhoConfigEntidade);
+    include_once($this->CaminhoEntidade);
+    */
+    $tmp_ConexaoDB = new ConexaoDB($this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['HOSTNAME']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['USERNAME']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['PASSWORD']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['DATABASENAME']
+                                 ,$this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['TIPODB']);
+                                 
+    $tmp_ConexaoDB->Data['USUARIO'] = $this->get('USUARIO_ID');
+    $tmp_ConexaoDB->Data['SESSAO_UID'] = $this->get('ID');
+	
+    if ($tmp_ConexaoDB->Data['SESSAO_UID'] == null){
+      //var_dump($tmp_ConexaoDB); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+      //session_start();
+      $this->setID();
+      //die($this->get('SESSAO_ID')." <--{");
+      $tmp_ConexaoDB->Data['SESSAO_UID'] = $this->get('SESSAO_ID');
+		
+      
+		$tmp_ConexaoDB->Data['IPCLIENTE'] = $this->getIP();
+		$tmp_ConexaoDB->Data['DATAINICIO'] = date($this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['DATA_HORA_ARMAZENAMENTO_FORMATO']);
+
+		$tmp_ConexaoDB->Data['CLIENTENOME'] = $this->SISTEMA_['SESSAO']['USUARIO']['NOME']."@".$tmp_ConexaoDB->Data['IPCLIENTE'];
+		
+			$tmp_ConexaoDB->Insert($this->SISTEMA_['CONFIG']['SESSAO']['DATABASE']['ENTIDADE_DB']);
+			//var_dump($tmp_ConexaoDB); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+			$this->set('SESSAO_CODIGO',$tmp_ConexaoDB->Id());
+			//$this->set('USUARIO_ID',$tmp_ConexaoDB->Id());
+		
+    }
+    
+    unset($tmp_ConexaoDB);
+  }
+/**
+ * Checa/Valida a Sessão corrente.
+ * access private
+ */
+  private function checkAutenticacao(){
+ 		if ($this->ComandoAutenticacao ==''){                        # Verifica se foi passado o COMANDO para Autenticacao
+			die("Erro: COMANDO deverá ser definida para autenticação!");                # Caso não tenha sido informada então saia do programa
+		}else{
+			$this->getAutenticado();                                                # Obtém-se o valor de Autenticado
+			if (!$this->Autenticado) {                                               # Caso a Autenticação não seja verdadeira
+				$this->Autenticar();                                                # Então realize a Autenticação
+			}
+			$this->setAutenticado();                                                # Seta-se o valor para Autenticado
+		}
+		$this->setUltimoEvento();                            # Seta o Time/Date do ultimo evento ocorrido na sessão
+  }
+/**
+ * Obtém-se a Sessão teve seu tempo expirado ou não.
+ * access public
+ */
+  public function getExpirado(){
+   		$TempoFinal = $this->get("UltimoEvento")+($this->get("TempoExpiracao")*60);
+//   		echo $this->get("UltimoEvento")."+".($this->get("TempoExpiracao")*60)." = ".$TempoFinal." < ".time();
+   		return ( $TempoFinal < time() )?true:false;       # Calcula o tempo e retorna se a Sessão está expirada
+		
+  }
+/**
+ * Libera a Sesão Corrente.
+ * access public
+ */  
+  public function Liberar(){
+   	$this->Autenticado = true;                                    # Seta-se o valor de Autenticado
+	$this->set('Autenticado',true);               				  # Seta-se o valor de Autenticado na Sessão
+	$this->SISTEMA_['SESSAO']['STATUS']['AUTENTICADO']=true;
+	$this->setAutenticado();                                      # Seta-se o valor de Autenticado
+	$this->setID();
+	
+
+	//$this->IPCliente = $_SERVER['REMOTE_ADDR'];
+	//$this->set('IP',$this->IPCliente);
+  }
+/**
+ * Bloqueia a Sesão Corrente.
+ * access private
+ */
+  public function Bloquear(){
+  	$this->Autenticado = false;                                   # Seta-se o valor de Autenticado
+		$this->set('Autenticado',$this->Autenticado);                 # Seta-se o valor de Autenticado na Sessão
+		$this->setAutenticado();                                      # Seta-se o valor de Autenticado
+  }
+/**
+ * Autentica a Sesão Corrente.
+ * access public
+ */
+  public function Autenticar(){
+   	/*
+		 echo "<script type=\"text/javascript\">
+			parent.window.location = '".$this->AutenticacaoURL."';
+		</script>";
+		*/
+/*		if ($this->AutenticacaoURL !=  ){
+		 	header('HTTP/1.0 204 No Content');
+		 	header('Content-Length: 0',true);
+		 	header('Content-Type: text/html',true);
+			//header('Location:'.$this->AutenticacaoURL);
+	//	}
+		//include_once($this->AutenticacaoURL);
+   		//die($this->AutenticacaoURL);                        # Chama URL para Autenticação
+		*/
+  }
+  
+############################################################################
+#                                  setAutenticado                          #
+#--------------------------------------------------------------------------#
+# Descrição: Seta-se o valor de Autenticao.                                #
+#                                                                          #
+#--------------------------------------------------------------------------#
+#                                   |                                      #
+############################################################################
+   private function setAutenticado(){
+   		if ($this->Autenticado =="")                              # Verifica se Autenticado está vazio
+		{
+			$this->Autenticado = false;                           # Caso seja vazio seta-se o valor "false"
+		}
+		$this->set('Autenticado',$this->Autenticado);             # Seta-se o valor de Autenticado na Sessão
+   }
+############################################################################
+#                                getAutenticado                            #
+#--------------------------------------------------------------------------#
+# Descrição: Obtém-se o valor de Autenticado                               #
+#                                                                          #
+#--------------------------------------------------------------------------#
+#                                   |                                      #
+############################################################################
+   public function getAutenticado(){
+   		$this->Autenticado = $this->get('Autenticado');            # Obtém-se o valor de Autenticado da Sessão
+		if ($this->Autenticado == "")                              # Verifica se Autenticado está vazio
+		{
+			$this->Autenticado = false;                            # Caso esteja vazio então seta-se o valor "false"
+		}
+		
+		if (!$this->Autenticacao) $this->Autenticado = true;
+		
+		return $this->Autenticado;                                 # Retornar o valor de Autenticado do Método
+   }
+/**
+ * Seta o local onde serão salvos os arquivos da sessão.
+ * access private
+ */
+  private function setDirSaveSessoes(){
+   	if ($this->DirSaveSessoes ==''){                                # Verifica se o Diretório dos Arquivos de Sessão está definido
+			$this->DirSaveSessoes = session_save_path();               # Caso não esteja definido obtém-se o valor padrão PHP
+		}else{
+			if ($this->DirSaveSessoes){                                 # Caso esteja definido então
+				session_save_path($this->DirSaveSessoes);              # Seta-se o endereço do diretório de arquivos de sessão
+        $this->set('DirSessao', $this->DirSaveSessoes);
+			}
+		}
+	ini_set('session.save_path', $this->DirSaveSessoes);
+  }   
+/**
+ * Seta o o Tempo para a expiração 
+ * access private
+ */
+  private function setTempoExpiracao() {
+   	if ($this->TempoExpiracao ==''){                                                        # Verifica se o Tempo de Expiração foi definido
+			$this->TempoExpiracao = session_cache_expire();                                    # Caso não seja setado, obtém-se a configuração padrão
+			$this->set('TempoExpiracao', $this->TempoExpiracao);                               # Seta na Sessão o tempo da expiração
+		}else{
+			if (is_int($this->TempoExpiracao))                                                 # Caso o Tempo de expiração tenha sido setado, e o valor sendo inteiro
+			{
+				@$this->set('TempoExpiracao', session_cache_expire($this->TempoExpiracao));     # Seta-se o tempo da expiração para a sessão e define o mesmo para a sessão
+			}
+		}
+  }
+/**
+ * Seta o ID da Sessão.
+ * access private
+ */
+  private function setID(){
+   	$tmp_SID="";
+		if (isset($this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID']))$tmp_SID = $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'];
+    
+		if ((isset($_SESSION['ID'])) && ($tmp_SID==""))		$tmp_SID = $_SESSION['ID'];
+		if (isset($_GET['SID']) && ($tmp_SID==""))			$tmp_SID = $_GET['SID'];
+		if (isset($_POST['SID']) && ($tmp_SID==""))			$tmp_SID = $_POST['SID'];
+		if (isset($_COOKIE['SESSAO_ID']) && ($tmp_SID==""))	$tmp_SID = $_COOKIE['SESSAO_ID'];
+		
+		
+		if ($tmp_SID != "") {
+			#var_dump($tmp_SID); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
+			session_id($tmp_SID);
+		}else{
+			$tmp_SID = session_id();
+      //die('teste :'.$tmp_SID);
+		}
+        //die($tmp_SID." <--");
+	
+    
+		$this->ID = $tmp_SID;                        # Caso seja vazio então um novo ID é gerado e setado;
+		$this->set('UID', $this->ID);                     # Seta-se o ID na Sessão
+    $this->set('SESSAO_ID', $this->ID);                     # Seta-se o ID na Sessão
+	$this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'] = $this->ID;
+    if (isset($this->SISTEMA_['TERMINAL']['CLIENTE']['TIPO']))
+      if ($this->SISTEMA_['TERMINAL']['CLIENTE']['TIPO'] == 0){
+       // setcookie("SESSAO_ID", $this->ID, time()+600); 
+      }
+		
+  }
+############################################################################
+#                                ResetID                                   #
+#--------------------------------------------------------------------------#
+# Descrição: reseta o ID da Sessão.                                        #
+#                                                                          #
+#--------------------------------------------------------------------------#
+#                                   |                                      #
+############################################################################
+   private function ResetID()
+   {
+   		//session_regenerate_id();
+		$this->setID();
+   }
+############################################################################
+#                                 getID                                    #
+#--------------------------------------------------------------------------#
+# Descrição: Obtem o ID da Sessão.                                         #
+#                                                                          #
+#--------------------------------------------------------------------------#
+#                                   |                                      #
+############################################################################
+   public function getID()
+   {
+   		if ( !$this->is_set('ID') )                           # Verifica se a sessão existe e o Id da mesma
+  			$this->setID();
+		$this->ID = $this->get('ID');                                                      # Obtém-se o ID da Sessão
+		return $this->ID;
+   }
+/**
+ * Obtem o IP do Cliente da Sessão.
+ * access private
+ */
+   private function getIP()
+   {
+    if ($this->SISTEMA_['TERMINAL']['CLIENTE']['TIPO'] == 0){
+		if (isset($_SERVER['REMOTE_ADDR'])){
+			$this->IPCliente = $_SERVER['REMOTE_ADDR'];
+		}else{
+			$this->IPCliente="127.0.0.1";
+		}
+      
+    }
+		if ($this->SISTEMA_['TERMINAL']['CLIENTE']['TIPO'] == 2){
+      $this->IPCliente = $_SERVER['REMOTE_ADDR'];
+    }
+    if ($this->SISTEMA_['TERMINAL']['CLIENTE']['TIPO'] == 1){
+      $tmp_arrayIP = explode(" ",$this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME']);
+      $this->SISTEMA_['TERMINAL']['CLIENTE']['IP'] = $tmp_arrayIP[0];
+      if ($this->SISTEMA_['TERMINAL']['CLIENTE']['USERAGENT']=="SHELL_SSH"){
+        $this->IPCliente = $_SERVER['SSH_CLIENT'];
+        
+      }else{
+        $this->IPCliente = $_SERVER['USER'];
+        die();
+      }
+    }else{
+      $this->SISTEMA_['TERMINAL']['CLIENTE']['IP'] = $this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME'];
+    }
+		return $this->IPCliente;
+   }
+############################################################################
+#                            setDataFechamento                             #
+#--------------------------------------------------------------------------#
+# Descrição: Seta a data que foi encerrada a sessão                        #
+#                                                                          #
+#--------------------------------------------------------------------------#
+#                                   |                                      #
+############################################################################   
+   private function setDataFechamento()
+   {
+	   	$this->DataFechamento = time();                                                       # Seta-se a Data/Hora que a sessão foi encerrada
+		if ( $this->is_set( $this->Nome ) )                                                   # Verifica se a Sessão existe
+		{
+			$this->set('DataFechamento',$this->DataFechamento);                               # Seta-se a Data/Hora do encerramento da Sessão
+		}
+   }
+############################################################################
+#                               setUltimoEvento                            #
+#--------------------------------------------------------------------------#
+# Descrição: Seta a Data/Hora do último evento na sessão.                  #
+#                                                                          #
+#--------------------------------------------------------------------------#
+#                                   |                                      #
+############################################################################
+   private function setUltimoEvento()
+   {
+   		$this->UltimoEvento = time();                                         # Seta-se a Data/Hora do último evendo da Sessão
+		$this->set('UltimoEvento',$this->UltimoEvento);                       # Seta-se a Data/Hora do último evendo na Sessão
+   }
+/**
+ * Obtem a data de Criação da Sessão.
+ * access private
+ */
+  private function getDataCriacao()
+  {
+    $this->DataCriacao = $this->get('DataCriacao');                      # Obtém-se a Data/Hora da Inicialização da Sessão
+  }
+/**
+ * Seta a Data/Hora da inicialização da sessão.
+ * access private
+ */
+  private function setDataCriacao()
+  {
+    $this->DataCriacao = time();                                       # Seta-se a Data/Hora da Inicialização da Sessão
+    $this->set('DataCriacao',$this->DataCriacao);                      # Seta-se a Data/Hora da Inicialização na Sessão
+  }
+/**
+ * Seta o Nome da Sessão.
+ * access private
+ */
+  private function setNome(){
+   	if ($this->Nome == '') die("É Necessário informar o nome da Sessão.");       # Verifica se o nome foi setado
+		session_name($this->Nome);         # Seta-se o nome da Sessão
+  }
+/**
+ * Seta o tipo Limiter (cache) da Sessão.
+ * access private
+ */
+  private function setLimiter(){
+   	if ($this->Limitacao!=''){                                   # Verifica se a Limitação foi setada
+   		session_cache_limiter($this->Limitacao);                # Caso tenha sido, então seta-se a Limitação do Cache da Sessão
+		}else{
+			$this->Limitacao = session_cache_limiter();             # Senão obtém-se o valor Padrão
+		}
+  }
+/**
+ * Seta um valor a uma determinada Chave. 
+ * access public
+ */
+	public function set ( $p_chave , $p_valor ){ 
+		$_SESSION[$this->Nome][$p_chave]  = $p_valor;                         # Seta o valor na Chave Informada
+	} 
+/**
+ * Apaga um valor de uma determinada Chave.
+ * access public
+ */
+	public function un_set ( $p_chave ){ 
+		unset( $_SESSION[$this->Nome][$p_chave] );                           # Apaga-se o valor e chave determinado
+	} 
+/**
+ * Metodo destrutor da classe.
+ * access public
+ */
+	public function destroy () { 
+		unset ( $_SESSION );                                     # Apaga-se todas os valores e chaves da Sessão
+		@session_destroy (); 									 # Destrói todos os dados registrados em uma sessão
+	} 
+/**
+ * Metodo para obter valores das chaves fornecida.
+ * access public
+ */	
+  public function get ( $p_chave ){ 
+		if ($this->is_set($p_chave)){                  # Verifica se a Chave existe e está setada
+			return $_SESSION[$this->Nome][$p_chave];              # Obtém-se o valor da chave fornecida
+		}
+	} 
+
+/**
+ * Fecha a sessão e limpa os valores e seta hora fechamento.
+ * access public
+ */
+	public function logout ( ) { 
+		$this->setUltimoEvento();
+		$this->setDataFechamento();
+		$this->GravaFechamento();
+		$this->Autenticado = false;
+		$this->destroy();
+	} 
+
+/**
+ * Grava a data/hora do fechamento da sessão.
+ * access public
+ */   
+  public function GravaFechamento(){
+		if ($this->is_set('SESSAO_CODIGO')){
+			include_once($this->CaminhoConfigEntidade);
+			include_once($this->CaminhoEntidade);	
+			$tblSessao = new tbl_sessoes();
+			$tblSessao->consultar($this->get('SESSAO_CODIGO'));
+			$tblSessao->setDATAFIM(date(SYS_DATA_HORA_ARMAZENAMENTO_FORMATO));
+			$tblSessao->alterar();
+		}
+  }
+  /**
+ * Identifica o tipo de browser do cliente- user agent
+ * @return void
+ * @access private
+ */
+  private function IdentificarUserAgent(){
+    $tmp_Agente = 'WEB - HTML 4.0';
+    $tmp_TipoSaida=0; // 0-HTML5;1-TEXTO;2-XML(DELPHI);
+    /* Condicoes para Terminal SHELL  */
+    if (array_key_exists('TERM',$_SERVER)){
+      if (array_key_exists('SHELL',$_SERVER)){
+        $tmp_Agente = 'SHELL';
+        $tmp_TipoSaida=1;
+        $this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME']=$_SERVER['USER'];
+        /* Condicoes para Terminal SHELL -SSH */
+        if (array_key_exists('SSH_CLIENT',$_SERVER)){
+          $tmp_Agente = 'SHELL_SSH';
+          $tmp_TipoSaida=1;
+          $this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME']=$_SERVER['SSH_CLIENT'];
+        }
+        /* Condicoes para Terminal SHELL - GRAFICO */
+        if (array_key_exists('WINDOWID',$_SERVER)){
+          $tmp_Agente = 'SHELL_GRAFICO';  
+          $tmp_TipoSaida=1;
+          $this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME']=$_SERVER['USER'];
+        }
+      }
+    }
+    /* Condicoes para Terminal DELPHI  */
+    if (array_key_exists('HTTP_USER_AGENT',$_SERVER)){
+      if (strpos($_SERVER['HTTP_USER_AGENT'],'Indy')){
+        $tmp_Agente = 'XMLDELPHI';
+        $tmp_TipoSaida=2;
+        $this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME']=$_SERVER['REMOTE_ADDR'];
+      }
+    }
+    //echo $tmp_Agente;
+    //print_r($_SERVER);
+    $this->SISTEMA_['TERMINAL']['CLIENTE']['TIPO']=$tmp_TipoSaida;
+    $this->SISTEMA_['TERMINAL']['CLIENTE']['USERAGENT']=$tmp_Agente;
+    if ($tmp_TipoSaida == 0) {
+		if (isset($_SERVER['REMOTE_ADDR'])){
+			$this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME']=$_SERVER['REMOTE_ADDR'];
+		}else{
+			$this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME']="127.0.0.1";
+		}
+    }
+    $this->IPCliente = $this->SISTEMA_['TERMINAL']['CLIENTE']['CLIENTE_NOME'];
+    $this->SISTEMA_['TERMINAL']['CLIENTE']['TIPO_SAIDA']=$tmp_TipoSaida;
+    $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['LAYOUT_PADRAO'] = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['LAYOUT_MODELO'][$tmp_TipoSaida];
+    $this->SISTEMA_['LAYOUT'] = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['LAYOUT_PADRAO'];
+    
+  }
+/**
+* Restaura a Sessao que foi aberta ou que esta em trabalho.
+* access private
+*/   
+  private function RestaurarSessao(){
+	if (isset($HTTP_COOKIE_VARS[$this->SISTEMA_['CONFIG']['SESSAO']['GERAL']['NOME']."[SESSAO_ID]"])){
+      $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID']=$HTTP_COOKIE_VARS[$this->SISTEMA_['CONFIG']['SESSAO']['GERAL']['NOME']."[SESSAO_ID]"];
+      $this->getDadosSessao();
+      if ($this->getExpirado()){
+        //die("Expirado!");
+      }else{
+        //$this->Liberar();
+      }
+			
+	}
+  }
+  
+/**
+* Verifica se SID exite
+*/
+  private function VerificaSID(){
+	$tmp_SID=NULL;
+	
+	if (isset($_REQUEST['SID']) && ($tmp_SID==NULL))		$tmp_SID = $_REQUEST['SID'];
+	if ((isset($_SESSION['ID'])) && ($tmp_SID==NULL))		$tmp_SID = $_SESSION['ID'];
+	if (isset($_GET['SID']) && ($tmp_SID==NULL))			$tmp_SID = $_GET['SID'];
+	if (isset($_POST['SID']) && ($tmp_SID==NULL))			$tmp_SID = $_POST['SID'];
+	if (isset($_COOKIE['SESSAO_ID']) && ($tmp_SID==NULL))	$tmp_SID = $_COOKIE['SESSAO_ID'];
+	return $tmp_SID;
+	
+	  
+  }
+  
+}
+
+
+?>
