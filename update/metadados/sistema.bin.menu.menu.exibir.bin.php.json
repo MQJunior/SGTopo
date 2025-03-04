@@ -1,0 +1,16 @@
+{
+    "nome": "menu.exibir.bin.php",
+    "caminho": "bin/menu/menu.exibir.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "cb93e2a70669f9c29834e4d0d10238c47402e2630f32f86385626fb5e89374e4",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "cb93e2a70669f9c29834e4d0d10238c47402e2630f32f86385626fb5e89374e4",
+            "tamanho": "4271 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

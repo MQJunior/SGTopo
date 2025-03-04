@@ -1,0 +1,16 @@
+{
+    "nome": "menu.ordem.mudar.bin.php",
+    "caminho": "bin/menu/menu.ordem.mudar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "7076a5cef70522c68e8b21242daf4ed810ed18c6b29bdb4e5f03bbb166463587",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "7076a5cef70522c68e8b21242daf4ed810ed18c6b29bdb4e5f03bbb166463587",
+            "tamanho": "1068 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

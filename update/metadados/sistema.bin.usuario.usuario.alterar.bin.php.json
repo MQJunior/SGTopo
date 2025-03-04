@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.alterar.bin.php",
+    "caminho": "bin/usuario/usuario.alterar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "3171870d34ef8dd705b265b362b65129846eec18509c05314e04fed8ee358fe1",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "3171870d34ef8dd705b265b362b65129846eec18509c05314e04fed8ee358fe1",
+            "tamanho": "2537 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

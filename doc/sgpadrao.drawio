@@ -1,14 +1,67 @@
 <mxfile host="65bd71144e">
     <diagram id="3BcqYq1dNmGBUhCzZV8g" name="Page-1">
-        <mxGraphModel dx="968" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="957" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <object label="#&lt;span style=&quot;color: rgb(78, 201, 176); background-color: rgb(0, 0, 0); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;ConexaoDB&lt;br&gt;&lt;/span&gt;" HostName="" id="2">
-                    <mxCell style="html=1;" vertex="1" parent="1">
+                    <mxCell style="html=1;" parent="1" vertex="1">
                         <mxGeometry x="70" y="140" width="110" height="50" as="geometry"/>
                     </mxCell>
                 </object>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="iMUeVRLHvi9oK0svB_Tt" name="EsquemaLayoutCliente_HTML">
+        <mxGraphModel dx="957" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-1" value="PaginaHTML" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="80" width="710" height="460" as="geometry">
+                        <mxRectangle x="320" y="290" width="100" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-3" value="DIV #CONTAINER" style="swimlane;whiteSpace=wrap;html=1;" parent="urDgtllq4nLSeVUSrD0A-1" vertex="1">
+                    <mxGeometry x="30" y="50" width="650" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-4" value="PaginaHTML" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="560" width="710" height="460" as="geometry">
+                        <mxRectangle x="320" y="290" width="100" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-5" value="DIV #CONTAINER" style="swimlane;whiteSpace=wrap;html=1;" parent="urDgtllq4nLSeVUSrD0A-4" vertex="1">
+                    <mxGeometry x="30" y="50" width="650" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-7" value="DIV #FORMULARIO LOGIN" style="swimlane;whiteSpace=wrap;html=1;" parent="urDgtllq4nLSeVUSrD0A-5" vertex="1">
+                    <mxGeometry x="30" y="50" width="580" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-8" value="PaginaHTML" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="1040" width="930" height="600" as="geometry">
+                        <mxRectangle x="320" y="290" width="100" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-9" value="DIV #CONTAINER" style="swimlane;whiteSpace=wrap;html=1;" parent="urDgtllq4nLSeVUSrD0A-8" vertex="1">
+                    <mxGeometry x="30" y="50" width="870" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-11" value="DIV #DASHBOARD" style="swimlane;whiteSpace=wrap;html=1;" parent="urDgtllq4nLSeVUSrD0A-9" vertex="1">
+                    <mxGeometry x="30" y="50" width="820" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-12" value="DIV #TOPO" style="swimlane;whiteSpace=wrap;html=1;" parent="urDgtllq4nLSeVUSrD0A-11" vertex="1">
+                    <mxGeometry x="10" y="30" width="800" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-14" value="DIV #MENU_ESQUERDO" style="swimlane;whiteSpace=wrap;html=1;" parent="urDgtllq4nLSeVUSrD0A-11" vertex="1">
+                    <mxGeometry x="10" y="110" width="160" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-15" value="#DIV CONTENT_WRAPPER" style="swimlane;whiteSpace=wrap;html=1;fontSize=10;" parent="urDgtllq4nLSeVUSrD0A-11" vertex="1">
+                    <mxGeometry x="180" y="110" width="600" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-17" value="DIV #CONTEUDO" style="swimlane;whiteSpace=wrap;html=1;fontSize=10;" parent="urDgtllq4nLSeVUSrD0A-15" vertex="1">
+                    <mxGeometry x="10" y="30" width="570" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="urDgtllq4nLSeVUSrD0A-16" value="#DIV FOOTER" style="swimlane;whiteSpace=wrap;html=1;fontSize=10;" parent="urDgtllq4nLSeVUSrD0A-11" vertex="1">
+                    <mxGeometry x="180" y="370" width="600" height="50" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>

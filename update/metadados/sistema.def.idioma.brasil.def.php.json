@@ -1,0 +1,16 @@
+{
+    "nome": "idioma.brasil.def.php",
+    "caminho": "def/idioma.brasil.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "92ecf17763af5a9be6567844bd910857502d6840ccbffb8cec5491a626a9fecb",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "92ecf17763af5a9be6567844bd910857502d6840ccbffb8cec5491a626a9fecb",
+            "tamanho": "926 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

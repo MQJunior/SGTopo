@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.consultar.bin.php",
+    "caminho": "bin/entidadeacao/modelos/padrao.consultar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "ca88408da8084838f3bc001cf3cabb1f409d041733a280d88ed08e7f47e0a05a",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "ca88408da8084838f3bc001cf3cabb1f409d041733a280d88ed08e7f47e0a05a",
+            "tamanho": "836 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

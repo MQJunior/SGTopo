@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.incluir.bin.php",
+    "caminho": "bin/padrao/padrao.incluir.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "2c712f2dc333fe5c3dc9bfcbd9814b5fc303e7e470072cc5ccb4420b65bdb1cc",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "2c712f2dc333fe5c3dc9bfcbd9814b5fc303e7e470072cc5ccb4420b65bdb1cc",
+            "tamanho": "1073 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

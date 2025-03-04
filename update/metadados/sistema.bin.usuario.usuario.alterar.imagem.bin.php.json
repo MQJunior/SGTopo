@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.alterar.imagem.bin.php",
+    "caminho": "bin/usuario/usuario.alterar.imagem.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "5c4ffe4ffc4101925c1385ade9f983952a0591228c5e7382803444b326fa6c5b",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "5c4ffe4ffc4101925c1385ade9f983952a0591228c5e7382803444b326fa6c5b",
+            "tamanho": "656 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

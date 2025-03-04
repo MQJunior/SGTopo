@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.incluir.layout.php",
+    "caminho": "layout/html/usuario/usuario.incluir.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4ba646f3e9cf2613273da5434c273f8a08cf80e482d1521bd7d757f6ec0b1168",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4ba646f3e9cf2613273da5434c273f8a08cf80e482d1521bd7d757f6ec0b1168",
+            "tamanho": "3650 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

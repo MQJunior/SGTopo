@@ -1,0 +1,16 @@
+{
+    "nome": "entidadeacao.criar.arquivo.bin.php",
+    "caminho": "bin/entidadeacao/entidadeacao.criar.arquivo.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "c7c46e69002402ed9fd2f7faf019d500d91d21641c331a1faa4295adc9332114",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c7c46e69002402ed9fd2f7faf019d500d91d21641c331a1faa4295adc9332114",
+            "tamanho": "765 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

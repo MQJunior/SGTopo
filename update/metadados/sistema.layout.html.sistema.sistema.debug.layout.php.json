@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.debug.layout.php",
+    "caminho": "layout/html/sistema/sistema.debug.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "1d7ecc7684579fa2e26cf949cf73055c5adfe2b9f8253971a1ccb0a4e480669a",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "1d7ecc7684579fa2e26cf949cf73055c5adfe2b9f8253971a1ccb0a4e480669a",
+            "tamanho": "979 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.ativar.bin.php",
+    "caminho": "bin/usuario/usuario.ativar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "53fa7dd2f6ab7ef50140507e8384caaa7080c4b24de19848d1c7ef5150ae2a2e",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "53fa7dd2f6ab7ef50140507e8384caaa7080c4b24de19848d1c7ef5150ae2a2e",
+            "tamanho": "2123 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

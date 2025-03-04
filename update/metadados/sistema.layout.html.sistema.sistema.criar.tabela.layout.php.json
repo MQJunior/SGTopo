@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.criar.tabela.layout.php",
+    "caminho": "layout/html/sistema/sistema.criar.tabela.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "a9709b9b198864f68538e3d3911228c67dd07c91a2d3b3b6d7dceacc10ce1a33",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "a9709b9b198864f68538e3d3911228c67dd07c91a2d3b3b6d7dceacc10ce1a33",
+            "tamanho": "2015 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

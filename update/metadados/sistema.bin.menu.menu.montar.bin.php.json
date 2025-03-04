@@ -1,0 +1,16 @@
+{
+    "nome": "menu.montar.bin.php",
+    "caminho": "bin/menu/menu.montar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4101dbdc4cb79d00d640b3580fcec379a9e457cbba20387b3cf56f8a72e60dc2",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4101dbdc4cb79d00d640b3580fcec379a9e457cbba20387b3cf56f8a72e60dc2",
+            "tamanho": "4834 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

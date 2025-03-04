@@ -1,0 +1,16 @@
+{
+    "nome": "class.permissao.lib.php",
+    "caminho": "lib/class.permissao.lib.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "9369bd4c283a9a3cadd1943a8c92646d257b47a216b6022ae9b29b0ed06804b9",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "9369bd4c283a9a3cadd1943a8c92646d257b47a216b6022ae9b29b0ed06804b9",
+            "tamanho": "17209 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

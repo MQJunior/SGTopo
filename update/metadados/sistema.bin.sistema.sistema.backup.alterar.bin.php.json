@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.backup.alterar.bin.php",
+    "caminho": "bin/sistema/sistema.backup.alterar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "312266fa16e2c2fcf93b84190ec6f9d7d547bbf03268cb6d8d81293cef079116",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "312266fa16e2c2fcf93b84190ec6f9d7d547bbf03268cb6d8d81293cef079116",
+            "tamanho": "2669 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.conf.php",
+    "caminho": "conf/scripts/scripts.conf.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "f992e4aa7a4ca37c31391c1617ea16702489d7552f1b3018891359baf5195e52",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "f992e4aa7a4ca37c31391c1617ea16702489d7552f1b3018891359baf5195e52",
+            "tamanho": "855 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

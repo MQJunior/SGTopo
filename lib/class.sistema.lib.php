@@ -112,25 +112,25 @@ class sistema
     if (file_exists($tmpArquivo)) {
       $tmpArquivoConf = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['CONF'] . $tmpEntidade_ . "/" . $tmpEntidade_ . ".conf.php";
       if (file_exists($tmpArquivoConf))
-        include($tmpArquivoConf);
+        include ($tmpArquivoConf);
 
       $tmpArquivoDef = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['DEF'] . $tmpEntidade_ . "/" . $tmpEntidade_ . ".def.php";
       if (file_exists($tmpArquivoDef))
-        include($tmpArquivoDef);
+        include ($tmpArquivoDef);
 
       $tmpArquivoDefLayout = $this->SISTEMA_['LAYOUT'] . "/layout.def.php";
       if (file_exists($tmpArquivoDefLayout))
-        include($tmpArquivoDefLayout);
+        include ($tmpArquivoDefLayout);
 
       $tmpArquivoDefLayoutEntidade = $this->SISTEMA_['LAYOUT'] . $tmpEntidade_ . "/" . $tmpEntidade_ . ".layout.def.php";
       if (file_exists($tmpArquivoDefLayoutEntidade))
-        include($tmpArquivoDefLayoutEntidade);
+        include ($tmpArquivoDefLayoutEntidade);
 
       $tmpArquivoLib = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['LIB'] . "class." . $tmpEntidade_ . ".lib.php";
       if (file_exists($tmpArquivoLib))
-        require_once($tmpArquivoLib);
+        require_once ($tmpArquivoLib);
 
-      include($tmpArquivo);
+      include ($tmpArquivo);
     } else {
       header("Content-Type: application/json");
       header("Expires: 0");
@@ -179,15 +179,20 @@ class sistema
     }
 
     $SAIDA_Sistema = trim($this->SISTEMA_['SAIDA']['EXIBIR']);
-    if (isset($_REQUEST["XMLHTML"])) {
+    if (isset($_REQUEST["XMLHTML"]) || ($this->SISTEMA_['SAIDA']['MODE'] == 'api')) {
       header("Content-Type: application/json");
       header("Expires: 0");
       header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
       header("Cache-Control: no-store, no-cache, must-revalidate");
       header("Cache-Control: post-check=0, pre-check=0", false);
       header("Pragma: no-cache");
+      header("Access-Control-Allow-Origin: *");
       //$SAIDA_Sistema = GerarXMLAjax($SAIDA_Sistema);
-      (isset($this->SISTEMA_['SAIDA']['FORMULARIO'])) ? $SAIDA_Sistema = GerarJSONAjax('', $this->SISTEMA_['SAIDA']['FORMULARIO']) : $SAIDA_Sistema = GerarJSONAjax($SAIDA_Sistema);
+      $TMP_SESSION_ID = null;
+      if (isset($this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID']))
+        $TMP_SESSION_ID = $this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'];
+
+      (isset($this->SISTEMA_['SAIDA']['PAGINA'])) ? $SAIDA_Sistema = GerarJSONAjax('', $this->SISTEMA_['SAIDA']['PAGINA'], $TMP_SESSION_ID) : $SAIDA_Sistema = GerarJSONAjax($SAIDA_Sistema, null, $TMP_SESSION_ID);
     } else {
       header("Content-Type: text/html; charset=ISO-8859-1", true);
       $SAIDA_Sistema = $SAIDA_Sistema;
@@ -204,15 +209,15 @@ class sistema
     $p_Entidade = strtolower($p_Entidade);
     $tmpArquivoConf = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['CONF'] . $p_Entidade . "/" . $p_Entidade . ".conf.php";
     if (file_exists($tmpArquivoConf))
-      require_once($tmpArquivoConf);
+      require_once ($tmpArquivoConf);
 
     $tmpArquivoDef = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['DEF'] . $p_Entidade . "/" . $p_Entidade . ".def.php";
     if (file_exists($tmpArquivoDef))
-      require_once($tmpArquivoDef);
+      require_once ($tmpArquivoDef);
 
     $tmpArquivoLib = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['LIB'] . "class." . $p_Entidade . ".lib.php";
     if (file_exists($tmpArquivoLib))
-      require_once($tmpArquivoLib);
+      require_once ($tmpArquivoLib);
   }
 
 }

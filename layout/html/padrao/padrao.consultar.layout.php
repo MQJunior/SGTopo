@@ -1,33 +1,6 @@
 <?php
-/**
- * @file padrao.consultar.layout.php
- * @name padrao.consultar
- * @desc
- *   Layout para o formul�rio de consulta
- *
- * @author     M�rcio Queiroz Jr <mqjunior@gmail.com>
- * @version    0.0.0 
- * @copyright  Copyright � 2006, M�rcio Queiroz Jr.
- * @package    padrao
- * @subpackage Layout
- * @todo       
- *   Descricao todo
- *
- * @date 2018-02-22  v. 0.0.0
- *
- */
 
-// -------------------- CAPTURA DE DADOS -----------------//
-/* Verifica os campos obrigat�rios e seta-se os mesmo como required */
-$EntidadeCampos = $EntidadePadraoCampos;
 
-/* Captura as Variaveis que ser�o exibidas */
-foreach ($EntidadeCampos as $tmpValor) {
-  $tmpVar = "VAR_PADRAO_" . $tmpValor['NOME'];
-  $$tmpVar = $this->SISTEMA_['ENTIDADE']['PADRAO']['VARS'][$tmpValor['NOME']];
-}
-
-// -------------------- MANIPULA��O -----------------//
 /* Formata o campo DATACRIACAO */
 $VAR_PADRAO_DATACRIACAO = FORMATA_CAMPO($VAR_PADRAO_DATACRIACAO, $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['DATA_HORA_EXIBICAO_FORMATO'], 'data');
 

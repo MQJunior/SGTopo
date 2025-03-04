@@ -1,0 +1,16 @@
+{
+    "nome": "entidadeacao.importar.modelo.bin.php",
+    "caminho": "bin/entidadeacao/entidadeacao.importar.modelo.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "9980c4aa6bc4bd33ad3a7df113bd488eb8fcf5e29502de279b726e3fb478f0e0",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "9980c4aa6bc4bd33ad3a7df113bd488eb8fcf5e29502de279b726e3fb478f0e0",
+            "tamanho": "18442 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "teste2.py",
+    "caminho": "install/client/python/teste2.py",
+    "pacote": "SGPadrao",
+    "hash_atual": "a1122ba744569024b3043d34475850027f78f1f3b10e9c08c7bab913c9da519a",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "a1122ba744569024b3043d34475850027f78f1f3b10e9c08c7bab913c9da519a",
+            "tamanho": "3056 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

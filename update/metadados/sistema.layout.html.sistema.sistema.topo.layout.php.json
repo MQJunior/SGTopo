@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.topo.layout.php",
+    "caminho": "layout/html/sistema/sistema.topo.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4a14a1d2fe04bef368bab0acefa882df2344bfd1d58a44c218d00792e611874a",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4a14a1d2fe04bef368bab0acefa882df2344bfd1d58a44c218d00792e611874a",
+            "tamanho": "4918 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.login.bin.php",
+    "caminho": "bin/usuario/usuario.login.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "143541433c71a03d020994400a9a7898199fe9d04f618b4e6d894f1d65c2b3ad",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "143541433c71a03d020994400a9a7898199fe9d04f618b4e6d894f1d65c2b3ad",
+            "tamanho": "1929 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

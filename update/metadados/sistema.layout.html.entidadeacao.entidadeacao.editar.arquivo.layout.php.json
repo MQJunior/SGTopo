@@ -1,0 +1,16 @@
+{
+    "nome": "entidadeacao.editar.arquivo.layout.php",
+    "caminho": "layout/html/entidadeacao/entidadeacao.editar.arquivo.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "d609cd1c31bd3127da31ae65172df0520fe54b840897de62a6c524324aeaff3d",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "d609cd1c31bd3127da31ae65172df0520fe54b840897de62a6c524324aeaff3d",
+            "tamanho": "2657 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

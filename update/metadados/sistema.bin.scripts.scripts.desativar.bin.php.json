@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.desativar.bin.php",
+    "caminho": "bin/scripts/scripts.desativar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "53cf6a24ec7ad5d7d0ff9b25a7c5aaa22c716b2c588a89fb59c230b280c28aad",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "53cf6a24ec7ad5d7d0ff9b25a7c5aaa22c716b2c588a89fb59c230b280c28aad",
+            "tamanho": "824 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

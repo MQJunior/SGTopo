@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.criar.tabela.bin.php",
+    "caminho": "bin/sistema/sistema.criar.tabela.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "7a4d739817faf5b291d34070eee5b60bf4f2e0f4d61286cd3dbaf17a85f5dee1",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "7a4d739817faf5b291d34070eee5b60bf4f2e0f4d61286cd3dbaf17a85f5dee1",
+            "tamanho": "477 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

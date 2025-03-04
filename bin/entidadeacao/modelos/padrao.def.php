@@ -1,33 +1,22 @@
 <?php
 /**
-* @file padrao.def.php
-* @name padrao
-* @desc
-*   Definição dos campos no Banco de Dados e Seta-se o UID da Sessão
-*
-* @author     Márcio Queiroz Jr <mqjunior@gmail.com>
-* @version    0.0.0 
-* @copyright  Copyright © 2006, Márcio Queiroz Jr.
-* @package    padrao
-* @subpackage Def
-* @todo       
-*   Descricao todo
-*
-* @date 2018-02-22  v. 0.0.0
-*
-*/
-/* UID DA SESSÃO */
+ * ðŸ“„ padrao.def.php - DefiniÃ§Ã£o dos campos no Banco de Dados e UID da Sessao
+ * ðŸ‘¤ Autor: MÃ¡rcio Queiroz Jr <mqjunior@gmail.com> | ðŸ“… 2018-02-22 | ðŸ·ï¸ v0.0.0
+ * ðŸ“¦ Pacote: padrao | ðŸ“‚ Subpacote: Def
+ */
+
+/** ðŸ†” UID da Sessao */
 $SistemaSessaoUID = $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'];
 include("padrao.idioma.".strtolower($this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['IDIOMA']).".def.php");
 
-/*  DEFINIÇÕES DOS CAMPOS NO BANCO DE DADOS   */
-$EntidadePadraoCampos['TXT_PADRAO_CODIGO']=array('NOME' =>'CODIGO'            , 'TIPO'=>'CODIGO'  , 'EXIBIR'=>false , 'PESQUISAR'=>false , 'REQUERIDO'=>false , 'TAMANHO'=>0);
+/** ðŸ—„ï¸ DefiniÃ§Ãµes dos Campos no Banco de Dados */
+$EntidadePadraoCampos['TXT_PADRAO_CODIGO'] = array('NOME' =>'CODIGO', 'TIPO'=>'CODIGO', 'EXIBIR'=>false, 'PESQUISAR'=>false, 'REQUERIDO'=>false, 'TAMANHO'=>0);
 
-/*BUSCAR_NO_BD*/
-$EntidadePadraoCampos['TXT_PADRAO_SESSAO']=array('NOME' =>'SESSAO'            , 'TIPO'=>'CODIGO_LINK'   , 'EXIBIR'=>false , 'PESQUISAR'=>false, 'REQUERIDO'=>false , 'TAMANHO'=>0);
-$EntidadePadraoCampos['TXT_PADRAO_USUARIO']=array('NOME' =>'USUARIO'    , 'TIPO'=>'CODIGO_LINK'   , 'EXIBIR'=>false , 'PESQUISAR'=>false, 'REQUERIDO'=>false , 'TAMANHO'=>0);
-$EntidadePadraoCampos['TXT_PADRAO_USUARIO_NOME']=array('NOME' =>'USUARIO_NOME'    , 'TIPO'=>'CODIGO_LINK'   , 'EXIBIR'=>false , 'PESQUISAR'=>false, 'REQUERIDO'=>false , 'TAMANHO'=>0);
-$EntidadePadraoCampos['TXT_PADRAO_DATACRIACAO']=array('NOME' =>'DATACRIACAO'  , 'TIPO'=>'DATA'          , 'EXIBIR'=>true  , 'PESQUISAR'=>false, 'REQUERIDO'=>false , 'TAMANHO'=>20);
-$EntidadePadraoCampos['TXT_PADRAO_REG_ATIVO']=array('NOME' =>'REG_ATIVO'      , 'TIPO'=>'TIPO'          , 'EXIBIR'=>false , 'PESQUISAR'=>false, 'REQUERIDO'=>false , 'TAMANHO'=>1);
+/** ðŸ”„ Buscar no Banco de Dados */
+$EntidadePadraoCampos['TXT_PADRAO_SESSAO'] = array('NOME' =>'SESSAO', 'TIPO'=>'CODIGO_LINK', 'EXIBIR'=>false, 'PESQUISAR'=>false, 'REQUERIDO'=>false, 'TAMANHO'=>0);
+$EntidadePadraoCampos['TXT_PADRAO_USUARIO'] = array('NOME' =>'USUARIO', 'TIPO'=>'CODIGO_LINK', 'EXIBIR'=>false, 'PESQUISAR'=>false, 'REQUERIDO'=>false, 'TAMANHO'=>0);
+$EntidadePadraoCampos['TXT_PADRAO_USUARIO_NOME'] = array('NOME' =>'USUARIO_NOME', 'TIPO'=>'CODIGO_LINK', 'EXIBIR'=>false, 'PESQUISAR'=>false, 'REQUERIDO'=>false, 'TAMANHO'=>0);
+$EntidadePadraoCampos['TXT_PADRAO_DATACRIACAO'] = array('NOME' =>'DATACRIACAO', 'TIPO'=>'DATA', 'EXIBIR'=>true, 'PESQUISAR'=>false, 'REQUERIDO'=>false, 'TAMANHO'=>20);
+$EntidadePadraoCampos['TXT_PADRAO_REG_ATIVO'] = array('NOME' =>'REG_ATIVO', 'TIPO'=>'TIPO', 'EXIBIR'=>false, 'PESQUISAR'=>false, 'REQUERIDO'=>false, 'TAMANHO'=>1);
 
 ?>

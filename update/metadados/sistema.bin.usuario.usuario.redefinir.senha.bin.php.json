@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.redefinir.senha.bin.php",
+    "caminho": "bin/usuario/usuario.redefinir.senha.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "c3033f68a8900ef210fc00e0157cdedc5da70a90705951f817d965eb4e7f7529",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c3033f68a8900ef210fc00e0157cdedc5da70a90705951f817d965eb4e7f7529",
+            "tamanho": "1611 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

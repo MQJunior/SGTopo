@@ -1,0 +1,16 @@
+{
+    "nome": "sqlStart.sql",
+    "caminho": "install/sqlStart.sql",
+    "pacote": "SGPadrao",
+    "hash_atual": "401f96796df856c42a890a1478814ddbb249ddbdafc12fc01becd9c71b119625",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "401f96796df856c42a890a1478814ddbb249ddbdafc12fc01becd9c71b119625",
+            "tamanho": "24993 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

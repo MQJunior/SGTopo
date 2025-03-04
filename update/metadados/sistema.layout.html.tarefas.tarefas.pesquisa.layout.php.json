@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.pesquisa.layout.php",
+    "caminho": "layout/html/tarefas/tarefas.pesquisa.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "3ec9a53dded19099ee552521cca155557281598f492082520c201454fb849c73",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "3ec9a53dded19099ee552521cca155557281598f492082520c201454fb849c73",
+            "tamanho": "4187 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

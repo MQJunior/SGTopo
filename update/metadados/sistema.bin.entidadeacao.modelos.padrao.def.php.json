@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.def.php",
+    "caminho": "bin/entidadeacao/modelos/padrao.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4ef2d592031d2e069f582ce7d88ee0fc9dcccb59c58a4732aaf416ee7dd41956",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4ef2d592031d2e069f582ce7d88ee0fc9dcccb59c58a4732aaf416ee7dd41956",
+            "tamanho": "1736 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "menu.alterar.bin.php",
+    "caminho": "bin/menu/menu.alterar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "06c5d094bf06234ad260f0688b753a39f3806da805d3382db53122271bd9c0d7",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "06c5d094bf06234ad260f0688b753a39f3806da805d3382db53122271bd9c0d7",
+            "tamanho": "1995 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

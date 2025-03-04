@@ -67,26 +67,30 @@ function GerarXMLAjax($P_Conteudo)
 }
 
 
-function GerarJSONAjax($P_Conteudo, $P_Formulario = null)
+function GerarJSONAjax($P_Conteudo, $P_Formulario = null, $P_SessionID = null)
 {
+    // 🔹 Primeiro, converter para UTF-8 se necessário
+    $conteudo = mb_convert_encoding($P_Conteudo, 'UTF-8', mb_detect_encoding($P_Conteudo, 'UTF-8, ISO-8859-1', true));
 
-	//$tmp_Conteudo['TRECHO_HTML'] = str_replace("'", "\'", $P_Conteudo);
-	//$tmp_Conteudo['TRECHO_HTML'] = $P_Conteudo;
+    // 🔹 NÃO usar htmlentities, porque o JSON precisa ser puro
+    $tmp_Conteudo = htmlspecialchars($conteudo, ENT_QUOTES, 'UTF-8');
 
-	$tmp_Conteudo = $P_Conteudo;
-	//$tmp_Conteudo = addslashes($P_Conteudo);
-	//$tmp_Conteudo = htmlspecialchars($tmp_Conteudo, ENT_QUOTES, 'UTF-8', true);
-	//$tmp_Conteudo = str_replace('"', '\"', $tmp_Conteudo);
-	$tmp_Conteudo = htmlentities($tmp_Conteudo);
-	($P_Formulario == null) ? $ArrayConteudo = array('TRECHO_HTML' => $tmp_Conteudo) : $ArrayConteudo = array('FORMULARIO' => $P_Formulario);
-	/*
-			   echo "-- " . $JsonConteudo . " -- \n";
-			   print_r($ArrayConteudo);
-			   die("Aqui " . __FILE__ . " > " . __LINE__);
-			   */
-	$JsonConteudo = json_encode($ArrayConteudo);
-	@header("Content-type: application/json; charset=iso-8859-1");
-	return $JsonConteudo;
+    // 🔹 Criar o JSON corretamente
+    $ArrayConteudo = array('TRECHO_HTML' => $tmp_Conteudo);
+    
+    if ($P_Formulario !== null) {
+        $ArrayConteudo['PAGINA'] = $P_Formulario;
+    }
+
+    if (!is_null($P_SessionID)) {
+        $ArrayConteudo['SESSION_UID'] = $P_SessionID;
+    }
+
+    // 🔹 Definir o cabeçalho correto para JSON UTF-8
+    header("Content-type: application/json; charset=UTF-8");
+
+    // 🔹 Retornar JSON corretamente codificado
+    return json_encode($ArrayConteudo, JSON_UNESCAPED_UNICODE);
 }
 
 
@@ -182,7 +186,7 @@ function EsquemaLinha($P_EsquemaLinha, $P_Linha)
 		$Resultado[$i_EsquemaDados][$P_EsquemaLinha["DADOS"][$i_EsquemaDados]["NOME"]] = LerConteudoLinha($P_Linha, $P_EsquemaLinha["DADOS"][$i_EsquemaDados]["COL_I"], $P_EsquemaLinha["DADOS"][$i_EsquemaDados]["COL_F"], $P_EsquemaLinha["DADOS"][$i_EsquemaDados]["COL_S"]);
 	}
 	/*echo $P_Linha;
-																																														   print_r($Resultado);*/
+																																																										print_r($Resultado);*/
 	return $Resultado;
 
 }
@@ -415,10 +419,10 @@ function diffDate($d1, $d2, $type = '', $sep = '-')
 function MeuIPNET()
 {
 	/*
-																																														   $SiteIP = "http://www.kromus.com.br/meuip.php";
-																																														   $LinhasSite = file_get_contents($SiteIP);
-																																														   return $LinhasSite;
-																																														   */
+																																																										$SiteIP = "http://www.kromus.com.br/meuip.php";
+																																																										$LinhasSite = file_get_contents($SiteIP);
+																																																										return $LinhasSite;
+																																																										*/
 	return $_SERVER["REMOTE_ADDR"]; // este procedimento � tempor�rio
 }
 

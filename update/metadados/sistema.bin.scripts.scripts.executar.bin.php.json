@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.executar.bin.php",
+    "caminho": "bin/scripts/scripts.executar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "694f144d242bc4ac821998ca659799a61db34bf0cc10943d48e4f2a302609927",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "694f144d242bc4ac821998ca659799a61db34bf0cc10943d48e4f2a302609927",
+            "tamanho": "876 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

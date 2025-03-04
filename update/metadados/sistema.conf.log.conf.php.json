@@ -1,0 +1,16 @@
+{
+    "nome": "log.conf.php",
+    "caminho": "conf/log.conf.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "8c954d5348b00c625bbad94d49b04956ba9f2c93c11b24c4a83a1808ae0c7188",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "8c954d5348b00c625bbad94d49b04956ba9f2c93c11b24c4a83a1808ae0c7188",
+            "tamanho": "1043 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

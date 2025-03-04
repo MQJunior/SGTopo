@@ -1,0 +1,16 @@
+{
+    "nome": "modelos.montar.def.bin.php",
+    "caminho": "bin/entidadeacao/modelos/modelos.montar.def.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "bb1e124076f6f4acd2072f4c68524cd48615e27fe0f55bf896c9bcb1159826db",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "bb1e124076f6f4acd2072f4c68524cd48615e27fe0f55bf896c9bcb1159826db",
+            "tamanho": "1831 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

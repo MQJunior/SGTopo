@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.perfil.bin.php",
+    "caminho": "bin/usuario/usuario.perfil.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "f54fa604dc06344c323a3106a51533d006bc6ec5075d6d3aba01e607a451ad7d",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "f54fa604dc06344c323a3106a51533d006bc6ec5075d6d3aba01e607a451ad7d",
+            "tamanho": "1514 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

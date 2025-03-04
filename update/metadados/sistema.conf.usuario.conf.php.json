@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.conf.php",
+    "caminho": "conf/usuario.conf.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "c5a514678bf79258be536c64285460a3380eebdcbca339e0a039851965e22032",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c5a514678bf79258be536c64285460a3380eebdcbca339e0a039851965e22032",
+            "tamanho": "1079 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

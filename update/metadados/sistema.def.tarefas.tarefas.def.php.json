@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.def.php",
+    "caminho": "def/tarefas/tarefas.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "45cfbb3654786275fdd017acc52e72dcc3755ff07a6666da9e40e21e8d907768",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "45cfbb3654786275fdd017acc52e72dcc3755ff07a6666da9e40e21e8d907768",
+            "tamanho": "3854 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

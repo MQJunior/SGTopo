@@ -1,0 +1,16 @@
+{
+    "nome": "menu.editar.bin.php",
+    "caminho": "bin/menu/menu.editar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "7740f82e17b3ad197ade4cdb11aedfa3fb5b575816f7ea65d599933f8bef728e",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "7740f82e17b3ad197ade4cdb11aedfa3fb5b575816f7ea65d599933f8bef728e",
+            "tamanho": "4415 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

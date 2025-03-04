@@ -1,0 +1,16 @@
+{
+    "nome": "class.usuario.lib.php",
+    "caminho": "lib/class.usuario.lib.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "bec4203db0d3d8fddfe98696a839926b2491d598e5aea6bf23c22a746a89af0f",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "bec4203db0d3d8fddfe98696a839926b2491d598e5aea6bf23c22a746a89af0f",
+            "tamanho": "16011 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

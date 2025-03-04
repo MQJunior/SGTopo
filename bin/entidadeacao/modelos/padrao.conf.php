@@ -1,29 +1,17 @@
 <?php
 /**
-* @file padrao.conf.php
-* @name padrao
-* @desc
-*   Descri��o padr�o
-*
-* @author     M�rcio Queiroz Jr <mqjunior@gmail.com>
-* @version    0.0.0 
-* @copyright  Copyright � 2006, M�rcio Queiroz Jr.
-* @package    padrao
-* @subpackage Config
-* @todo       
-*   Descricao todo
-*
-* @date 2018-02-22  v. 0.0.0
-*
-*/
+ * 📄 padrao.conf.php - Configuração da entidade padrao
+ * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com> | 📅 2018-02-22 | 🏷️ v0.0.0
+ * 📦 Pacote: padrao | 📂 Subpacote: Config
+ */
 
-/* CONFIGURA��O DO BANCO DE DADOS */ 
+/** ⚙️ Configuração do Banco de Dados */
 $this->SISTEMA_['ENTIDADE']['PADRAO']['CONF']['DATABASE'] = $this->SISTEMA_['CONFIG']['SISTEMA']['DATABASE'];
-/* NOME DA TABELA DA ENTIDADE NO BANCO DE DADOS */
+
+/** 🗄️ Nome da Tabela da Entidade no Banco */
 $this->SISTEMA_['ENTIDADE']['PADRAO']['CONF']['DATABASE']['TBL_PADRAO'] = 'TBL_PADRAO';
 
-/* TABELA USUARIO NO BANCO DE DADOS - RELACIONADA  */
+/** 🗄️ Tabela Usuário Relacionada */
 $this->SISTEMA_['ENTIDADE']['PADRAO']['CONF']['DATABASE']['TBL_USUARIO'] = $this->SISTEMA_['CONFIG']['USUARIO']['DATABASE']['ENTIDADE_DB'];
-
 
 ?>

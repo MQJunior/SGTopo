@@ -1,0 +1,16 @@
+{
+    "nome": "layout.saida.alerta.layout.php",
+    "caminho": "layout/html/layout/layout.saida.alerta.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "0d71f5edd60d31c0362d803b2a72e63a969d1aed8486cfd5e7b15695406bc114",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "0d71f5edd60d31c0362d803b2a72e63a969d1aed8486cfd5e7b15695406bc114",
+            "tamanho": "382 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

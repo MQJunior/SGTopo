@@ -89,10 +89,14 @@ $SysRtl_Backup_Executar_Cabecalho_Icone = "fa-gear";
 $SysRtl_Backup_Executar_Conteudo_Titulo = "Executar Backup";
 //----------------------//
 
+/* Legendas do formul�rio Login */
+$SysRtl_Sistema_Logar_Mensagem_BoaVindas = "Entre para iniciar uma nova sessao!";
+$SysRtl_Sistema_Logar_TxtManterConectado = "Manter-me conectado";
+
 /* Op��es dos campos do Tipo */
 $SysOpt_Backup_TIPO['OPCOES'] = array(
-      array('VALOR' => '1', 'LEGENDA' => 'ARQUIVO'),
-      array('VALOR' => '2', 'LEGENDA' => 'FIREBIRD'),
-      array('VALOR' => '3', 'LEGENDA' => 'MySQL')
+  array('VALOR' => '1', 'LEGENDA' => 'ARQUIVO'),
+  array('VALOR' => '2', 'LEGENDA' => 'FIREBIRD'),
+  array('VALOR' => '3', 'LEGENDA' => 'MySQL')
 );
 ?>

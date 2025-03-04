@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.perfil.layout.php",
+    "caminho": "layout/html/usuario/usuario.perfil.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "68bec34b9d8a3f03ce285a592db5d6e7c6603c239eb5cb36c68cdde022f1ea2c",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "68bec34b9d8a3f03ce285a592db5d6e7c6603c239eb5cb36c68cdde022f1ea2c",
+            "tamanho": "9254 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

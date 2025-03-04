@@ -1,34 +1,23 @@
 <?php
 /**
-* @file padrao.ativar.bin.php
-* @name padrao.ativar
-* @desc
-*   Ativa um registro do sistema
-*
-* @author     M�rcio Queiroz Jr <mqjunior@gmail.com>
-* @version    0.0.0 
-* @copyright  Copyright � 2006, M�rcio Queiroz Jr.
-* @package    padrao
-* @subpackage bin
-* @todo       
-*   Descricao todo
-*
-* @date 2018-02-22  v. 0.0.0
-*
-*/
+ * 📄 padrao.ativar.bin.php - Ativa um registro do sistema
+ * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com> | 📅 2018-02-22 | 🏷️ v0.0.0
+ * 📦 Pacote: padrao | 📂 Subpacote: bin
+ */
 
-/* Captura a chave do registro a ser ativada */
-if (isset($_REQUEST['txtChaveRegistro'])){
+// 📝 Captura a Chave do Registro
+if (isset($_REQUEST['txtChaveRegistro'])) {
 
-/* Realiza a ativa��o do sistema */
+  // 🔄 Ativa o Registro
   $PADRAO_ = new Padrao($this->SISTEMA_);
-   $PADRAO_->Ativar($_REQUEST['txtChaveRegistro']);
-   $this->SISTEMA_ =$PADRAO_->getSISTEMA();
+  $PADRAO_->Ativar($_REQUEST['txtChaveRegistro']);
+  $this->SISTEMA_ = $PADRAO_->getSISTEMA();
   unset($PADRAO_);
-  
-  require($this->SISTEMA_['LAYOUT']."padrao/padrao.consultar.layout.php");
-}else{
-  require($this->SISTEMA_['LAYOUT']."padrao/padrao.incluir.layout.php");
-}
 
+  // 📦 Exibe Layout de Consulta
+  require($this->SISTEMA_['LAYOUT'] . "padrao/padrao.consultar.layout.php");
+} else {
+  // 📦 Exibe Layout de Inclusão
+  require($this->SISTEMA_['LAYOUT'] . "padrao/padrao.incluir.layout.php");
+}
 ?>

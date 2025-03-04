@@ -3,14 +3,14 @@
 /**
  * sgpadrao.php
  *
- * SGPadrao
+ * SGTopo
  *
  * Sistema de Gerenciamento Padrao
  *
  * @date 2018-01-10
  * @author Marcio Queiroz Jr <mqjunior@gmail.com>
  * @version 1.0
- * @package SGPadrao
+ * @package SGTopo
  *
  * @uses ./conf/def.sgpadrao.conf.php Arquivo de definicao das Includes
  *
@@ -18,52 +18,48 @@
 
 error_reporting(E_ALL);
 
+if (! isset($SISTEMA['SAIDA']['MODE'])) {
+    $SISTEMA['SAIDA']['MODE'] = 'api';
+}
+
 //  Define o endereco do Diretorio conf;
-$SISTEMA['INCLUDES']['DIR']['CONFIG'] = '/sistema/SGTopo/conf/';
+$SISTEMA['INCLUDES']['DIR']['CONFIG'] = '/sistema/sistemas/SGTopo/conf/';
 
+require_once $SISTEMA['INCLUDES']['DIR']['CONFIG'] . 'sistema.def.conf.php';
 
-require_once ($SISTEMA['INCLUDES']['DIR']['CONFIG'] . 'sistema.def.conf.php');
 //require_once($SISTEMA['INCLUDES']['CLASSES']['SISTEMA']);
 
-
-$SISTEMA['DEBUG']['MENSAGEM'] = array();
-$SISTEMA['LOGS']['COMANDOS'] = array();
-$SISTEMA['SAIDA']['MENSAGEM'] = "";          // ['ERRO'] | ['SUCESSO'] | ['ALERTA']
-$SISTEMA['SAIDA']['INFORMACAO'] = "";        // ['NOTIFICACAO'] | ['TAREFAS'] 
-$SISTEMA['SAIDA']['CHAT'] = "";              // implementar
-$SISTEMA['SAIDA']['EXIBIR'] = "";           //
-//$SISTEMA['DEBUG']['MENSAGEM'] = array();
-
+$SISTEMA['DEBUG']['MENSAGEM']   = [];
+$SISTEMA['LOGS']['COMANDOS']    = [];
+$SISTEMA['SAIDA']['MENSAGEM']   = ""; // ['ERRO'] | ['SUCESSO'] | ['ALERTA']
+$SISTEMA['SAIDA']['INFORMACAO'] = ""; // ['NOTIFICACAO'] | ['TAREFAS'] 
+$SISTEMA['SAIDA']['CHAT']       = ""; // implementar
+$SISTEMA['SAIDA']['EXIBIR']     = ""; //
+                                      //$SISTEMA['DEBUG']['MENSAGEM'] = array();
 
 $Z2Sessao = new Sessao($SISTEMA);
-$SISTEMA = $Z2Sessao->getSISTEMA();
+$SISTEMA  = $Z2Sessao->getSISTEMA();
 
-$SGPadrao = new sistema($SISTEMA);
-$SISTEMA = $SGPadrao->getSISTEMA();
-
+$SGTopo  = new sistema($SISTEMA);
+$SISTEMA = $SGTopo->getSISTEMA();
 
 $SGPermissao = new permissao($SISTEMA);
-
 $SGPermissao->ChecarPermissaoSys();
-
 $SISTEMA = $SGPermissao->getSISTEMA();
 unset($SGPermissao);
 
-
-
-$SGPadrao->ExecutarSistema($SISTEMA);
+$SGTopo->ExecutarSistema($SISTEMA);
 
 #die(print_r($SISTEMA). __LINE__ .' - '. __FILE__);
 
-//$SISTEMA = $SGPadrao->getSISTEMA();
+//$SISTEMA = $SGTopo->getSISTEMA();
 //print_r($_REQUEST); print_r($SISTEMA); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");  
 
-$SGPadrao->ExibirSaida();
-$SISTEMA = $SGPadrao->getSISTEMA();
+$SGTopo->ExibirSaida();
+$SISTEMA = $SGTopo->getSISTEMA();
 
-unset($SGPadrao);
+unset($SGTopo);
 unset($Z2Sessao);
-
 
 //print_r($_REQUEST);
 //@print_r($_SESSION);

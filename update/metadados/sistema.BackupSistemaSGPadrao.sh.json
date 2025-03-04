@@ -1,0 +1,16 @@
+{
+    "nome": "BackupSistemaSGPadrao.sh",
+    "caminho": "BackupSistemaSGPadrao.sh",
+    "pacote": "SGPadrao",
+    "hash_atual": "c70f66c68b384d9ef93613e9026d63c1b2955959fd64f1e27c07b69c6d61ca7d",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c70f66c68b384d9ef93613e9026d63c1b2955959fd64f1e27c07b69c6d61ca7d",
+            "tamanho": "568 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

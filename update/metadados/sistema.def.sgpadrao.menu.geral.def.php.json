@@ -1,0 +1,16 @@
+{
+    "nome": "sgpadrao.menu.geral.def.php",
+    "caminho": "def/sgpadrao.menu.geral.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "3fcc32e28552c2dd6e2db2d66b40ce9e3acdd08189381321f6b5c3d4faad75f9",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "3fcc32e28552c2dd6e2db2d66b40ce9e3acdd08189381321f6b5c3d4faad75f9",
+            "tamanho": "7131 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

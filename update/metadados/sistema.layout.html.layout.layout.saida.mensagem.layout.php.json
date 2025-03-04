@@ -1,0 +1,16 @@
+{
+    "nome": "layout.saida.mensagem.layout.php",
+    "caminho": "layout/html/layout/layout.saida.mensagem.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4162af23e71de267e218a7c9ad71c8652e0421a3d3f70288707865e2e78103ad",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4162af23e71de267e218a7c9ad71c8652e0421a3d3f70288707865e2e78103ad",
+            "tamanho": "382 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "syncPadraoAtualizarArquivosLayoutWEB.sh",
+    "caminho": "sh/syncPadraoAtualizarArquivosLayoutWEB.sh",
+    "pacote": "SGPadrao",
+    "hash_atual": "17ab825b4f4ad96208812a0de0067130bda1d675c0a928b311ca19cea20f8771",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "17ab825b4f4ad96208812a0de0067130bda1d675c0a928b311ca19cea20f8771",
+            "tamanho": "925 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

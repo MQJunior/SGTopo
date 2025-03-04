@@ -1,0 +1,16 @@
+{
+    "nome": "backupDB.sql",
+    "caminho": "backupDB.sql",
+    "pacote": "SGPadrao",
+    "hash_atual": "ffa89d1e7b2424871f32ae47216677ecba44cbcfa91047914e3141467bc2d2cd",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "ffa89d1e7b2424871f32ae47216677ecba44cbcfa91047914e3141467bc2d2cd",
+            "tamanho": "62435 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

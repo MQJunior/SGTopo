@@ -54,7 +54,7 @@ function MontarMenu($p_MenuArray, $p_Layout, $p_SessaoUID = "")
     } else {
       $tmp_Eval_Saida = $p_Layout[$tmp_Nivel]['MENU'];
     }
-    eval("\$tmp_Eval_Saida = \"$tmp_Eval_Saida\";");
+    eval ("\$tmp_Eval_Saida = \"$tmp_Eval_Saida\";");
     $tmp_Saida .= $tmp_Eval_Saida;
   }
   return $tmp_Saida;
@@ -124,12 +124,14 @@ if (is_array($tmp_Permissao_Usuario))
 $VAR_MENU_GERAL_ = MontarMenuPermissao($VAR_MENU_GERAL, $VAR_PERMISSAO_ENTIDADE_ACAO);
 
 $VAR_MENU_GERAL = LimparMenu($VAR_MENU_GERAL_);
-#print_r($VAR_MENU_GERAL);
-//die(print_r($VAR_SISTEMA_MENU) .__LINE__ . __FILE__ );
+//print_r($VAR_MENU_GERAL);
+//echo json_encode($VAR_MENU_GERAL[0], true);
+//die(print_r($VAR_SISTEMA_MENU) . __LINE__ . __FILE__);
+//die(print_r($this->SISTEMA_['ENTIDADE']['MENU']['VARS']));
 
 $VAR_SISTEMA_MENU = MontarMenu($VAR_MENU_GERAL, $VAR_LAYOUT_MENU, $TMP_SESSAO_UID);
 
 $this->SISTEMA_['ENTIDADE']['MENU']['VARS']['VAR_SISTEMA_MENU'] = $VAR_SISTEMA_MENU;
+$this->SISTEMA_['ENTIDADE']['MENU']['VAR_MENU_GERAL'] = $VAR_MENU_GERAL;
 
-
-?>
+//die($VAR_SISTEMA_MENU);

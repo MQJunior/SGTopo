@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.logar.bin.php",
+    "caminho": "bin/sistema/sistema.logar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "e1ad86fbc7f6d5ee1d669e8a4c4afbb22d9661307094e1d88ac5be24fdcfa703",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "e1ad86fbc7f6d5ee1d669e8a4c4afbb22d9661307094e1d88ac5be24fdcfa703",
+            "tamanho": "790 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

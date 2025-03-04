@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.pesquisar.bin.php",
+    "caminho": "bin/tarefas/tarefas.pesquisar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "8e913ef54889d6e7e4f0f049d9ab03ee8ea7fa822e2bd2b537ff36e7121fb0b0",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "8e913ef54889d6e7e4f0f049d9ab03ee8ea7fa822e2bd2b537ff36e7121fb0b0",
+            "tamanho": "1210 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -38,7 +38,7 @@ if ($TMP_AUTENTICADO) {
   $TMP_SESSAO->Inicializar();
 
 
- 
+
 
   $this->SISTEMA_ = $TMP_SESSAO->getSISTEMA();
   unset($TMP_SESSAO);
@@ -46,6 +46,7 @@ if ($TMP_AUTENTICADO) {
   $this->SISTEMA_['EXECUTAR']['COMANDO']['ENTIDADE'] = $this->SISTEMA_['CONFIG']['SISTEMA']['ENTIDADEPADRAO'];
   $this->SISTEMA_['EXECUTAR']['COMANDO']['ACAO'] = "PRINCIPAL";
   unset($this->SISTEMA_['EXECUTAR']['COMANDO']['PARAMETROS']);
+
 
 } else {
   if (isset($this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['LAYOUT_PADRAO'])) {
@@ -57,5 +58,9 @@ if ($TMP_AUTENTICADO) {
     die("senha errada!" . __LINE__ . ' - ' . __FILE__);
   }
 }
+
+// Fornece a SESSAO_UID ao realizar o login somente
+$this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'] = $this->SISTEMA_['SESSAO']['CLIENTE']['SESSAO_UID'];
+
 
 $this->ExecutarComando();

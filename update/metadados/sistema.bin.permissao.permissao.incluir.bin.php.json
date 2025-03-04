@@ -1,0 +1,16 @@
+{
+    "nome": "permissao.incluir.bin.php",
+    "caminho": "bin/permissao/permissao.incluir.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "8cb45ea1a67db85e6fa79c352a7ab4ba85e41e3c59fa3af9396565b4b0e8396e",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "8cb45ea1a67db85e6fa79c352a7ab4ba85e41e3c59fa3af9396565b4b0e8396e",
+            "tamanho": "2078 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

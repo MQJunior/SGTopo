@@ -1,0 +1,16 @@
+{
+    "nome": "GerarUpdate.php",
+    "caminho": "update/GerarUpdate.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "8f863931f877a5c5ff6d6e4a7bb6c3ee317a9d474f70b2e42f841861a335b8d8",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "8f863931f877a5c5ff6d6e4a7bb6c3ee317a9d474f70b2e42f841861a335b8d8",
+            "tamanho": "1808 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

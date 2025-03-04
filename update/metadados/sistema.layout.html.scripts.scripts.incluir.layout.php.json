@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.incluir.layout.php",
+    "caminho": "layout/html/scripts/scripts.incluir.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "d75f3375a8a11892d8c5c1dba2060c8f06ef6880a44722484fa78a14de33d3fb",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "d75f3375a8a11892d8c5c1dba2060c8f06ef6880a44722484fa78a14de33d3fb",
+            "tamanho": "4965 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.consultar.bin.php",
+    "caminho": "bin/tarefas/tarefas.consultar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "89965763ff1f4e30a0bf866055e2f4f7371ccde07bcc4f62e52e9c9061a27adc",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "89965763ff1f4e30a0bf866055e2f4f7371ccde07bcc4f62e52e9c9061a27adc",
+            "tamanho": "848 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

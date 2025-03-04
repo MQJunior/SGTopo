@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.tabela.carregar.csv.layout.php",
+    "caminho": "layout/html/sistema/sistema.tabela.carregar.csv.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "0901d46441119af9f9c48a64a21d1fca8bfaa133b64154a5cd55ea52bc5ad8ab",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "0901d46441119af9f9c48a64a21d1fca8bfaa133b64154a5cd55ea52bc5ad8ab",
+            "tamanho": "9206 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

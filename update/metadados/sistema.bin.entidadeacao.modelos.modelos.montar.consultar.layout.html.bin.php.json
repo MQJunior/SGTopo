@@ -1,0 +1,16 @@
+{
+    "nome": "modelos.montar.consultar.layout.html.bin.php",
+    "caminho": "bin/entidadeacao/modelos/modelos.montar.consultar.layout.html.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "88dc85d8c361c38ea5a779facc73c41bd45fa893db523e103e13a60520bd831e",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "88dc85d8c361c38ea5a779facc73c41bd45fa893db523e103e13a60520bd831e",
+            "tamanho": "2462 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

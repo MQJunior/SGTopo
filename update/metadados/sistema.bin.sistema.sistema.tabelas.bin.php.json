@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.tabelas.bin.php",
+    "caminho": "bin/sistema/sistema.tabelas.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "eb6e107c209c1e940365b666d9bdc4adcaf70815cc2bb0317527b7d3983384ed",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "eb6e107c209c1e940365b666d9bdc4adcaf70815cc2bb0317527b7d3983384ed",
+            "tamanho": "873 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

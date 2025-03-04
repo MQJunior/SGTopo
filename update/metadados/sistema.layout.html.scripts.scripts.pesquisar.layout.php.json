@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.pesquisar.layout.php",
+    "caminho": "layout/html/scripts/scripts.pesquisar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "9b8a2545b3431efa589ee33ca4359b7f4864ae994215194fe3911c22ba705892",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "9b8a2545b3431efa589ee33ca4359b7f4864ae994215194fe3911c22ba705892",
+            "tamanho": "7989 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

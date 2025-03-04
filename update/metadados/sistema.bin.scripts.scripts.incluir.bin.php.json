@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.incluir.bin.php",
+    "caminho": "bin/scripts/scripts.incluir.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "fba402a165aac1a1915dc88e8c81d46ae48b72ca76c6ef8e3e8540b3d7c06068",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "fba402a165aac1a1915dc88e8c81d46ae48b72ca76c6ef8e3e8540b3d7c06068",
+            "tamanho": "1117 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

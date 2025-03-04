@@ -1,0 +1,16 @@
+{
+    "nome": "menu.incluir.bin.php",
+    "caminho": "bin/menu/menu.incluir.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "f1f7c57bfee324943660876a463d26f14acb864457edeec617edf09f9cfd0d86",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "f1f7c57bfee324943660876a463d26f14acb864457edeec617edf09f9cfd0d86",
+            "tamanho": "1995 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "entidadeacao.conf.php",
+    "caminho": "conf/entidadeacao/entidadeacao.conf.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "f5b38c7febb8a10ebb14ada26d2f40b2b0e2704ef1945445c7da1e6b4ae6aee1",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "f5b38c7febb8a10ebb14ada26d2f40b2b0e2704ef1945445c7da1e6b4ae6aee1",
+            "tamanho": "702 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

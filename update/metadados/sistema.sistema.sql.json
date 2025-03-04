@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.sql",
+    "caminho": "sistema.sql",
+    "pacote": "SGPadrao",
+    "hash_atual": "6bc7db9a44666252cb96501e993bde610f5277220907ef1d9c293d5e41941741",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "6bc7db9a44666252cb96501e993bde610f5277220907ef1d9c293d5e41941741",
+            "tamanho": "36380 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

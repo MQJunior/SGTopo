@@ -1,0 +1,16 @@
+{
+    "nome": "entidadeacao.alterar.acao.bin.php",
+    "caminho": "bin/entidadeacao/entidadeacao.alterar.acao.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "dac7d57c049a1dc1c379833a84c33f8393e956b6a84805aa21862e6a9958c51d",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "dac7d57c049a1dc1c379833a84c33f8393e956b6a84805aa21862e6a9958c51d",
+            "tamanho": "1516 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

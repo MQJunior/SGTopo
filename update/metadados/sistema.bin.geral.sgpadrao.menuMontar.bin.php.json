@@ -1,0 +1,16 @@
+{
+    "nome": "sgpadrao.menuMontar.bin.php",
+    "caminho": "bin/geral/sgpadrao.menuMontar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "bac7974623e076e77067968c8bc73036ff87a0eaec46b8ad3e3cc1cbef5c4345",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "bac7974623e076e77067968c8bc73036ff87a0eaec46b8ad3e3cc1cbef5c4345",
+            "tamanho": "1977 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

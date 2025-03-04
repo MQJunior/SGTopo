@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.acao.sbin.php",
+    "caminho": "sbin/padrao/padrao.acao.sbin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "3b14e900c19a9625f4e7be5b09e57ef63abf3d0491599aeb3232eb897f703256",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "3b14e900c19a9625f4e7be5b09e57ef63abf3d0491599aeb3232eb897f703256",
+            "tamanho": "730 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

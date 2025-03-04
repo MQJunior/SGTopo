@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.conf.php",
+    "caminho": "conf/padrao/padrao.conf.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "705be5b526661ed30056997b6141a94bcc2c31f40b62e3dd1231971dab9b6c6b",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "705be5b526661ed30056997b6141a94bcc2c31f40b62e3dd1231971dab9b6c6b",
+            "tamanho": "828 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

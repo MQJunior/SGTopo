@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.consultar.layout.php",
+    "caminho": "layout/html/tarefas/tarefas.consultar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4263f15eccad7de9dc6b63c49a563efeedb0f4ccdc80a12fa60313250008a55b",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4263f15eccad7de9dc6b63c49a563efeedb0f4ccdc80a12fa60313250008a55b",
+            "tamanho": "12225 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

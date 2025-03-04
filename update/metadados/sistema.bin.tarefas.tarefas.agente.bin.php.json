@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.agente.bin.php",
+    "caminho": "bin/tarefas/tarefas.agente.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "d07905b54266e6ae0b06455d833ee26c8fa5e2ebf40d8a6117f92ce3e6e38195",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "d07905b54266e6ae0b06455d833ee26c8fa5e2ebf40d8a6117f92ce3e6e38195",
+            "tamanho": "701 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

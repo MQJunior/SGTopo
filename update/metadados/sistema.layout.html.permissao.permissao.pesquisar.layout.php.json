@@ -1,0 +1,16 @@
+{
+    "nome": "permissao.pesquisar.layout.php",
+    "caminho": "layout/html/permissao/permissao.pesquisar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "2676e3fc1f15902c52bfa928724d2d042c56807ae446ba5259f5dde70f22a5cc",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "2676e3fc1f15902c52bfa928724d2d042c56807ae446ba5259f5dde70f22a5cc",
+            "tamanho": "2496 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

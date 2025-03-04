@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.exibir.erro.bin.php",
+    "caminho": "bin/sistema/sistema.exibir.erro.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "5b3f7569a39b1779cc4147455ce914d604ca54904aa508a61550df6e534c5f8d",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "5b3f7569a39b1779cc4147455ce914d604ca54904aa508a61550df6e534c5f8d",
+            "tamanho": "738 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

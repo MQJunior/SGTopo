@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.alterar.bin.php",
+    "caminho": "bin/entidadeacao/modelos/padrao.alterar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4e52a0a787f1749617bb98573dde20a67e05f654b39213d3a86670155743c21f",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4e52a0a787f1749617bb98573dde20a67e05f654b39213d3a86670155743c21f",
+            "tamanho": "1314 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

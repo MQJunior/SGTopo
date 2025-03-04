@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.backup.alterar.layout.php",
+    "caminho": "layout/html/sistema/sistema.backup.alterar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4cd1d0d1c4f1e5fbf21d39232bc34fb53f0b6a2b3536e951f659f9769c54e095",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4cd1d0d1c4f1e5fbf21d39232bc34fb53f0b6a2b3536e951f659f9769c54e095",
+            "tamanho": "11062 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

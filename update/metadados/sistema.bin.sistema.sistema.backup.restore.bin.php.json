@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.backup.restore.bin.php",
+    "caminho": "bin/sistema/sistema.backup.restore.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "a295460c1b19a603ca3f99612afb980451e16d911ba630fce769085ee955ead7",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "a295460c1b19a603ca3f99612afb980451e16d911ba630fce769085ee955ead7",
+            "tamanho": "1421 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.ativar.bin.php",
+    "caminho": "bin/scripts/scripts.ativar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "b2a912be61988354c49afcccb90c0991c87a2ae46ebfbde8b612df02ea4bf646",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "b2a912be61988354c49afcccb90c0991c87a2ae46ebfbde8b612df02ea4bf646",
+            "tamanho": "833 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

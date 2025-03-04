@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.incluir.layout.php",
+    "caminho": "layout/html/tarefas/tarefas.incluir.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "285a3eeb6466e01a5b0af19df82140cf93ef92c4bebcd38c96cf4ab2f7519a99",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "285a3eeb6466e01a5b0af19df82140cf93ef92c4bebcd38c96cf4ab2f7519a99",
+            "tamanho": "10287 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

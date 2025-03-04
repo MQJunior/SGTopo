@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.alterar.senha.bin.php",
+    "caminho": "bin/usuario/usuario.alterar.senha.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "0c2fefe6cacdc331bb4e5ba0b9cc50499a77750172d9dc61eb233a54a90bfd6e",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "0c2fefe6cacdc331bb4e5ba0b9cc50499a77750172d9dc61eb233a54a90bfd6e",
+            "tamanho": "1649 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

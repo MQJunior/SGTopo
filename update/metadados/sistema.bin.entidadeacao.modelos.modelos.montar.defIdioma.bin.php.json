@@ -1,0 +1,16 @@
+{
+    "nome": "modelos.montar.defIdioma.bin.php",
+    "caminho": "bin/entidadeacao/modelos/modelos.montar.defIdioma.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "f5549bb6cb866652a1d7b7017dbcd92684ccecf44ec7fee091137c8487ce019e",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "f5549bb6cb866652a1d7b7017dbcd92684ccecf44ec7fee091137c8487ce019e",
+            "tamanho": "1646 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

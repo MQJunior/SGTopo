@@ -1,0 +1,16 @@
+{
+    "nome": "menu.reload.bin.php",
+    "caminho": "bin/menu/menu.reload.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "c8029af4785b56408b46f73dbb4abecaf326d45de5f3bd90c16b6c5f031c70c6",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c8029af4785b56408b46f73dbb4abecaf326d45de5f3bd90c16b6c5f031c70c6",
+            "tamanho": "4048 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -22,7 +22,9 @@ if (isset($_REQUEST['TXT_ENTIDADEACAO_ARQUIVO_NOME'])) {
   $tmpConteudoArquivo = $_REQUEST['TXT_ENTIDADEACAO_ARQUIVO_CONTEUDO'];
   $tmpConteudoArquivo = str_replace('[@textarea>', '</textarea>', $tmpConteudoArquivo);
   file_put_contents($_REQUEST['TXT_ENTIDADEACAO_ARQUIVO_NOME'], $tmpConteudoArquivo);
-  @chmod($_REQUEST['TXT_ENTIDADEACAO_ARQUIVO_NOME'], 0771);
+  @chmod($_REQUEST['TXT_ENTIDADEACAO_ARQUIVO_NOME'], 0775);
+  chown($_REQUEST['TXT_ENTIDADEACAO_ARQUIVO_NOME'], "www-data");  // Define o dono do arquivo
+  chgrp($_REQUEST['TXT_ENTIDADEACAO_ARQUIVO_NOME'], "www-data");  // Define o grupo do arquivo
 }
 $this->SISTEMA_['SAIDA']['EXIBIR'] = "";
 

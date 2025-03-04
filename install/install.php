@@ -105,11 +105,6 @@ function installSystem()
         die(__FILE__ . ' > ARQUIVO: "' . $fileInstallDB . '" Não encontrado! < ' . __LINE__);
     }
 
-    print_r($dbConfig);
-    die(__FILE__ . ' > Implementar aqui < ' . __LINE__);
-
-
-
     echo "Sistema instalado com sucesso!\n";
 }
 

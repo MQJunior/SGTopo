@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.incluir.bin.php",
+    "caminho": "bin/tarefas/tarefas.incluir.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "f62121414204b5578b5c795e01d3d4a2fd4967a83230cc59d852acf8e70af869",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "f62121414204b5578b5c795e01d3d4a2fd4967a83230cc59d852acf8e70af869",
+            "tamanho": "2562 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

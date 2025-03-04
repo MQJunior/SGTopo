@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.tabelas.layout.php",
+    "caminho": "layout/html/sistema/sistema.tabelas.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "deb330ecfbc1116f1af6dd80602793fc72c6e92f8e863073852c268c7c1aaeb2",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "deb330ecfbc1116f1af6dd80602793fc72c6e92f8e863073852c268c7c1aaeb2",
+            "tamanho": "2650 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

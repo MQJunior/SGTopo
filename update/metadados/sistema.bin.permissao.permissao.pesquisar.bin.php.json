@@ -1,0 +1,16 @@
+{
+    "nome": "permissao.pesquisar.bin.php",
+    "caminho": "bin/permissao/permissao.pesquisar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "1e386ec6bf89635a23156ce9dab12100101221f640ba2517212997065252c675",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "1e386ec6bf89635a23156ce9dab12100101221f640ba2517212997065252c675",
+            "tamanho": "1938 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

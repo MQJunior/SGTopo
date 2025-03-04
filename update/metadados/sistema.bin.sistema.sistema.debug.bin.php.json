@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.debug.bin.php",
+    "caminho": "bin/sistema/sistema.debug.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "fa9efb3f11f1c1b8715eef2d2c6ca014290aeff21ad7fb26a99f187551f9c21a",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "fa9efb3f11f1c1b8715eef2d2c6ca014290aeff21ad7fb26a99f187551f9c21a",
+            "tamanho": "598 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

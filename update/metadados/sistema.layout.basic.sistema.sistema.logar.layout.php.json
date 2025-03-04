@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.logar.layout.php",
+    "caminho": "layout/basic/sistema/sistema.logar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "1ab6d2ba04d017a68c7cb2304ef202900716500b16b68064878aab1ae5d9db82",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "1ab6d2ba04d017a68c7cb2304ef202900716500b16b68064878aab1ae5d9db82",
+            "tamanho": "3941 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "mapa.icones.def.php",
+    "caminho": "layout/html/mapa.icones.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "fa7b2f0d1ad07fbc5900be0b2fa98995d64e5ef4a6f600e0ee9efb21e2329f02",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "fa7b2f0d1ad07fbc5900be0b2fa98995d64e5ef4a6f600e0ee9efb21e2329f02",
+            "tamanho": "55953 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

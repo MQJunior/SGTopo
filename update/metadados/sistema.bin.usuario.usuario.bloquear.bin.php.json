@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.bloquear.bin.php",
+    "caminho": "bin/usuario/usuario.bloquear.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "a196f4ed1849701f3c4361b9a295e577a7cf1d15407d25e5a32c8450841aa2ef",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "a196f4ed1849701f3c4361b9a295e577a7cf1d15407d25e5a32c8450841aa2ef",
+            "tamanho": "2006 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

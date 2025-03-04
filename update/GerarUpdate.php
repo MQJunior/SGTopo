@@ -1,50 +1,87 @@
 <?php
 
-function obterInformacoesArquivos($caminhoDoDiretorio, $listaDeIgnorados = [])
-{
-    $arquivos = [];
+define("DIRETORIO_METADADOS", "metadados"); // Diretório onde os metadados JSON estão armazenados
+define("ARQUIVO_UPDATE", "sistema_update.json"); // Nome do JSON consolidado
+define("NOME_SISTEMA", "SGPadrao"); // Nome fixo do sistema
+define("PACOTE_SISTEMA", "SGPadrao"); // Nome fixo do pacote
 
-    // Percorrer o diretório
-    $diretorio = new RecursiveDirectoryIterator($caminhoDoDiretorio);
-    $iterator = new RecursiveIteratorIterator($diretorio);
+// Mapear categorias para relevância
+$categorias_relevancia = [
+    "log" => 0,
+    "config" => 1,
+    "def" => 2,
+    "bin" => 3
+];
 
-    foreach ($iterator as $arquivo) {
-        $caminhoCompleto = $arquivo->getPathname();
-        $relativoAoDiretorio = str_replace($caminhoDoDiretorio, '', $caminhoCompleto);
+// Inicializa o JSON consolidado
+$versaoGeral = "0.0.0"; // Começamos com a menor versão possível
+$arquivosListados = []; // Lista dos arquivos
 
-        // Verificar se o arquivo ou diretório deve ser ignorado
-        $ignorarItem = false;
-        foreach ($listaDeIgnorados as $item) {
-            if (strpos($relativoAoDiretorio, $item) !== false) {
-                $ignorarItem = true;
-                break;
-            }
-        }
+// Percorre os arquivos de metadados
+$arquivosMetadados = glob(DIRETORIO_METADADOS . "/*.json");
+foreach ($arquivosMetadados as $jsonFile) {
+    $dados = json_decode(file_get_contents($jsonFile), true);
+    if (!$dados)
+        continue; // Ignora arquivos inválidos
 
-        if (!$ignorarItem) {
-            // Se não for para ignorar, verificar se é um arquivo e processar
-            if ($arquivo->isFile()) {
-                $hash = hash_file('sha256', $caminhoCompleto);
-                $tamanho = filesize($caminhoCompleto);
-                $dataModificacao = date('Y-m-d H:i:s', $arquivo->getMTime());
+    // Obter a versão mais recente do arquivo
+    $ultimaVersao = $dados["versoes"][0] ?? null;
+    if (!$ultimaVersao)
+        continue; // Se não há versões, ignora
 
-                $arquivos[$relativoAoDiretorio] = [
-                    'hash' => $hash,
-                    'tamanho' => $tamanho,
-                    'dataModificacao' => $dataModificacao
-                ];
-            }
+    // Obter pacote do JSON
+    $pacote = $dados["pacote"] ?? "Desconhecido";
+
+    // Obter o caminho completo do arquivo
+    $caminhoArquivo = $dados["caminho"] ?? "desconhecido";
+
+    // Determinar a categoria e relevância do arquivo
+    $categoria = "outro";
+    foreach ($categorias_relevancia as $cat => $rel) {
+        if (strpos(strtolower($dados["nome"]), $cat) !== false) {
+            $categoria = $cat;
+            break;
         }
     }
+    $relevancia = $categorias_relevancia[$categoria] ?? 0;
 
-    return $arquivos;
+    // Comparar a versão para encontrar a maior
+    if (version_compare($ultimaVersao["versao"], $versaoGeral, ">")) {
+        $versaoGeral = $ultimaVersao["versao"];
+    }
+
+    // Adicionar à lista de arquivos
+    $arquivosListados[] = [
+        "nome" => $dados["nome"],
+        "caminho" => $caminhoArquivo,
+        "hash" => $ultimaVersao["hash"],
+        "versao" => $ultimaVersao["versao"],
+        "datahora" => $ultimaVersao["data_hora_modificacao"],
+        "categoria" => $categoria,
+        "pacote" => $pacote,
+        "relevancia" => $relevancia
+    ];
 }
 
-$caminhoDoDiretorio = dirname(__DIR__);
-$listaDeIgnorados = ['.conf.php', '.log', '.tmp', '.git', '.vscode', 'doc'];
-$arquivoUpdateJson = $caminhoDoDiretorio . '/update/update.json';
-$informacoesArquivos = obterInformacoesArquivos($caminhoDoDiretorio, $listaDeIgnorados);
-$json = json_encode($informacoesArquivos, JSON_PRETTY_PRINT);
-file_put_contents($arquivoUpdateJson, $json);
+// Gerar hash geral com base no conteúdo da lista de arquivos
+$hashSistema = hash("sha256", json_encode($arquivosListados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 
-//die($caminhoDoDiretorio);
+// Criar JSON consolidado com os campos principais antes da lista de arquivos
+$jsonUpdate = [
+    "nome_sistema" => NOME_SISTEMA,
+    "pacote_sistema" => PACOTE_SISTEMA,
+    "versao_sistema" => $versaoGeral,
+    "hash_sistema" => $hashSistema,
+    "arquivos" => $arquivosListados
+];
+
+// Salvar JSON consolidado
+file_put_contents(ARQUIVO_UPDATE, json_encode($jsonUpdate, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+
+echo "✅ Arquivo de atualização gerado: " . ARQUIVO_UPDATE . "\n";
+echo "📌 Nome do sistema: " . NOME_SISTEMA . "\n";
+echo "📦 Pacote: " . PACOTE_SISTEMA . "\n";
+echo "📌 Versão geral do sistema: " . $versaoGeral . "\n";
+echo "🔑 Hash geral do sistema: " . $hashSistema . "\n";
+
+?>

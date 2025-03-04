@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.tabela.registros.bin.php",
+    "caminho": "bin/tarefas/tarefas.tabela.registros.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "2c85307b94396071913bd0661db37ad9589767e688f626dbf42798b14d4d3bfa",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "2c85307b94396071913bd0661db37ad9589767e688f626dbf42798b14d4d3bfa",
+            "tamanho": "787 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

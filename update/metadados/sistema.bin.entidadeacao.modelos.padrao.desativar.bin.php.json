@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.desativar.bin.php",
+    "caminho": "bin/entidadeacao/modelos/padrao.desativar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "c8bc34e6325746cf8a78f55156d498d78d00b503beffd216f4b06d26c44cde16",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c8bc34e6325746cf8a78f55156d498d78d00b503beffd216f4b06d26c44cde16",
+            "tamanho": "812 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "layout.saida.informacao.layout.php",
+    "caminho": "layout/html/layout/layout.saida.informacao.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "8ed024fec593706855f7797fe5b5a26fa96566769bf93337f46cf32a189f0091",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "8ed024fec593706855f7797fe5b5a26fa96566769bf93337f46cf32a189f0091",
+            "tamanho": "379 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

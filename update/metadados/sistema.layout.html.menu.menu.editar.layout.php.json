@@ -1,0 +1,16 @@
+{
+    "nome": "menu.editar.layout.php",
+    "caminho": "layout/html/menu/menu.editar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4eda2a520a3e6f1947f60e7c8541858c4996ff93df1d10a20231e6bb205251de",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4eda2a520a3e6f1947f60e7c8541858c4996ff93df1d10a20231e6bb205251de",
+            "tamanho": "7370 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.def.php",
+    "caminho": "def/scripts/scripts.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "a7b195cc7c00c9ff4c6e33d7983cb9558f35979fa91148d2c9ec7ddeed5037f1",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "a7b195cc7c00c9ff4c6e33d7983cb9558f35979fa91148d2c9ec7ddeed5037f1",
+            "tamanho": "2421 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

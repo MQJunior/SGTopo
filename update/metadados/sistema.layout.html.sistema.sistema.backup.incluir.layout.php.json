@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.backup.incluir.layout.php",
+    "caminho": "layout/html/sistema/sistema.backup.incluir.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "ad2bdb72eece64d9ecd75b79dfb0b0ac5b4b09925ea0df0f0bebffc20a9cf067",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "ad2bdb72eece64d9ecd75b79dfb0b0ac5b4b09925ea0df0f0bebffc20a9cf067",
+            "tamanho": "7021 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

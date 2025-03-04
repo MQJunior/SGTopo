@@ -1,0 +1,16 @@
+{
+    "nome": "class.scripts.lib.php",
+    "caminho": "lib/class.scripts.lib.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "93bb871d53bfcdeee4d621c2cc163db4aaa253e1c4006c0388dd906a2984a460",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "93bb871d53bfcdeee4d621c2cc163db4aaa253e1c4006c0388dd906a2984a460",
+            "tamanho": "10617 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

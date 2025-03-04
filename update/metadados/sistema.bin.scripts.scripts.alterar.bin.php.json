@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.alterar.bin.php",
+    "caminho": "bin/scripts/scripts.alterar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "af6acf37ee758f80ef7283713482c09d9113054f83d50e11d5b6e5c6f4bca692",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "af6acf37ee758f80ef7283713482c09d9113054f83d50e11d5b6e5c6f4bca692",
+            "tamanho": "1329 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.excluir.bin.php",
+    "caminho": "bin/scripts/scripts.excluir.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "5f5570fbd4cb1c2d84e381d984bf02637d2431a2848ad2a5f2f467070e9a51c4",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "5f5570fbd4cb1c2d84e381d984bf02637d2431a2848ad2a5f2f467070e9a51c4",
+            "tamanho": "750 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

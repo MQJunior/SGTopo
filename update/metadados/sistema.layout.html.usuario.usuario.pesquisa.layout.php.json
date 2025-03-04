@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.pesquisa.layout.php",
+    "caminho": "layout/html/usuario/usuario.pesquisa.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "a876508f49cc529eade8fd5fd55d355d32a9a550f1104caa09a7615f1c8ab2b7",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "a876508f49cc529eade8fd5fd55d355d32a9a550f1104caa09a7615f1c8ab2b7",
+            "tamanho": "1275 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

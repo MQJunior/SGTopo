@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.ativar.bin.php",
+    "caminho": "bin/tarefas/tarefas.ativar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "0a1b67a2f97d3f578f7d46df7cfff28fd08a3bdb27cd5dd265a883280f7fafa6",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "0a1b67a2f97d3f578f7d46df7cfff28fd08a3bdb27cd5dd265a883280f7fafa6",
+            "tamanho": "833 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

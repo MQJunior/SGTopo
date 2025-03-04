@@ -1,0 +1,16 @@
+{
+    "nome": "class.padrao.lib.php",
+    "caminho": "bin/entidadeacao/modelos/class.padrao.lib.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "5833ff35cf430bbfbfddd572957db9a0c125bac38129ae646ec74c7076427030",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "5833ff35cf430bbfbfddd572957db9a0c125bac38129ae646ec74c7076427030",
+            "tamanho": "9540 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

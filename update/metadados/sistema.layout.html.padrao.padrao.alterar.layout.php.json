@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.alterar.layout.php",
+    "caminho": "layout/html/padrao/padrao.alterar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "9b357b56e173c532628cf106ff10d46e888f233e26746f26a571d2c32edd06d2",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "9b357b56e173c532628cf106ff10d46e888f233e26746f26a571d2c32edd06d2",
+            "tamanho": "9973 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "layout.configuracao.layout.php",
+    "caminho": "layout/html/layout/layout.configuracao.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "b5a281562a4ebf907a932e154e7b5242740bed1076d60658a91c4e3bfd3db49f",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "b5a281562a4ebf907a932e154e7b5242740bed1076d60658a91c4e3bfd3db49f",
+            "tamanho": "1021 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

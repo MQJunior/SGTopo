@@ -17,20 +17,7 @@
  *
  */
 
-/* 
-  Legendas dos Bot�es
-*/
-$SysRtl_Btn_Alterar = "Alterar";
-$SysRtl_Btn_Ativar = "Ativar";
-$SysRtl_Btn_Buscar = "Buscar";
-$SysRtl_Btn_Consultar = "Consultar";
-$SysRtl_Btn_Desativar = "Desativar";
-$SysRtl_Btn_Editar = "Editar";
-$SysRtl_Btn_Excluir = "Excluir";
-$SysRtl_Btn_Incluir = "Incluir";
-$SysRtl_Btn_Novo = "Novo";
-$SysRtl_Btn_Pesquisar = "Pesquisar";
-$SysRtl_Btn_Salvar = "Salvar";
+
 
 /* Legendas da mensagem de sucesso */
 $this->SISTEMA_['ENTIDADE']['PADRAO']['MENSAGEM']['SUCESSO']['MENSAGEM'] = "Informa��es salva com sucesso!";

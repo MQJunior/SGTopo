@@ -1,0 +1,16 @@
+{
+    "nome": "layout.def.php",
+    "caminho": "layout/html/layout.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "42323e1cbaf08e32369d0a8132d604115eda5e8ced244e771deeb6aca4aba458",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "42323e1cbaf08e32369d0a8132d604115eda5e8ced244e771deeb6aca4aba458",
+            "tamanho": "1434 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

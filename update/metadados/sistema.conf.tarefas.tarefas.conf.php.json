@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.conf.php",
+    "caminho": "conf/tarefas/tarefas.conf.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "c1ac462d4f18de66554b2317ecf54d6fbaa83718120d79f5ba513ba4dbedc266",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c1ac462d4f18de66554b2317ecf54d6fbaa83718120d79f5ba513ba4dbedc266",
+            "tamanho": "1286 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

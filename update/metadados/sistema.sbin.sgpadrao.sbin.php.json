@@ -1,0 +1,16 @@
+{
+    "nome": "sgpadrao.sbin.php",
+    "caminho": "sbin/sgpadrao.sbin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "cb91e4a3eefa6cfae495ecfccb5ae4dde39cabcbfa93d988198f65a1c642cb0f",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "cb91e4a3eefa6cfae495ecfccb5ae4dde39cabcbfa93d988198f65a1c642cb0f",
+            "tamanho": "831 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

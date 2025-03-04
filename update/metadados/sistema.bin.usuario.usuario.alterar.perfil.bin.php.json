@@ -1,0 +1,16 @@
+{
+    "nome": "usuario.alterar.perfil.bin.php",
+    "caminho": "bin/usuario/usuario.alterar.perfil.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "a815ed890818166c7f4a522ceeecf601700bbd47465f6d1a2b39f193f8366076",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "a815ed890818166c7f4a522ceeecf601700bbd47465f6d1a2b39f193f8366076",
+            "tamanho": "2491 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

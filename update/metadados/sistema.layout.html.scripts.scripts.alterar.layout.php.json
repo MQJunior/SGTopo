@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.alterar.layout.php",
+    "caminho": "layout/html/scripts/scripts.alterar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "986679420e68339df760cf211b892f7c88720dd3e489808f055f1dcfa2f304ab",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "986679420e68339df760cf211b892f7c88720dd3e489808f055f1dcfa2f304ab",
+            "tamanho": "8743 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

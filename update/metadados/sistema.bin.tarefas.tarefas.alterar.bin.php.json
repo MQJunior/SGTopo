@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.alterar.bin.php",
+    "caminho": "bin/tarefas/tarefas.alterar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "658f7efd38a763cb404726c0a7ba23ebd0664590cd0ecbae220fc8ef49679a35",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "658f7efd38a763cb404726c0a7ba23ebd0664590cd0ecbae220fc8ef49679a35",
+            "tamanho": "2687 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

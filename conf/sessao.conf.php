@@ -1,6 +1,6 @@
 <?php
 /**
- * sessao.sgpadrao.conf.php
+ * sessao.SGTOPO.conf.php
  *
  * Sistema - Configuração Sessão
  *
@@ -11,7 +11,7 @@
  * @author       Marcio Queiroz Jr <mqjunior@gmail.com>
  * @version      1.0
  * @copyright    Copyright © 2006, Marcio Queiroz Jr.
- * @package      SGPadrao
+ * @package      SGTOPO
  * @subpackage   Config
  * @category     Sessao
  */
@@ -20,7 +20,7 @@ $SISTEMA['INCLUDES']['CLASSES']['SESSAO'] = $SISTEMA['INCLUDES']['DIR']['LIB'] .
 
 $SISTEMA['CONFIG']['SESSAO']['GERAL']['PROCEDIMENTO'] = 'FINALIZAR'; // Define se a sessao deve continuar ou finalizar { CONTINUAR | FINALIZAR }
 
-$SISTEMA['CONFIG']['SESSAO']['GERAL']['NOME'] = 'SESSAO_SGPADRAO'; // Define o NOME da Sessao
+$SISTEMA['CONFIG']['SESSAO']['GERAL']['NOME'] = 'SESSAO_SGTOPO'; // Define o NOME da Sessao
 
 $SISTEMA['CONFIG']['SESSAO']['GERAL']['TEMPO_EXPIRACAO'] = 100; // Define o Tempo de Expiração da Sessão em Minutos
 
@@ -36,7 +36,7 @@ $SISTEMA['CONFIG']['SESSAO']['DATABASE'] = $SISTEMA['CONFIG']['SISTEMA']['DATABA
 
 $SISTEMA['CONFIG']['SESSAO']['DATABASE']['ENTIDADE_DB'] = 'TBL_SYS_SESSOES'; // Define o nome da tabela no banco de dados
 
-$SISTEMA['CONFIG']['SESSAO']['DATABASE']['ENTIDADE_USUARIO'] = 'TBL_USUARIOS'; // tabela Usuarios
+$SISTEMA['CONFIG']['SESSAO']['DATABASE']['ENTIDADE_USUARIO'] = 'TBL_SYS_USUARIOS'; // tabela Usuarios
 
 $SISTEMA['SESSAO']['DATABASE']['DATA']['CODIGO'] = null;
 

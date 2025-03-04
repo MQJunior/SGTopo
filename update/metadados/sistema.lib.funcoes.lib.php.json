@@ -1,0 +1,16 @@
+{
+    "nome": "funcoes.lib.php",
+    "caminho": "lib/funcoes.lib.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "481f3581c075ea6ed70f2568cda6f71e5e55e52d601dbe2e7c62ae56e0fedf8d",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "481f3581c075ea6ed70f2568cda6f71e5e55e52d601dbe2e7c62ae56e0fedf8d",
+            "tamanho": "27353 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

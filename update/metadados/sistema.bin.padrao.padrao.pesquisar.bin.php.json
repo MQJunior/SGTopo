@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.pesquisar.bin.php",
+    "caminho": "bin/padrao/padrao.pesquisar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "385fb1bd77a4cc89bb8d3f657767378f145feeb65d5f6ffe4c360defbaf83fcd",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "385fb1bd77a4cc89bb8d3f657767378f145feeb65d5f6ffe4c360defbaf83fcd",
+            "tamanho": "1244 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "nome": "class.sessao.lib.php",
+    "caminho": "lib/class.sessao.lib.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "d90e0a33376224b25eb8d6cc9467aea42bfb9c14271c5ff0e2b493772dcc608a",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "d90e0a33376224b25eb8d6cc9467aea42bfb9c14271c5ff0e2b493772dcc608a",
+            "tamanho": "35085 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

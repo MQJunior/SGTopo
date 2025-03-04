@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.agente.bin.sh",
+    "caminho": "bin/tarefas/tarefas.agente.bin.sh",
+    "pacote": "SGPadrao",
+    "hash_atual": "485c2f3da5014a216e82ffa765b2cae0abd741e30edb3373b514258f7b167605",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "485c2f3da5014a216e82ffa765b2cae0abd741e30edb3373b514258f7b167605",
+            "tamanho": "89 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

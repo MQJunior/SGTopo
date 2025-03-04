@@ -1,0 +1,16 @@
+{
+    "nome": "install.php",
+    "caminho": "install/install.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "ba5bd3ad0b7e02f2d1eb12ef3e05232aee9fb1a13736bf0f2f4cbd102c89502f",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "ba5bd3ad0b7e02f2d1eb12ef3e05232aee9fb1a13736bf0f2f4cbd102c89502f",
+            "tamanho": "6727 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

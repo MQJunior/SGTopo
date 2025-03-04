@@ -1,0 +1,16 @@
+{
+    "nome": "logatividade.def.php",
+    "caminho": "def/logatividade/logatividade.def.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "9490eb486dc7ba1ee488b028ccca181a2a3a7dffaf4295be94d6a313b5eabd99",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "9490eb486dc7ba1ee488b028ccca181a2a3a7dffaf4295be94d6a313b5eabd99",
+            "tamanho": "322 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

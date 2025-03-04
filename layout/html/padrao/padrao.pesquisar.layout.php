@@ -1,56 +1,53 @@
 <?php
 /**
-* @file padrao.pesquisar.layout.php
-* @name padrao.pesquisar
-* @desc
-*   Formulário de pesquisa com tabela de dados
-*
-* @author     Márcio Queiroz Jr <mqjunior@gmail.com>
-* @version    0.0.0 
-* @copyright  Copyright © 2006, Márcio Queiroz Jr.
-* @package    padrao
-* @subpackage Layout
-* @todo       
-*   Descricao todo
-*
-* @date 2018-02-22  v. 0.0.0
-*
-*/
-$EntidadeCampos = $EntidadePadraoCampos;
-(isset($this->SISTEMA_['ENTIDADE']['PADRAO']['DADOS']))?$VAR_PADRAO_LISTAR = $this->SISTEMA_['ENTIDADE']['PADRAO']['DADOS']:$VAR_PADRAO_LISTAR = null;
+ * @file padrao.pesquisar.layout.php
+ * @name padrao.pesquisar
+ * @desc
+ *   Formulï¿½rio de pesquisa com tabela de dados
+ *
+ * @author     Mï¿½rcio Queiroz Jr <mqjunior@gmail.com>
+ * @version    0.0.0 
+ * @copyright  Copyright ï¿½ 2006, Mï¿½rcio Queiroz Jr.
+ * @package    padrao
+ * @subpackage Layout
+ * @todo       
+ *   Descricao todo
+ *
+ * @date 2018-02-22  v. 0.0.0
+ *
+ */
 
-$VAR_DADOS_PESQUISA =$VAR_PADRAO_LISTAR;
 
 /* // -------------------- PERMISSAO -----------------// */
 $PERMISSAO_ = new permissao($this->SISTEMA_);
-/* Permissão para Consultar */
-$tmpPermissaoConsulta=$PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'CONSULTAR');
+/* Permissï¿½o para Consultar */
+$tmpPermissaoConsulta = $PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'CONSULTAR');
 
-$tmpLogAtividade="<i class=\"fa fa-info-circle\"></i>";            
+$tmpLogAtividade = "<i class=\"fa fa-info-circle\"></i>";
 
-/* Permissão para Incluir um novo Registro */
+/* Permissï¿½o para Incluir um novo Registro */
 $btn_novo = "";
-if($PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'INCLUIR'))
+if ($PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'INCLUIR'))
   $btn_novo = "<a href=\"javascript::;\" class=\"btn btn-sm btn-$SistemaLayoutCor\" onclick=\"PesquisaDados('.?XMLHTML=true&SysEntidade=PADRAO&SysEntidadeAcao=INCLUIR&SID=$SistemaSessaoUID','','DIV_CONTEUDO',null)\"><i class=\"fa fa-file-o\"></i> <b>$SysRtl_Btn_Novo</b></a>";
- 
 
-/* Permissão para pesquisar os registros inativos */
-$tmpMostrarInativos="";
-if(
+
+/* Permissï¿½o para pesquisar os registros inativos */
+$tmpMostrarInativos = "";
+if (
   ($PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'ATIVAR'))
-    ||
-  ($PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'DESATIVAR'))  
+  ||
+  ($PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'DESATIVAR'))
 )
-  $tmpMostrarInativos="<h6>
+  $tmpMostrarInativos = "<h6>
                   <input type=\"checkbox\"  name=\"TXT_REGISTROS_INATIVOS\" id=\"TXT_REGISTROS_INATIVOS\" >Inativos
                 </h6>";
-                
+
 unset($PERMISSAO_);
 // -------------------- PERMISSAO -----------------//
 
-/* Layout do Formulário Pesquisar */
-$this->SISTEMA_['SAIDA']['EXIBIR'] = 
-"   <div class=\"col-md-12\">
+/* Layout do Formulï¿½rio Pesquisar */
+$this->SISTEMA_['SAIDA']['EXIBIR'] =
+  "   <div class=\"col-md-12\">
       <div class=\"box box-$SistemaLayoutCor\">
         <div class=\"box-header\">
           <h3 class=\"box-title\">$SysRtl_Padrao_Pesquisar_Conteudo_Titulo</h3>
@@ -68,14 +65,14 @@ $this->SISTEMA_['SAIDA']['EXIBIR'] =
               </div>
               <div class=\"col-sm-2\">
                 <select class=\"form-control\" name=\"TXT_PESQUISA_CAMPO\" onChange=\"BTN_PESQUISAR.click()\">";
-                  
-                  foreach($EntidadeCampos as $tmpCampos){
-                    if($tmpCampos['PESQUISAR']){
-                      $tmpExibir= "SysRtl_Padrao_Campos_".$tmpCampos['NOME'];
-                      $this->SISTEMA_['SAIDA']['EXIBIR'] .= "<option value=\"".$tmpCampos['NOME']."\">".$$tmpExibir."</option>";
-                    }
-                  }
-$this->SISTEMA_['SAIDA']['EXIBIR'] .="</select>
+
+foreach ($EntidadeCampos as $tmpCampos) {
+  if ($tmpCampos['PESQUISAR']) {
+    $tmpExibir = "SysRtl_Padrao_Campos_" . $tmpCampos['NOME'];
+    $this->SISTEMA_['SAIDA']['EXIBIR'] .= "<option value=\"" . $tmpCampos['NOME'] . "\">" . $$tmpExibir . "</option>";
+  }
+}
+$this->SISTEMA_['SAIDA']['EXIBIR'] .= "</select>
               </div>
               <div class=\"col-sm-1\">
                   <select class=\"form-control\" name=\"TXT_REGISTROS_QUANTIDADE\" onChange=\"BTN_PESQUISAR.click()\">
@@ -105,44 +102,44 @@ $this->SISTEMA_['SAIDA']['EXIBIR'] .="</select>
             <table id=\"TABELA_PADRAO_PESQUISAR\" class=\"table table-hover\" >
               <thead>
                 <tr>";
-                foreach($EntidadeCampos as $tmpCampos){
-                  if($tmpCampos['EXIBIR']){
-                    $tmpExibir= "SysRtl_Padrao_Campos_".$tmpCampos['NOME'];
-                    $this->SISTEMA_['SAIDA']['EXIBIR'] .= "<th>".$$tmpExibir."</th>";
-                  }
-                }
-              $this->SISTEMA_['SAIDA']['EXIBIR'] .= "                </tr>
+foreach ($EntidadeCampos as $tmpCampos) {
+  if ($tmpCampos['EXIBIR']) {
+    $tmpExibir = "SysRtl_Padrao_Campos_" . $tmpCampos['NOME'];
+    $this->SISTEMA_['SAIDA']['EXIBIR'] .= "<th>" . $$tmpExibir . "</th>";
+  }
+}
+$this->SISTEMA_['SAIDA']['EXIBIR'] .= "                </tr>
               </thead>
               <tbody id=\"TABELA_PADRAO_PESQUISAR_DADOS\">
               ";
-              /* Formatar o campo DATACRIACAO */
-              if(!empty($VAR_DADOS_PESQUISA)){
-                $VAR_DADOS_PESQUISA = FORMATA_DADOS($VAR_DADOS_PESQUISA,"DATACRIACAO",$this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['DATA_EXIBICAO_FORMATO'],"data");
-              /* Formatar o campo VALOR */
-                $VAR_DADOS_PESQUISA = FORMATA_DADOS($VAR_DADOS_PESQUISA,"VALOR",$this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['MOEDA_SIMBOLO'],"moeda");
-                
-                
-                foreach($VAR_DADOS_PESQUISA as $VAR_LISTAR_DADOS){
-                  if($VAR_LISTAR_DADOS['REG_ATIVO']==1){
-                    $tmpStatusREG_ATIVO_stilo="";
-                  }else{
-                    $tmpStatusREG_ATIVO_stilo="class=\"text-$SistemaLayoutRegInativoCor\"";
-                  }
-                  $tmpCODIGO = $VAR_LISTAR_DADOS['CODIGO'];
-                  if($tmpPermissaoConsulta)
-                    $this->SISTEMA_['SAIDA']['EXIBIR'] .= " <tr $tmpStatusREG_ATIVO_stilo style=\"cursor:pointer\" onclick=\"PesquisaDados('.?XMLHTML=true&SID=$SistemaSessaoUID&SysEntidade=PADRAO&SysEntidadeAcao=CONSULTAR&txtChaveRegistro=$tmpCODIGO','','DIV_CONTEUDO',null)\">";
-                  else
-                    $this->SISTEMA_['SAIDA']['EXIBIR'] .= " <tr $tmpStatusREG_ATIVO_stilo>";
-                  foreach($EntidadeCampos as $tmpCampos)
-                    if($tmpCampos['EXIBIR']){
-                      $this->SISTEMA_['SAIDA']['EXIBIR'] .= "<td>".$VAR_LISTAR_DADOS[$tmpCampos['NOME']]."</td>";
-                    }
+/* Formatar o campo DATACRIACAO */
+if (!empty($VAR_DADOS_PESQUISA)) {
+  $VAR_DADOS_PESQUISA = FORMATA_DADOS($VAR_DADOS_PESQUISA, "DATACRIACAO", $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['DATA_EXIBICAO_FORMATO'], "data");
+  /* Formatar o campo VALOR */
+  $VAR_DADOS_PESQUISA = FORMATA_DADOS($VAR_DADOS_PESQUISA, "VALOR", $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['MOEDA_SIMBOLO'], "moeda");
 
-                  $this->SISTEMA_['SAIDA']['EXIBIR'] .= "                </tr>";
-                }
-              }
-                
-$this->SISTEMA_['SAIDA']['EXIBIR'] .="</tbody>
+
+  foreach ($VAR_DADOS_PESQUISA as $VAR_LISTAR_DADOS) {
+    if ($VAR_LISTAR_DADOS['REG_ATIVO'] == 1) {
+      $tmpStatusREG_ATIVO_stilo = "";
+    } else {
+      $tmpStatusREG_ATIVO_stilo = "class=\"text-$SistemaLayoutRegInativoCor\"";
+    }
+    $tmpCODIGO = $VAR_LISTAR_DADOS['CODIGO'];
+    if ($tmpPermissaoConsulta)
+      $this->SISTEMA_['SAIDA']['EXIBIR'] .= " <tr $tmpStatusREG_ATIVO_stilo style=\"cursor:pointer\" onclick=\"PesquisaDados('.?XMLHTML=true&SID=$SistemaSessaoUID&SysEntidade=PADRAO&SysEntidadeAcao=CONSULTAR&txtChaveRegistro=$tmpCODIGO','','DIV_CONTEUDO',null)\">";
+    else
+      $this->SISTEMA_['SAIDA']['EXIBIR'] .= " <tr $tmpStatusREG_ATIVO_stilo>";
+    foreach ($EntidadeCampos as $tmpCampos)
+      if ($tmpCampos['EXIBIR']) {
+        $this->SISTEMA_['SAIDA']['EXIBIR'] .= "<td>" . $VAR_LISTAR_DADOS[$tmpCampos['NOME']] . "</td>";
+      }
+
+    $this->SISTEMA_['SAIDA']['EXIBIR'] .= "                </tr>";
+  }
+}
+
+$this->SISTEMA_['SAIDA']['EXIBIR'] .= "</tbody>
                 
             </table>
           </div> <!-- fim da tabela -->
@@ -151,7 +148,7 @@ $this->SISTEMA_['SAIDA']['EXIBIR'] .="</tbody>
     </div>
 ";
 
-/* Layout JavaScript para manipulação do Layout */
+/* Layout JavaScript para manipulaï¿½ï¿½o do Layout */
 $this->SISTEMA_['SAIDA']['EXIBIR'] .= "
 <script language=\"text/javascript\">
   LBL_TITULO.innerText='$SysRtl_Padrao_Pesquisar_Cabecalho_Titulo';

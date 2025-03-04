@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.ativar.bin.php",
+    "caminho": "bin/entidadeacao/modelos/padrao.ativar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "03c5efcbb11e8a0d3d5bc2dec22fe1277e0ff2c849e03993ddc20f7c7782724a",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "03c5efcbb11e8a0d3d5bc2dec22fe1277e0ff2c849e03993ddc20f7c7782724a",
+            "tamanho": "821 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

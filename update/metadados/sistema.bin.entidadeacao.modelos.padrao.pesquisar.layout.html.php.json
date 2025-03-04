@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.pesquisar.layout.html.php",
+    "caminho": "bin/entidadeacao/modelos/padrao.pesquisar.layout.html.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "cd018fc0110759bd142188f18b5ff7c471384ec85dcf85d05de00411f9d5c9f7",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "cd018fc0110759bd142188f18b5ff7c471384ec85dcf85d05de00411f9d5c9f7",
+            "tamanho": "7637 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

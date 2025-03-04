@@ -1,0 +1,16 @@
+{
+    "nome": "tarefas.alterar.layout.php",
+    "caminho": "layout/html/tarefas/tarefas.alterar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "cac8ef94280f0b0d46cf5258d9b8fd851e4d030f5040a26ad50b9884d8145c5f",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "cac8ef94280f0b0d46cf5258d9b8fd851e4d030f5040a26ad50b9884d8145c5f",
+            "tamanho": "16392 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

@@ -205,6 +205,9 @@ class usuario
     if ($p_senha == "") {
       $p_senha = $tmp_Parametros['txtLoginSenha'];
     }
+    $p_senha = str_replace("'", "", $p_senha);
+    $p_senha = str_replace("\"", "", $p_senha);
+
     $sqlLogar = "SELECT * FROM " . $this->ENTIDADE_DB . " WHERE EMAIL='" . $p_usuario . "' AND SENHA='" . $p_senha . "' AND REG_ATIVO='1'";
     $this->BD_CONEXAO->Query($sqlLogar);
     $dados = $this->BD_CONEXAO->ResultConsult();

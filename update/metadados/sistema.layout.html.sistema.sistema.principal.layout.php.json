@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.principal.layout.php",
+    "caminho": "layout/html/sistema/sistema.principal.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "0c4279faabf367ce08bd7a4367e7b967cb71b78816bed98c4037c2cefdee1970",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "0c4279faabf367ce08bd7a4367e7b967cb71b78816bed98c4037c2cefdee1970",
+            "tamanho": "5846 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

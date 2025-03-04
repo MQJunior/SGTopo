@@ -1,0 +1,16 @@
+{
+    "nome": "componentes.layout.php",
+    "caminho": "layout/basic/componentes.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "65d1aa59b9375d2fd5dfa56931ff17f6a5181c69469acf79f168047fdacd3182",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "65d1aa59b9375d2fd5dfa56931ff17f6a5181c69469acf79f168047fdacd3182",
+            "tamanho": "10688 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

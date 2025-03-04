@@ -1,0 +1,16 @@
+{
+    "nome": "menu.consultar.layout.php",
+    "caminho": "layout/html/menu/menu.consultar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "7b5b85f9490fa6fdca210383f10ee88f4d00590b8e183531f175dcee73f67123",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "7b5b85f9490fa6fdca210383f10ee88f4d00590b8e183531f175dcee73f67123",
+            "tamanho": "8280 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

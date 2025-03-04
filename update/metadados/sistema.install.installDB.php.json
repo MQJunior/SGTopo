@@ -1,0 +1,16 @@
+{
+    "nome": "installDB.php",
+    "caminho": "install/installDB.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "7acef0638313eadc4a6a3e771b51d34ab68ed1a39729b618552f0cd2c5546453",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "7acef0638313eadc4a6a3e771b51d34ab68ed1a39729b618552f0cd2c5546453",
+            "tamanho": "1590 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

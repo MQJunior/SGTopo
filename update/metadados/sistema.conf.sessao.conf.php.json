@@ -1,0 +1,16 @@
+{
+    "nome": "sessao.conf.php",
+    "caminho": "conf/sessao.conf.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "c937ea823e8a032b9f5196020a68a08414d4d39ff8fbaccfa021c444210f0952",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "c937ea823e8a032b9f5196020a68a08414d4d39ff8fbaccfa021c444210f0952",
+            "tamanho": "2609 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

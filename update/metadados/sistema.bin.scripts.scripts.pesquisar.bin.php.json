@@ -1,0 +1,16 @@
+{
+    "nome": "scripts.pesquisar.bin.php",
+    "caminho": "bin/scripts/scripts.pesquisar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "9f95f26ea48efba22cefc582429fed27aa7063fd99f21839fc156b51fc52fb7d",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "9f95f26ea48efba22cefc582429fed27aa7063fd99f21839fc156b51fc52fb7d",
+            "tamanho": "1210 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

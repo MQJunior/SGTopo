@@ -1,0 +1,16 @@
+{
+    "nome": "gerenciador.php",
+    "caminho": "update/gerenciador.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "291ce8927600f3d5724ab2b26008301391353adcdf17e2cb79eccc286ef36601",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "291ce8927600f3d5724ab2b26008301391353adcdf17e2cb79eccc286ef36601",
+            "tamanho": "4257 bytes",
+            "data_hora_modificacao": "2025-02-20T00:53:24",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-20T00:53:24"
+        }
+    ]
+}

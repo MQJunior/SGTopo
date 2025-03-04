@@ -1,0 +1,16 @@
+{
+    "nome": "sistema.backup.consultar.bin.php",
+    "caminho": "bin/sistema/sistema.backup.consultar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "54e8608737d05607b0476e8602606e62d58de44e85307072b0badaf84e37ac4e",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "54e8608737d05607b0476e8602606e62d58de44e85307072b0badaf84e37ac4e",
+            "tamanho": "1581 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

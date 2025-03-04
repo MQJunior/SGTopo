@@ -1,0 +1,16 @@
+{
+    "nome": "teste.py",
+    "caminho": "install/client/python/teste.py",
+    "pacote": "SGPadrao",
+    "hash_atual": "40ecf41f5844b310194605c81d74b2f787cfa79ec991621fc7d46306a166d9ea",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "40ecf41f5844b310194605c81d74b2f787cfa79ec991621fc7d46306a166d9ea",
+            "tamanho": "1583 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

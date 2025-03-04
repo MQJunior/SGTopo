@@ -1,0 +1,16 @@
+{
+    "nome": "permissao.montar.layout.php",
+    "caminho": "layout/html/permissao/permissao.montar.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "dfd8977c9861fc37d7aec7b37ddedc7348257dc604a14380559898976ec4e8e9",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "dfd8977c9861fc37d7aec7b37ddedc7348257dc604a14380559898976ec4e8e9",
+            "tamanho": "2050 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

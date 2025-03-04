@@ -1,25 +1,11 @@
 <?php
 /**
-* @file padrao.idioma.brasil.def.php
-* @name padrao.idioma.brasil
-* @desc
-*   Arquivo com as legendas dos campos, formulários, mensagens e botões. <idioma português-Brasil>
-*
-* @author     Márcio Queiroz Jr <mqjunior@gmail.com>
-* @version    0.0.0 
-* @copyright  Copyright © 2006, Márcio Queiroz Jr.
-* @package    padrao
-* @subpackage Def.Idioma
-* @todo       
-*   Descricao todo
-*
-* @date 2018-02-22  v. 0.0.0
-*
-*/
+ * ðŸ“„ padrao.idioma.brasil.def.php - Legendas dos campos, formulÃ¡rios, mensagens e botÃµes (pt-BR)
+ * ðŸ‘¤ Autor: MÃ¡rcio Queiroz Jr <mqjunior@gmail.com> | ðŸ“… 2018-02-22 | ðŸ·ï¸ v0.0.0
+ * ðŸ“¦ Pacote: padrao | ðŸ“‚ Subpacote: Def.Idioma
+ */
 
-/* 
-  Legendas dos Botões
-*/
+/** ðŸ”˜ Legendas dos BotÃµes */
 $SysRtl_Btn_Alterar = "Alterar";
 $SysRtl_Btn_Ativar = "Ativar";
 $SysRtl_Btn_Buscar = "Buscar";
@@ -32,51 +18,47 @@ $SysRtl_Btn_Novo = "Novo";
 $SysRtl_Btn_Pesquisar = "Pesquisar";
 $SysRtl_Btn_Salvar = "Salvar";
 
-/* Legendas da mensagem de sucesso */
-$this->SISTEMA_['ENTIDADE']['PADRAO']['MENSAGEM']['SUCESSO']['MENSAGEM'] = "Informações salva com sucesso!";
-$this->SISTEMA_['ENTIDADE']['PADRAO']['MENSAGEM']['SUCESSO']['EXCLUSAO'] = "Registro excluído com sucesso!";
-$this->SISTEMA_['ENTIDADE']['PADRAO']['MENSAGEM']['SUCESSO']['TITULO'] = "Entidade Padrão";
+/** âœ… Mensagens de Sucesso */
+$this->SISTEMA_['ENTIDADE']['PADRAO']['MENSAGEM']['SUCESSO']['MENSAGEM'] = "InformaÃ§Ãµes salva com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PADRAO']['MENSAGEM']['SUCESSO']['EXCLUSAO'] = "Registro excluÃ­do com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PADRAO']['MENSAGEM']['SUCESSO']['TITULO'] = "Entidade padrao";
 
-/* Legendas dos Campos do Banco de Dados */
-$SysRtl_Padrao_Campos_CODIGO ="Código";
-$SysRtl_Padrao_Campos_SESSAO ="Sessão";
-$SysRtl_Padrao_Campos_DATACRIACAO ="Dt Criação";
-$SysRtl_Padrao_Campos_USUARIO ="Usuário";
-$SysRtl_Padrao_Campos_USUARIO_NOME ="Criado por";
-$SysRtl_Padrao_Campos_REG_ATIVO ="Ativo";
-      //----------------------//
-/*BUSCAR_NO_BD*/
-/* Legendas do formulário pesquisar */
-$SysRtl_Padrao_Pesquisar_Cabecalho_Titulo = "Padrão";
+/** ðŸ—„ï¸ Legendas dos Campos do Banco de Dados */
+$SysRtl_Padrao_Campos_CODIGO = "CÃ³digo";
+$SysRtl_Padrao_Campos_SESSAO = "SessÃ£o";
+$SysRtl_Padrao_Campos_DATACRIACAO = "Dt CriaÃ§Ã£o";
+$SysRtl_Padrao_Campos_USUARIO = "UsuÃ¡rio";
+$SysRtl_Padrao_Campos_USUARIO_NOME = "Criado por";
+$SysRtl_Padrao_Campos_REG_ATIVO = "Ativo";
+
+/** ðŸ” Legendas do FormulÃ¡rio Pesquisar */
+$SysRtl_Padrao_Pesquisar_Cabecalho_Titulo = "padrao";
 $SysRtl_Padrao_Pesquisar_Cabecalho_Subtitulo = "Pesquisar";
 $SysRtl_Padrao_Pesquisar_Cabecalho_Icone = "fa-user";
-$SysRtl_Padrao_Pesquisar_Conteudo_Titulo = "Pesquisa Padrão";
-      //----------------------//
+$SysRtl_Padrao_Pesquisar_Conteudo_Titulo = "Pesquisa padrao";
 
-$SysRtl_Padrao_Incluir_Cabecalho_Titulo = "Padrão";
+/** âž• Legendas do FormulÃ¡rio Incluir */
+$SysRtl_Padrao_Incluir_Cabecalho_Titulo = "padrao";
 $SysRtl_Padrao_Incluir_Cabecalho_Subtitulo = "Incluir";
 $SysRtl_Padrao_Incluir_Cabecalho_Icone = "fa-user";
-$SysRtl_Padrao_Incluir_Conteudo_Titulo = "Incluir Padrão";
-      //----------------------//
-      
-/* Legendas do formulário consultar */
-$SysRtl_Padrao_Consultar_Cabecalho_Titulo = "Padrão";
+$SysRtl_Padrao_Incluir_Conteudo_Titulo = "Incluir padrao";
+
+/** ðŸ“‹ Legendas do FormulÃ¡rio Consultar */
+$SysRtl_Padrao_Consultar_Cabecalho_Titulo = "padrao";
 $SysRtl_Padrao_Consultar_Cabecalho_Subtitulo = "Consultar";
 $SysRtl_Padrao_Consultar_Cabecalho_Icone = "fa-user";
-$SysRtl_Padrao_Consultar_Conteudo_Titulo = "Consulta Padrão";
-      //----------------------//
-      
-/* Legendas do formulário alterar */
-$SysRtl_Padrao_Alterar_Cabecalho_Titulo = "Padrão";
+$SysRtl_Padrao_Consultar_Conteudo_Titulo = "Consulta padrao";
+
+/** ðŸ› ï¸ Legendas do FormulÃ¡rio Alterar */
+$SysRtl_Padrao_Alterar_Cabecalho_Titulo = "padrao";
 $SysRtl_Padrao_Alterar_Cabecalho_Subtitulo = "Alterar";
 $SysRtl_Padrao_Alterar_Cabecalho_Icone = "fa-user";
-$SysRtl_Padrao_Alterar_Conteudo_Titulo = "Alteração Padrão";
-      //----------------------//
-      
-/* Opções dos campos do Tipo Tipo */
+$SysRtl_Padrao_Alterar_Conteudo_Titulo = "AlteraÃ§Ã£o padrao";
+
+/** ðŸ”„ OpÃ§Ãµes dos Campos do Tipo Tipo */
 /* $SysOpt_Padrao_ESCOLHA['OPCOES']= array(
-                                    array( 'VALOR'=>'1', 'LEGENDA'=>'OPÇÃO - 01'),
-                                    array( 'VALOR'=>'2', 'LEGENDA'=>'OPÇÃO - 02'),
-                                    array( 'VALOR'=>'3', 'LEGENDA'=>'OPÇÃO - 03')
+                                    array( 'VALOR'=>'1', 'LEGENDA'=>'OPÃ‡ÃƒO - 01'),
+                                    array( 'VALOR'=>'2', 'LEGENDA'=>'OPÃ‡ÃƒO - 02'),
+                                    array( 'VALOR'=>'3', 'LEGENDA'=>'OPÃ‡ÃƒO - 03')
                                     ); */
 ?>

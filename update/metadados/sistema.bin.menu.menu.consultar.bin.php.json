@@ -1,0 +1,16 @@
+{
+    "nome": "menu.consultar.bin.php",
+    "caminho": "bin/menu/menu.consultar.bin.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "4f4ea9cdcff43606e5c868a2f333924be89781dd95ab849076e46293181390c7",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "4f4ea9cdcff43606e5c868a2f333924be89781dd95ab849076e46293181390c7",
+            "tamanho": "1608 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

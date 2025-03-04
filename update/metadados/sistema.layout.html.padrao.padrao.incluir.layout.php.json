@@ -1,0 +1,16 @@
+{
+    "nome": "padrao.incluir.layout.php",
+    "caminho": "layout/html/padrao/padrao.incluir.layout.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "237bbd12f14f7d345eab99065dab68590c04b8695037ec530a9e0b5612711065",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "237bbd12f14f7d345eab99065dab68590c04b8695037ec530a9e0b5612711065",
+            "tamanho": "5783 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

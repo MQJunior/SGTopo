@@ -1,0 +1,16 @@
+{
+    "nome": "class.formulario.lib.php",
+    "caminho": "lib/class.formulario.lib.php",
+    "pacote": "SGPadrao",
+    "hash_atual": "f0b86834bb666adcac30b5c456c61f5d04d8d669e91ddaf992c4dd45ea413249",
+    "versoes": [
+        {
+            "versao": "1.0.0",
+            "hash": "f0b86834bb666adcac30b5c456c61f5d04d8d669e91ddaf992c4dd45ea413249",
+            "tamanho": "5525 bytes",
+            "data_hora_modificacao": "2025-02-17T23:42:08",
+            "usuario": "admin",
+            "relatorio": "Última alteração detectada em 2025-02-17T23:42:08"
+        }
+    ]
+}

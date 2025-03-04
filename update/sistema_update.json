@@ -1,0 +1,2198 @@
+{
+    "nome_sistema": "SGPadrao",
+    "pacote_sistema": "SGPadrao",
+    "versao_sistema": "1.0.0",
+    "hash_sistema": "2480bcdf22a541c4a0fcfa0b4d7600ce37b7027d70d2eca089c886b87293917c",
+    "arquivos": [
+        {
+            "nome": "BackupSistemaSGPadrao.sh",
+            "caminho": "BackupSistemaSGPadrao.sh",
+            "hash": "c70f66c68b384d9ef93613e9026d63c1b2955959fd64f1e27c07b69c6d61ca7d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "backupDB.sql",
+            "caminho": "backupDB.sql",
+            "hash": "ffa89d1e7b2424871f32ae47216677ecba44cbcfa91047914e3141467bc2d2cd",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.alterar.acao.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.alterar.acao.bin.php",
+            "hash": "dac7d57c049a1dc1c379833a84c33f8393e956b6a84805aa21862e6a9958c51d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.consultar.acao.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.consultar.acao.bin.php",
+            "hash": "cf6625cacc214dc39c5098fc49fbdddd996e9ac0c983a349cb30612ade5afef9",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.consultar.entidade.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.consultar.entidade.bin.php",
+            "hash": "18f09cad32a549ea9512a8beb91329b51bf2215677bc235707484cad0b5fe60b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.criar.arquivo.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.criar.arquivo.bin.php",
+            "hash": "c7c46e69002402ed9fd2f7faf019d500d91d21641c331a1faa4295adc9332114",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.criar.diretorio.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.criar.diretorio.bin.php",
+            "hash": "6ac46cef8d5ca063696934c76fcb039913022f3c54ad381a0935c695e851c029",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.editar.arquivo.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.editar.arquivo.bin.php",
+            "hash": "923270d557e5025470b114bd23ff5aeb826d8a6da9c747263f1e4f3d188124c3",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.importar.modelo.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.importar.modelo.bin.php",
+            "hash": "9980c4aa6bc4bd33ad3a7df113bd488eb8fcf5e29502de279b726e3fb478f0e0",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.incluir.acao.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.incluir.acao.bin.php",
+            "hash": "d9932828bdf2fce7299cb000d6fdc475786e50686c53decd7d667df7780c6a43",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.incluir.entidade.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.incluir.entidade.bin.php",
+            "hash": "df685eaf7a9268fe5ecaceedd05fd064d6cd53c0460fe3db40ff901ec07b5c8c",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.listar.acao.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.listar.acao.bin.php",
+            "hash": "b7a65f78348319d1051e93a3cd2924d90d72c454a1272f2a9f2d9e61c33c1783",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.pesquisar.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.pesquisar.bin.php",
+            "hash": "5c50573e9c9a66f29c1e3db4da5fbc62db73ec472703ce34a97358c6fc8e10f4",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.salvar.arquivo.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.salvar.arquivo.bin.php",
+            "hash": "2568cfa8a66d0a5b13f1640d33fff558a0fdcfaef5b3f2c2b2f74f0f5622ea8e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "entidadeacao.visualizar.arquivo.bin.php",
+            "caminho": "bin/entidadeacao/entidadeacao.visualizar.arquivo.bin.php",
+            "hash": "464e8acde5bc546b01695d305bee36355f5d539bb5d8351a5149aec35bb33bb4",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "class.padrao.lib.php",
+            "caminho": "bin/entidadeacao/modelos/class.padrao.lib.php",
+            "hash": "5833ff35cf430bbfbfddd572957db9a0c125bac38129ae646ec74c7076427030",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "modelos.montar.alterar.layout.html.bin.php",
+            "caminho": "bin/entidadeacao/modelos/modelos.montar.alterar.layout.html.bin.php",
+            "hash": "f120fa1332a08caf06159da5357e941e094a23ed159ffaa8781a83ad009fa13e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "modelos.montar.consultar.layout.html.bin.php",
+            "caminho": "bin/entidadeacao/modelos/modelos.montar.consultar.layout.html.bin.php",
+            "hash": "88dc85d8c361c38ea5a779facc73c41bd45fa893db523e103e13a60520bd831e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "modelos.montar.def.bin.php",
+            "caminho": "bin/entidadeacao/modelos/modelos.montar.def.bin.php",
+            "hash": "bb1e124076f6f4acd2072f4c68524cd48615e27fe0f55bf896c9bcb1159826db",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "modelos.montar.defIdioma.bin.php",
+            "caminho": "bin/entidadeacao/modelos/modelos.montar.defIdioma.bin.php",
+            "hash": "f5549bb6cb866652a1d7b7017dbcd92684ccecf44ec7fee091137c8487ce019e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "modelos.montar.incluir.layout.html.bin.php",
+            "caminho": "bin/entidadeacao/modelos/modelos.montar.incluir.layout.html.bin.php",
+            "hash": "ba8d4397b913c9edfa1837ec931037ec15394b525c4cb2ecf78546e8738b0764",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "modelos.montar.pesquisar.layout.html.bin.php",
+            "caminho": "bin/entidadeacao/modelos/modelos.montar.pesquisar.layout.html.bin.php",
+            "hash": "56229615ae4bc1077d190504b3886999a80df5f4e0905c07351d07f466bd6d50",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.alterar.bin.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.alterar.bin.php",
+            "hash": "4e52a0a787f1749617bb98573dde20a67e05f654b39213d3a86670155743c21f",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.alterar.layout.html.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.alterar.layout.html.php",
+            "hash": "1ef40952f49e06832f6ec43013effc9e05ae2304c8ede213f8b802b729554cdc",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.ativar.bin.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.ativar.bin.php",
+            "hash": "03c5efcbb11e8a0d3d5bc2dec22fe1277e0ff2c849e03993ddc20f7c7782724a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.conf.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.conf.php",
+            "hash": "35494258df3c791aafe2a0552515099a5d7228c2f2438b9ce022e71b05ac66ad",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.consultar.bin.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.consultar.bin.php",
+            "hash": "ca88408da8084838f3bc001cf3cabb1f409d041733a280d88ed08e7f47e0a05a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.consultar.layout.html.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.consultar.layout.html.php",
+            "hash": "7ee4de291f4995cb1aecc42adb15b778fad9b949f5f8b3fa6f0fadba17c632ca",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.def.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.def.php",
+            "hash": "4ef2d592031d2e069f582ce7d88ee0fc9dcccb59c58a4732aaf416ee7dd41956",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "padrao.desativar.bin.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.desativar.bin.php",
+            "hash": "c8bc34e6325746cf8a78f55156d498d78d00b503beffd216f4b06d26c44cde16",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.excluir.bin.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.excluir.bin.php",
+            "hash": "adf3e7b06350e283c4bb7a4f9cea9cecae6cbb6804ffa0b441db10f0a932d5a6",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.idioma.brasil.def.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.idioma.brasil.def.php",
+            "hash": "89df02ffee6df33efcfad87e1ec9df106c04bde24ce11b774d6b0975845fe20c",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "padrao.incluir.bin.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.incluir.bin.php",
+            "hash": "e0f8356e4e0dfeb76361b46875848676acbd7caddbbe36ccca07fa3b27081466",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.incluir.layout.html.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.incluir.layout.html.php",
+            "hash": "5609be13606dde4dae52b6aea10b0c586d69670e60b32fe5e1dc86c66f599009",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.incluir.layout.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.incluir.layout.php",
+            "hash": "23f53047648ef7dd087097a74a0bae00325debedd127ae3fa3f8532210937b23",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.pesquisa.layout.html.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.pesquisa.layout.html.php",
+            "hash": "abc39e99bd2c17ab8a58561537ff9587ca747d573fd420ae5a1d1bdc5249f20b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.pesquisar.bin.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.pesquisar.bin.php",
+            "hash": "e8a169be02dd0af6a4955e9d46dfedb2444f61f8df64b29f4eeecb4c537913f8",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.pesquisar.layout.html.php",
+            "caminho": "bin/entidadeacao/modelos/padrao.pesquisar.layout.html.php",
+            "hash": "cd018fc0110759bd142188f18b5ff7c471384ec85dcf85d05de00411f9d5c9f7",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sgpadrao.logar.bin.php",
+            "caminho": "bin/geral/sgpadrao.logar.bin.php",
+            "hash": "8ac56fc503af062ee5ea0c4976d9a839ddaa6b62aeaa6adb8f7691612f481f05",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sgpadrao.menuMontar.bin.php",
+            "caminho": "bin/geral/sgpadrao.menuMontar.bin.php",
+            "hash": "bac7974623e076e77067968c8bc73036ff87a0eaec46b8ad3e3cc1cbef5c4345",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sgpadrao.principal.bin.php",
+            "caminho": "bin/geral/sgpadrao.principal.bin.php",
+            "hash": "832ee7b8d0e3dc7bf535d77fe3b7ac858cc3bfc600b404f7c1c2b111b909f4c3",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.alterar.bin.php",
+            "caminho": "bin/menu/menu.alterar.bin.php",
+            "hash": "06c5d094bf06234ad260f0688b753a39f3806da805d3382db53122271bd9c0d7",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.consultar.bin.php",
+            "caminho": "bin/menu/menu.consultar.bin.php",
+            "hash": "4f4ea9cdcff43606e5c868a2f333924be89781dd95ab849076e46293181390c7",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.editar.bin.php",
+            "caminho": "bin/menu/menu.editar.bin.php",
+            "hash": "7740f82e17b3ad197ade4cdb11aedfa3fb5b575816f7ea65d599933f8bef728e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.exibir.bin.php",
+            "caminho": "bin/menu/menu.exibir.bin.php",
+            "hash": "cb93e2a70669f9c29834e4d0d10238c47402e2630f32f86385626fb5e89374e4",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.incluir.bin.php",
+            "caminho": "bin/menu/menu.incluir.bin.php",
+            "hash": "f1f7c57bfee324943660876a463d26f14acb864457edeec617edf09f9cfd0d86",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.montar.bin.php",
+            "caminho": "bin/menu/menu.montar.bin.php",
+            "hash": "4101dbdc4cb79d00d640b3580fcec379a9e457cbba20387b3cf56f8a72e60dc2",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.ordem.mudar.bin.php",
+            "caminho": "bin/menu/menu.ordem.mudar.bin.php",
+            "hash": "7076a5cef70522c68e8b21242daf4ed810ed18c6b29bdb4e5f03bbb166463587",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "menu.reload.bin.php",
+            "caminho": "bin/menu/menu.reload.bin.php",
+            "hash": "c8029af4785b56408b46f73dbb4abecaf326d45de5f3bd90c16b6c5f031c70c6",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.alterar.bin.php",
+            "caminho": "bin/padrao/padrao.alterar.bin.php",
+            "hash": "68febf780998ad66bb8a910779eb7d41dc08e251c7ce22adde01d3fc1746069e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.ativar.bin.php",
+            "caminho": "bin/padrao/padrao.ativar.bin.php",
+            "hash": "03c5efcbb11e8a0d3d5bc2dec22fe1277e0ff2c849e03993ddc20f7c7782724a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.consultar.bin.php",
+            "caminho": "bin/padrao/padrao.consultar.bin.php",
+            "hash": "7f05f2aef9673df351e78487073a86b18a5e61b38006fbbabada2fd61312014e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.desativar.bin.php",
+            "caminho": "bin/padrao/padrao.desativar.bin.php",
+            "hash": "c8bc34e6325746cf8a78f55156d498d78d00b503beffd216f4b06d26c44cde16",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.excluir.bin.php",
+            "caminho": "bin/padrao/padrao.excluir.bin.php",
+            "hash": "adf3e7b06350e283c4bb7a4f9cea9cecae6cbb6804ffa0b441db10f0a932d5a6",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.incluir.bin.php",
+            "caminho": "bin/padrao/padrao.incluir.bin.php",
+            "hash": "2c712f2dc333fe5c3dc9bfcbd9814b5fc303e7e470072cc5ccb4420b65bdb1cc",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "padrao.pesquisar.bin.php",
+            "caminho": "bin/padrao/padrao.pesquisar.bin.php",
+            "hash": "385fb1bd77a4cc89bb8d3f657767378f145feeb65d5f6ffe4c360defbaf83fcd",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "permissao.incluir.bin.php",
+            "caminho": "bin/permissao/permissao.incluir.bin.php",
+            "hash": "8cb45ea1a67db85e6fa79c352a7ab4ba85e41e3c59fa3af9396565b4b0e8396e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "permissao.pesquisar.bin.php",
+            "caminho": "bin/permissao/permissao.pesquisar.bin.php",
+            "hash": "1e386ec6bf89635a23156ce9dab12100101221f640ba2517212997065252c675",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.alterar.bin.php",
+            "caminho": "bin/scripts/scripts.alterar.bin.php",
+            "hash": "af6acf37ee758f80ef7283713482c09d9113054f83d50e11d5b6e5c6f4bca692",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.ativar.bin.php",
+            "caminho": "bin/scripts/scripts.ativar.bin.php",
+            "hash": "b2a912be61988354c49afcccb90c0991c87a2ae46ebfbde8b612df02ea4bf646",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.consultar.bin.php",
+            "caminho": "bin/scripts/scripts.consultar.bin.php",
+            "hash": "8734c8acc1328a095c691e8731a71e2a74ad8e4ae60eea159d9f8136f76fddbc",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.desativar.bin.php",
+            "caminho": "bin/scripts/scripts.desativar.bin.php",
+            "hash": "53cf6a24ec7ad5d7d0ff9b25a7c5aaa22c716b2c588a89fb59c230b280c28aad",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.excluir.bin.php",
+            "caminho": "bin/scripts/scripts.excluir.bin.php",
+            "hash": "5f5570fbd4cb1c2d84e381d984bf02637d2431a2848ad2a5f2f467070e9a51c4",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.executar.bin.php",
+            "caminho": "bin/scripts/scripts.executar.bin.php",
+            "hash": "694f144d242bc4ac821998ca659799a61db34bf0cc10943d48e4f2a302609927",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.incluir.bin.php",
+            "caminho": "bin/scripts/scripts.incluir.bin.php",
+            "hash": "fba402a165aac1a1915dc88e8c81d46ae48b72ca76c6ef8e3e8540b3d7c06068",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "scripts.pesquisar.bin.php",
+            "caminho": "bin/scripts/scripts.pesquisar.bin.php",
+            "hash": "9f95f26ea48efba22cefc582429fed27aa7063fd99f21839fc156b51fc52fb7d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.backup.alterar.bin.php",
+            "caminho": "bin/sistema/sistema.backup.alterar.bin.php",
+            "hash": "312266fa16e2c2fcf93b84190ec6f9d7d547bbf03268cb6d8d81293cef079116",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.backup.consultar.bin.php",
+            "caminho": "bin/sistema/sistema.backup.consultar.bin.php",
+            "hash": "54e8608737d05607b0476e8602606e62d58de44e85307072b0badaf84e37ac4e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.backup.executar.bin.php",
+            "caminho": "bin/sistema/sistema.backup.executar.bin.php",
+            "hash": "a858e47b0ee9d63d2569d50962266b0736ed21788c8cc8087574f0a0a16b3b6d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.backup.incluir.bin.php",
+            "caminho": "bin/sistema/sistema.backup.incluir.bin.php",
+            "hash": "723005d423fc5d5204056ac0c6dca7e9eaf7932501132fd6e3bcc4c11228bbd9",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.backup.restore.bin.php",
+            "caminho": "bin/sistema/sistema.backup.restore.bin.php",
+            "hash": "a295460c1b19a603ca3f99612afb980451e16d911ba630fce769085ee955ead7",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.criar.tabela.bin.php",
+            "caminho": "bin/sistema/sistema.criar.tabela.bin.php",
+            "hash": "7a4d739817faf5b291d34070eee5b60bf4f2e0f4d61286cd3dbaf17a85f5dee1",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.criar.tabela.sql.bin.php",
+            "caminho": "bin/sistema/sistema.criar.tabela.sql.bin.php",
+            "hash": "0916204791ad51a9c11531c0b487d2eac6c42d318b7bd2fe35ac9ba3d8f7d2d1",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.debug.bin.php",
+            "caminho": "bin/sistema/sistema.debug.bin.php",
+            "hash": "fa9efb3f11f1c1b8715eef2d2c6ca014290aeff21ad7fb26a99f187551f9c21a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.exibir.erro.bin.php",
+            "caminho": "bin/sistema/sistema.exibir.erro.bin.php",
+            "hash": "5b3f7569a39b1779cc4147455ce914d604ca54904aa508a61550df6e534c5f8d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.logar.bin.php",
+            "caminho": "bin/sistema/sistema.logar.bin.php",
+            "hash": "e1ad86fbc7f6d5ee1d669e8a4c4afbb22d9661307094e1d88ac5be24fdcfa703",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.principal.bin.php",
+            "caminho": "bin/sistema/sistema.principal.bin.php",
+            "hash": "339284e99182cba84272dab60c70f97b0cb67a149a1a7df431ddd8dcf139da56",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.tabela.carregar.csv.bin.php",
+            "caminho": "bin/sistema/sistema.tabela.carregar.csv.bin.php",
+            "hash": "a22f00a34c9588689d62d559b91395e814f3789c4b1c238b82a96df80c42b0da",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.tabela.csv.gerar.sql.bin.php",
+            "caminho": "bin/sistema/sistema.tabela.csv.gerar.sql.bin.php",
+            "hash": "b94f3d89088eeb1c2dc739a7884d9ed71458f2e3aae136c341067156c5ca611e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sistema.tabelas.bin.php",
+            "caminho": "bin/sistema/sistema.tabelas.bin.php",
+            "hash": "eb6e107c209c1e940365b666d9bdc4adcaf70815cc2bb0317527b7d3983384ed",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.agente.bin.php",
+            "caminho": "bin/tarefas/tarefas.agente.bin.php",
+            "hash": "d07905b54266e6ae0b06455d833ee26c8fa5e2ebf40d8a6117f92ce3e6e38195",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.agente.bin.sh",
+            "caminho": "bin/tarefas/tarefas.agente.bin.sh",
+            "hash": "485c2f3da5014a216e82ffa765b2cae0abd741e30edb3373b514258f7b167605",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.alterar.bin.php",
+            "caminho": "bin/tarefas/tarefas.alterar.bin.php",
+            "hash": "658f7efd38a763cb404726c0a7ba23ebd0664590cd0ecbae220fc8ef49679a35",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.ativar.bin.php",
+            "caminho": "bin/tarefas/tarefas.ativar.bin.php",
+            "hash": "0a1b67a2f97d3f578f7d46df7cfff28fd08a3bdb27cd5dd265a883280f7fafa6",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.consultar.bin.php",
+            "caminho": "bin/tarefas/tarefas.consultar.bin.php",
+            "hash": "89965763ff1f4e30a0bf866055e2f4f7371ccde07bcc4f62e52e9c9061a27adc",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.incluir.bin.php",
+            "caminho": "bin/tarefas/tarefas.incluir.bin.php",
+            "hash": "f62121414204b5578b5c795e01d3d4a2fd4967a83230cc59d852acf8e70af869",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.pesquisar.bin.php",
+            "caminho": "bin/tarefas/tarefas.pesquisar.bin.php",
+            "hash": "8e913ef54889d6e7e4f0f049d9ab03ee8ea7fa822e2bd2b537ff36e7121fb0b0",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "tarefas.tabela.registros.bin.php",
+            "caminho": "bin/tarefas/tarefas.tabela.registros.bin.php",
+            "hash": "2c85307b94396071913bd0661db37ad9589767e688f626dbf42798b14d4d3bfa",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.alterar.bin.php",
+            "caminho": "bin/usuario/usuario.alterar.bin.php",
+            "hash": "3171870d34ef8dd705b265b362b65129846eec18509c05314e04fed8ee358fe1",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.alterar.imagem.bin.php",
+            "caminho": "bin/usuario/usuario.alterar.imagem.bin.php",
+            "hash": "5c4ffe4ffc4101925c1385ade9f983952a0591228c5e7382803444b326fa6c5b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.alterar.perfil.bin.php",
+            "caminho": "bin/usuario/usuario.alterar.perfil.bin.php",
+            "hash": "a815ed890818166c7f4a522ceeecf601700bbd47465f6d1a2b39f193f8366076",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.alterar.senha.bin.php",
+            "caminho": "bin/usuario/usuario.alterar.senha.bin.php",
+            "hash": "0c2fefe6cacdc331bb4e5ba0b9cc50499a77750172d9dc61eb233a54a90bfd6e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.ativar.bin.php",
+            "caminho": "bin/usuario/usuario.ativar.bin.php",
+            "hash": "53fa7dd2f6ab7ef50140507e8384caaa7080c4b24de19848d1c7ef5150ae2a2e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.bloquear.bin.php",
+            "caminho": "bin/usuario/usuario.bloquear.bin.php",
+            "hash": "a196f4ed1849701f3c4361b9a295e577a7cf1d15407d25e5a32c8450841aa2ef",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.consulta.bin.php",
+            "caminho": "bin/usuario/usuario.consulta.bin.php",
+            "hash": "23a41feeb203b8b2dc74a347c1612758cf1656114caa111dcb7cd5e244930df8",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.consultar.bin.php",
+            "caminho": "bin/usuario/usuario.consultar.bin.php",
+            "hash": "0409c6c21f4d78d4f20d8ed70330cbb8fc2a73e99c0929047d91ff29a34253fa",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.incluir.bin.php",
+            "caminho": "bin/usuario/usuario.incluir.bin.php",
+            "hash": "983f0bb84f052306d78a8e7f617dffcd5ce927578af7098dcda1e1bc83f81e38",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.login.bin.php",
+            "caminho": "bin/usuario/usuario.login.bin.php",
+            "hash": "143541433c71a03d020994400a9a7898199fe9d04f618b4e6d894f1d65c2b3ad",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.perfil.bin.php",
+            "caminho": "bin/usuario/usuario.perfil.bin.php",
+            "hash": "f54fa604dc06344c323a3106a51533d006bc6ec5075d6d3aba01e607a451ad7d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.pesquisar.bin.php",
+            "caminho": "bin/usuario/usuario.pesquisar.bin.php",
+            "hash": "ac292162bf55d31ecc690eb8a81c8a41c0a68c3c8d857c1152106e22fafa0281",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "usuario.redefinir.senha.bin.php",
+            "caminho": "bin/usuario/usuario.redefinir.senha.bin.php",
+            "hash": "c3033f68a8900ef210fc00e0157cdedc5da70a90705951f817d965eb4e7f7529",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "arquivo.conf.php",
+            "caminho": "conf/arquivo.conf.php",
+            "hash": "9fcda58b49d49bca6039bbc3cd2f5747fc36889de2751f01e28206eafe3f6691",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "db.conf.php",
+            "caminho": "conf/db.conf.php",
+            "hash": "9025470b8bfbff11096b3db88e585399edae45d4f908a608b6c00970878213be",
+            "versao": "1.0.0",
+            "datahora": "2025-02-18T01:13:52",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.conf.php",
+            "caminho": "conf/entidadeacao/entidadeacao.conf.php",
+            "hash": "f5b38c7febb8a10ebb14ada26d2f40b2b0e2704ef1945445c7da1e6b4ae6aee1",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "log.conf.php",
+            "caminho": "conf/log.conf.php",
+            "hash": "8c954d5348b00c625bbad94d49b04956ba9f2c93c11b24c4a83a1808ae0c7188",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "menu.conf.php",
+            "caminho": "conf/menu/menu.conf.php",
+            "hash": "bb8263462af1ebf578af263ea160551c13845e03bc8d3ac524615f7ac8406e0b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.conf.php",
+            "caminho": "conf/padrao/padrao.conf.php",
+            "hash": "705be5b526661ed30056997b6141a94bcc2c31f40b62e3dd1231971dab9b6c6b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "permissao.conf.php",
+            "caminho": "conf/permissao.conf.php",
+            "hash": "1a15b242733ee48f8c29fd7de7c906c04d2a8aed231d3f074174ff0343079b76",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "scripts.conf.php",
+            "caminho": "conf/scripts/scripts.conf.php",
+            "hash": "f992e4aa7a4ca37c31391c1617ea16702489d7552f1b3018891359baf5195e52",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sessao.conf.php",
+            "caminho": "conf/sessao.conf.php",
+            "hash": "c937ea823e8a032b9f5196020a68a08414d4d39ff8fbaccfa021c444210f0952",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.conf.php",
+            "caminho": "conf/sistema.conf.php",
+            "hash": "056e8cf9868f96f8b7733742dc462c44e2fb9be0283d62f50e0c1309e56a595b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.def.conf.php",
+            "caminho": "conf/sistema.def.conf.php",
+            "hash": "f2734402a3c7c3b23e038a546a7a3a10e9698c86dd4683f42dd468b63d6ee44b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "sistema.conf.php",
+            "caminho": "conf/sistema/sistema.conf.php",
+            "hash": "549103e90a946984fffb21a7ef00784ebc37bd735cef5ef768a4fede08cdff7d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "tarefas.conf.php",
+            "caminho": "conf/tarefas/tarefas.conf.php",
+            "hash": "c1ac462d4f18de66554b2317ecf54d6fbaa83718120d79f5ba513ba4dbedc266",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.conf.php",
+            "caminho": "conf/usuario.conf.php",
+            "hash": "c5a514678bf79258be536c64285460a3380eebdcbca339e0a039851965e22032",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "idioma.brasil.def.php",
+            "caminho": "def/idioma.brasil.def.php",
+            "hash": "92ecf17763af5a9be6567844bd910857502d6840ccbffb8cec5491a626a9fecb",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "logatividade.def.php",
+            "caminho": "def/logatividade/logatividade.def.php",
+            "hash": "9490eb486dc7ba1ee488b028ccca181a2a3a7dffaf4295be94d6a313b5eabd99",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.def.php",
+            "caminho": "def/padrao/padrao.def.php",
+            "hash": "809ce95b27ed0b7323511920a3effa2421f3b3dcf0b7524d8030d1041d3dbc10",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "padrao.idioma.brasil.def.php",
+            "caminho": "def/padrao/padrao.idioma.brasil.def.php",
+            "hash": "b8ae7d8d40fd50fd2d135dee2c7fb200a93815229323ee0d562e36bd7940f625",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "scripts.def.php",
+            "caminho": "def/scripts/scripts.def.php",
+            "hash": "a7b195cc7c00c9ff4c6e33d7983cb9558f35979fa91148d2c9ec7ddeed5037f1",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "scripts.idioma.brasil.def.php",
+            "caminho": "def/scripts/scripts.idioma.brasil.def.php",
+            "hash": "edaa542d5f940c57463e934970427b5cdf6c7dfc75be372df769226c8ae31212",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "sgpadrao.menu.geral.def.php",
+            "caminho": "def/sgpadrao.menu.geral.def.php",
+            "hash": "3fcc32e28552c2dd6e2db2d66b40ce9e3acdd08189381321f6b5c3d4faad75f9",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "sistema.def.php",
+            "caminho": "def/sistema/sistema.def.php",
+            "hash": "089c15b0d2a2311a34cc1c2231c5511dccac647eba8d01d6291dd3f267e30b63",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "sistema.idioma.brasil.def.php",
+            "caminho": "def/sistema/sistema.idioma.brasil.def.php",
+            "hash": "5dfb24d32b20ca71ccbd9ca85e419519fba4f728dbd5e4f029f04633de6378bd",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "tarefas.def.php",
+            "caminho": "def/tarefas/tarefas.def.php",
+            "hash": "45cfbb3654786275fdd017acc52e72dcc3755ff07a6666da9e40e21e8d907768",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "tarefas.idioma.brasil.def.php",
+            "caminho": "def/tarefas/tarefas.idioma.brasil.def.php",
+            "hash": "d03e6af61738bc4ea11ef4f5cdfd538d35b43aac56ffa5b7c9fb098efe93dc80",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "teste.py",
+            "caminho": "install/client/python/teste.py",
+            "hash": "40ecf41f5844b310194605c81d74b2f787cfa79ec991621fc7d46306a166d9ea",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "teste2.py",
+            "caminho": "install/client/python/teste2.py",
+            "hash": "a1122ba744569024b3043d34475850027f78f1f3b10e9c08c7bab913c9da519a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "install.php",
+            "caminho": "install/install.php",
+            "hash": "ba5bd3ad0b7e02f2d1eb12ef3e05232aee9fb1a13736bf0f2f4cbd102c89502f",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "installDB.php",
+            "caminho": "install/installDB.php",
+            "hash": "7acef0638313eadc4a6a3e771b51d34ab68ed1a39729b618552f0cd2c5546453",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sqlStart.sql",
+            "caminho": "install/sqlStart.sql",
+            "hash": "401f96796df856c42a890a1478814ddbb249ddbdafc12fc01becd9c71b119625",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "componentes.layout.php",
+            "caminho": "layout/basic/componentes.layout.php",
+            "hash": "65d1aa59b9375d2fd5dfa56931ff17f6a5181c69469acf79f168047fdacd3182",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.consultar.layout.php",
+            "caminho": "layout/basic/padrao/padrao.consultar.layout.php",
+            "hash": "e02e5989b1720802eca1c36ee1445bf96c6689ab6e165ea49aa7f20fc4e7ec5a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.pesquisar.layout.php",
+            "caminho": "layout/basic/padrao/padrao.pesquisar.layout.php",
+            "hash": "11e6be892df96868f6b2d98ed1282075c3d1c7cb1df12a378594a69e74507637",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.logar.layout.php",
+            "caminho": "layout/basic/sistema/sistema.logar.layout.php",
+            "hash": "1ab6d2ba04d017a68c7cb2304ef202900716500b16b68064878aab1ae5d9db82",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.principal.layout.php",
+            "caminho": "layout/basic/sistema/sistema.principal.layout.php",
+            "hash": "fee898bfb64bd09c21a66fdefb16d59f360eafc76537fbbaa8da176864df0fff",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.consultar.acao.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.consultar.acao.layout.php",
+            "hash": "f71683701bcb386dc2a699ddb799eee120a72263eff40cb1dbf88e4471022975",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.consultar.entidade.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.consultar.entidade.layout.php",
+            "hash": "8cef326c87bccf18c53c4fecae6efe8d34fd4593a66c49dbf428b2f91e9ecc0e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.criar.arquivo.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.criar.arquivo.layout.php",
+            "hash": "ad7b8ca10bcf673613e7e03fe739836dafffc46912824389de1e877b61394c6e",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.editar.arquivo.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.editar.arquivo.layout.php",
+            "hash": "d609cd1c31bd3127da31ae65172df0520fe54b840897de62a6c524324aeaff3d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.importar.modelo.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.importar.modelo.layout.php",
+            "hash": "26a04b2791b5a73672c325e65348b510034a335c60d841f8c0b514b23b215c0d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.incluir.acao.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.incluir.acao.layout.php",
+            "hash": "1c28ce6542bba03898747b56031b3dda424b34bf12e9f2eda602c08cd669b1a5",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.incluir.entidade.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.incluir.entidade.layout.php",
+            "hash": "d29b2cc22703547306132e797bade8ced0d0557c8c704b36f8232336db3ae490",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.listar.acao.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.listar.acao.layout.php",
+            "hash": "0149962f57f403077ce41b9617dbd779df1d5c543b050fa1073d02a379775c8b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.pesquisar.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.pesquisar.layout.php",
+            "hash": "5b45c66e08d9d9a13c4daaa18e5ab268f860c4e2a1fc3f8abd7591e795c84d6b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "entidadeacao.visualizar.arquivo.layout.php",
+            "caminho": "layout/html/entidadeacao/entidadeacao.visualizar.arquivo.layout.php",
+            "hash": "d05763fef15ee59fa6c67801c887b71bff121f7a20e78f8a47e261e2ff8aaa42",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "layout.def.php",
+            "caminho": "layout/html/layout.def.php",
+            "hash": "42323e1cbaf08e32369d0a8132d604115eda5e8ced244e771deeb6aca4aba458",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "layout.configuracao.layout.php",
+            "caminho": "layout/html/layout/layout.configuracao.layout.php",
+            "hash": "b5a281562a4ebf907a932e154e7b5242740bed1076d60658a91c4e3bfd3db49f",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "config",
+            "pacote": "SGPadrao",
+            "relevancia": 1
+        },
+        {
+            "nome": "layout.saida.alerta.layout.php",
+            "caminho": "layout/html/layout/layout.saida.alerta.layout.php",
+            "hash": "0d71f5edd60d31c0362d803b2a72e63a969d1aed8486cfd5e7b15695406bc114",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "layout.saida.error.layout.php",
+            "caminho": "layout/html/layout/layout.saida.error.layout.php",
+            "hash": "a7655824311b6887e262e31bbc3e1ba6fecc5da48864649934ed3c7c567ab7ed",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "layout.saida.informacao.layout.php",
+            "caminho": "layout/html/layout/layout.saida.informacao.layout.php",
+            "hash": "8ed024fec593706855f7797fe5b5a26fa96566769bf93337f46cf32a189f0091",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "layout.saida.mensagem.layout.php",
+            "caminho": "layout/html/layout/layout.saida.mensagem.layout.php",
+            "hash": "4162af23e71de267e218a7c9ad71c8652e0421a3d3f70288707865e2e78103ad",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "mapa.icones.def.php",
+            "caminho": "layout/html/mapa.icones.def.php",
+            "hash": "fa7b2f0d1ad07fbc5900be0b2fa98995d64e5ef4a6f600e0ee9efb21e2329f02",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "def",
+            "pacote": "SGPadrao",
+            "relevancia": 2
+        },
+        {
+            "nome": "menu.consultar.layout.php",
+            "caminho": "layout/html/menu/menu.consultar.layout.php",
+            "hash": "7b5b85f9490fa6fdca210383f10ee88f4d00590b8e183531f175dcee73f67123",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "menu.editar.layout.php",
+            "caminho": "layout/html/menu/menu.editar.layout.php",
+            "hash": "4eda2a520a3e6f1947f60e7c8541858c4996ff93df1d10a20231e6bb205251de",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "menu.exibir.layout.php",
+            "caminho": "layout/html/menu/menu.exibir.layout.php",
+            "hash": "5b3455e55165b97499a99e9b179dd369cfbda69f7628660a3a585598ca33ecb8",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "menu.montar.layout.php",
+            "caminho": "layout/html/menu/menu.montar.layout.php",
+            "hash": "ec4420ec7c744973dd17383e87e8834e41b0aece01d1016d7a9cc6cecf044569",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.alterar.layout.php",
+            "caminho": "layout/html/padrao/padrao.alterar.layout.php",
+            "hash": "9b357b56e173c532628cf106ff10d46e888f233e26746f26a571d2c32edd06d2",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.consultar.layout.php",
+            "caminho": "layout/html/padrao/padrao.consultar.layout.php",
+            "hash": "648a31b86199fabbee20a8211b3c3e5233b3d1503d02bc8f9a54f11692a98eb2",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.incluir.layout.php",
+            "caminho": "layout/html/padrao/padrao.incluir.layout.php",
+            "hash": "237bbd12f14f7d345eab99065dab68590c04b8695037ec530a9e0b5612711065",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.pesquisa.layout.php",
+            "caminho": "layout/html/padrao/padrao.pesquisa.layout.php",
+            "hash": "ae84e721c05cde362a25bf677c3a4d856c97cc1a352321099c33e3edc3d301a0",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.pesquisar.layout.php",
+            "caminho": "layout/html/padrao/padrao.pesquisar.layout.php",
+            "hash": "445f896853ad873eb84e8ddf4f4c7184c98099b1faa354f3a0dfa98e77016057",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "permissao.montar.layout.php",
+            "caminho": "layout/html/permissao/permissao.montar.layout.php",
+            "hash": "dfd8977c9861fc37d7aec7b37ddedc7348257dc604a14380559898976ec4e8e9",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "permissao.pesquisar.layout.php",
+            "caminho": "layout/html/permissao/permissao.pesquisar.layout.php",
+            "hash": "2676e3fc1f15902c52bfa928724d2d042c56807ae446ba5259f5dde70f22a5cc",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "scripts.alterar.layout.php",
+            "caminho": "layout/html/scripts/scripts.alterar.layout.php",
+            "hash": "986679420e68339df760cf211b892f7c88720dd3e489808f055f1dcfa2f304ab",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "scripts.consultar.layout.php",
+            "caminho": "layout/html/scripts/scripts.consultar.layout.php",
+            "hash": "8646ec4428ac1c6ddc3e0ae4b365654c279c11c279b4f885f0c61f822feb6fbe",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "scripts.executar.layout.php",
+            "caminho": "layout/html/scripts/scripts.executar.layout.php",
+            "hash": "5db0707ef1fb7ee25ba8b251d3bed0ccc6d64314c99a4640d890d9f7bf72fac1",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "scripts.incluir.layout.php",
+            "caminho": "layout/html/scripts/scripts.incluir.layout.php",
+            "hash": "d75f3375a8a11892d8c5c1dba2060c8f06ef6880a44722484fa78a14de33d3fb",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "scripts.pesquisa.layout.php",
+            "caminho": "layout/html/scripts/scripts.pesquisa.layout.php",
+            "hash": "23d87300042401d7ae5266b8b711e40ad8fc07795b88cf2587cf7b7dbf97afda",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "scripts.pesquisar.layout.php",
+            "caminho": "layout/html/scripts/scripts.pesquisar.layout.php",
+            "hash": "9b8a2545b3431efa589ee33ca4359b7f4864ae994215194fe3911c22ba705892",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.backup.alterar.layout.php",
+            "caminho": "layout/html/sistema/sistema.backup.alterar.layout.php",
+            "hash": "4cd1d0d1c4f1e5fbf21d39232bc34fb53f0b6a2b3536e951f659f9769c54e095",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.backup.consultar.layout.php",
+            "caminho": "layout/html/sistema/sistema.backup.consultar.layout.php",
+            "hash": "fac0b5caa505ea02c26872271b16d4fd90863c4bdb316f3f9801bcc45bffb846",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.backup.incluir.layout.php",
+            "caminho": "layout/html/sistema/sistema.backup.incluir.layout.php",
+            "hash": "ad2bdb72eece64d9ecd75b79dfb0b0ac5b4b09925ea0df0f0bebffc20a9cf067",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.backup.restore.layout.php",
+            "caminho": "layout/html/sistema/sistema.backup.restore.layout.php",
+            "hash": "8e1674dc78eeb1192f085c6d928f0be99bbcfa554674fc233f418595bead4dff",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.conteudo.layout.php",
+            "caminho": "layout/html/sistema/sistema.conteudo.layout.php",
+            "hash": "1bac85c117dec33c2f6594e5d7d40eaf02d9f13add5953c2321cdd484e318936",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.criar.tabela.layout.php",
+            "caminho": "layout/html/sistema/sistema.criar.tabela.layout.php",
+            "hash": "a9709b9b198864f68538e3d3911228c67dd07c91a2d3b3b6d7dceacc10ce1a33",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.debug.layout.php",
+            "caminho": "layout/html/sistema/sistema.debug.layout.php",
+            "hash": "1d7ecc7684579fa2e26cf949cf73055c5adfe2b9f8253971a1ccb0a4e480669a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.logar.layout.php",
+            "caminho": "layout/html/sistema/sistema.logar.layout.php",
+            "hash": "fb664c986b3aa2f49ad57f3c677054f050f65b280b763e18da0856fef2d0f9eb",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.menu.layout.php",
+            "caminho": "layout/html/sistema/sistema.menu.layout.php",
+            "hash": "ccbe137e707eb427ceca3235efd38b5b078f0c8ef08280d00de15912fef14244",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.principal.layout.php",
+            "caminho": "layout/html/sistema/sistema.principal.layout.php",
+            "hash": "0c4279faabf367ce08bd7a4367e7b967cb71b78816bed98c4037c2cefdee1970",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.tabela.carregar.csv.layout.php",
+            "caminho": "layout/html/sistema/sistema.tabela.carregar.csv.layout.php",
+            "hash": "0901d46441119af9f9c48a64a21d1fca8bfaa133b64154a5cd55ea52bc5ad8ab",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.tabela.csv.gerar.sql.layout.php",
+            "caminho": "layout/html/sistema/sistema.tabela.csv.gerar.sql.layout.php",
+            "hash": "c058019e2c96f956365a3093f1b98458ef299da125f497c28c4c8a6b8d4ffe44",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.tabelas.layout.php",
+            "caminho": "layout/html/sistema/sistema.tabelas.layout.php",
+            "hash": "deb330ecfbc1116f1af6dd80602793fc72c6e92f8e863073852c268c7c1aaeb2",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.topo.layout.php",
+            "caminho": "layout/html/sistema/sistema.topo.layout.php",
+            "hash": "4a14a1d2fe04bef368bab0acefa882df2344bfd1d58a44c218d00792e611874a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "tarefas.alterar.layout.php",
+            "caminho": "layout/html/tarefas/tarefas.alterar.layout.php",
+            "hash": "cac8ef94280f0b0d46cf5258d9b8fd851e4d030f5040a26ad50b9884d8145c5f",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "tarefas.consultar.layout.php",
+            "caminho": "layout/html/tarefas/tarefas.consultar.layout.php",
+            "hash": "4263f15eccad7de9dc6b63c49a563efeedb0f4ccdc80a12fa60313250008a55b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "tarefas.incluir.layout.php",
+            "caminho": "layout/html/tarefas/tarefas.incluir.layout.php",
+            "hash": "285a3eeb6466e01a5b0af19df82140cf93ef92c4bebcd38c96cf4ab2f7519a99",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "tarefas.pesquisa.layout.php",
+            "caminho": "layout/html/tarefas/tarefas.pesquisa.layout.php",
+            "hash": "3ec9a53dded19099ee552521cca155557281598f492082520c201454fb849c73",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "tarefas.pesquisar.layout.php",
+            "caminho": "layout/html/tarefas/tarefas.pesquisar.layout.php",
+            "hash": "925ee816c8be2ebca10fb43d0b56f4edaf2441ee76253fbd28cf2bde62de814b",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "tarefas.tabela.registros.layout.php",
+            "caminho": "layout/html/tarefas/tarefas.tabela.registros.layout.php",
+            "hash": "b19b52476fa95b41de038c33ce454d180588b8cd1a9c2b8445a664d7b871b2f9",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.consultar.layout.php",
+            "caminho": "layout/html/usuario/usuario.consultar.layout.php",
+            "hash": "b89c87778f9d02f00d9d6acf1a0663ea74534063cfc1852dfa4bd3b8ea98b143",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.incluir.layout.php",
+            "caminho": "layout/html/usuario/usuario.incluir.layout.php",
+            "hash": "4ba646f3e9cf2613273da5434c273f8a08cf80e482d1521bd7d757f6ec0b1168",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.perfil.imagem.layout.php",
+            "caminho": "layout/html/usuario/usuario.perfil.imagem.layout.php",
+            "hash": "130d00906b65de2847eba9a49432e0cde91938e413daade68a48b118b9d126d4",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.perfil.layout.php",
+            "caminho": "layout/html/usuario/usuario.perfil.layout.php",
+            "hash": "68bec34b9d8a3f03ce285a592db5d6e7c6603c239eb5cb36c68cdde022f1ea2c",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.pesquisa.layout.php",
+            "caminho": "layout/html/usuario/usuario.pesquisa.layout.php",
+            "hash": "a876508f49cc529eade8fd5fd55d355d32a9a550f1104caa09a7615f1c8ab2b7",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "usuario.pesquisar.layout.php",
+            "caminho": "layout/html/usuario/usuario.pesquisar.layout.php",
+            "hash": "acc85e00b41b3a3c286461cd06e52d12f4979b3ede803e4abbc41c0b8a509b11",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.arquivo.lib.php",
+            "caminho": "lib/class.arquivo.lib.php",
+            "hash": "3335f143be30cb4f19f3d0717f8c25ef3b899ae347e53c8b933e4da5b435a156",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.conexao.lib.php",
+            "caminho": "lib/class.conexao.lib.php",
+            "hash": "c88c62eb2ec39700c4f33b57fb0b8f8343f5b534165dc378635355dc03e64490",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.debug.lib.php",
+            "caminho": "lib/class.debug.lib.php",
+            "hash": "9aa71f5001171a398c5561c00249512995c1738ae1c2b96d4c06eb877e9829ae",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.entidadeacao.lib.php",
+            "caminho": "lib/class.entidadeacao.lib.php",
+            "hash": "238e0aa9afc289405009146aaf5de441bb1804778d54a4f11931760bfba2c0e8",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.formulario.lib.php",
+            "caminho": "lib/class.formulario.lib.php",
+            "hash": "f0b86834bb666adcac30b5c456c61f5d04d8d669e91ddaf992c4dd45ea413249",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.log.lib.php",
+            "caminho": "lib/class.log.lib.php",
+            "hash": "0fa82f06804bbbc1f5d32a8ee3f29464386f4f2cc0a2b357f919aac7727d66ed",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "log",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.menu.lib.php",
+            "caminho": "lib/class.menu.lib.php",
+            "hash": "71d033bb9b0503374a3c2124c9b049d99da7505f495df3e52c519e6bb85227ed",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.padrao.lib.php",
+            "caminho": "lib/class.padrao.lib.php",
+            "hash": "a4a5ae838bc8e995e4837ae85e9c879a8a5a32dde528acb1ea8f01f2cb48faa7",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.permissao.lib.php",
+            "caminho": "lib/class.permissao.lib.php",
+            "hash": "9369bd4c283a9a3cadd1943a8c92646d257b47a216b6022ae9b29b0ed06804b9",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.scripts.lib.php",
+            "caminho": "lib/class.scripts.lib.php",
+            "hash": "93bb871d53bfcdeee4d621c2cc163db4aaa253e1c4006c0388dd906a2984a460",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.sessao.lib.php",
+            "caminho": "lib/class.sessao.lib.php",
+            "hash": "d90e0a33376224b25eb8d6cc9467aea42bfb9c14271c5ff0e2b493772dcc608a",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.sistema.lib.php",
+            "caminho": "lib/class.sistema.lib.php",
+            "hash": "c0d5f1fe7b1e038e544435c52008610117cfdef7eb1406d1c96098cd9502ce81",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.tarefas.lib.php",
+            "caminho": "lib/class.tarefas.lib.php",
+            "hash": "b12d9d118ef04640ee7dd00ca84a4e00f5fc7c0fdcd611f97588cf67a6feb772",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "class.usuario.lib.php",
+            "caminho": "lib/class.usuario.lib.php",
+            "hash": "bec4203db0d3d8fddfe98696a839926b2491d598e5aea6bf23c22a746a89af0f",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "funcoes.lib.php",
+            "caminho": "lib/funcoes.lib.php",
+            "hash": "481f3581c075ea6ed70f2568cda6f71e5e55e52d601dbe2e7c62ae56e0fedf8d",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "padrao.acao.sbin.php",
+            "caminho": "sbin/padrao/padrao.acao.sbin.php",
+            "hash": "3b14e900c19a9625f4e7be5b09e57ef63abf3d0491599aeb3232eb897f703256",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "sgpadrao.sbin.php",
+            "caminho": "sbin/sgpadrao.sbin.php",
+            "hash": "cb91e4a3eefa6cfae495ecfccb5ae4dde39cabcbfa93d988198f65a1c642cb0f",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "bin",
+            "pacote": "SGPadrao",
+            "relevancia": 3
+        },
+        {
+            "nome": "syncPadraoAtualizarArquivosLayoutWEB.sh",
+            "caminho": "sh/syncPadraoAtualizarArquivosLayoutWEB.sh",
+            "hash": "17ab825b4f4ad96208812a0de0067130bda1d675c0a928b311ca19cea20f8771",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.php",
+            "caminho": "sistema.php",
+            "hash": "ebffdda963bd367b7cf8537a502c6ec89f3c3237a7a943834e4d4ab703bc8a82",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sistema.sql",
+            "caminho": "sistema.sql",
+            "hash": "6bc7db9a44666252cb96501e993bde610f5277220907ef1d9c293d5e41941741",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "sqlStart.sql",
+            "caminho": "sqlStart.sql",
+            "hash": "8ffe5b01589edad303ec38d630d3766e3605f61ee5f3327bd1e8b1a04140a633",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "GerarUpdate.php",
+            "caminho": "update/GerarUpdate.php",
+            "hash": "8f863931f877a5c5ff6d6e4a7bb6c3ee317a9d474f70b2e42f841861a335b8d8",
+            "versao": "1.0.0",
+            "datahora": "2025-02-17T23:42:08",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        },
+        {
+            "nome": "gerenciador.php",
+            "caminho": "update/gerenciador.php",
+            "hash": "291ce8927600f3d5724ab2b26008301391353adcdf17e2cb79eccc286ef36601",
+            "versao": "1.0.0",
+            "datahora": "2025-02-20T00:53:24",
+            "categoria": "outro",
+            "pacote": "SGPadrao",
+            "relevancia": 0
+        }
+    ]
+}
