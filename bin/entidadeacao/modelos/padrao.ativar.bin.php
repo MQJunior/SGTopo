@@ -5,19 +5,17 @@
  * 📦 Pacote: padrao | 📂 Subpacote: bin
  */
 
-// 📝 Captura a Chave do Registro
-if (isset($_REQUEST['txtChaveRegistro'])) {
+/* Captura a chave do registro a ser ativada */
+if (isset($_REQUEST['txtChaveRegistro'])){
 
-  // 🔄 Ativa o Registro
-  $PADRAO_ = new Padrao($this->SISTEMA_);
-  $PADRAO_->Ativar($_REQUEST['txtChaveRegistro']);
-  $this->SISTEMA_ = $PADRAO_->getSISTEMA();
-  unset($PADRAO_);
-
-  // 📦 Exibe Layout de Consulta
-  require($this->SISTEMA_['LAYOUT'] . "padrao/padrao.consultar.layout.php");
-} else {
-  // 📦 Exibe Layout de Inclusão
-  require($this->SISTEMA_['LAYOUT'] . "padrao/padrao.incluir.layout.php");
-}
-?>
+  /* Realiza a ativação do sistema */
+    $PADRAO_ = new Padrao($this->SISTEMA_);
+     $PADRAO_->Ativar($_REQUEST['txtChaveRegistro']);
+     $this->SISTEMA_ =$PADRAO_->getSISTEMA();
+    unset($PADRAO_);
+    
+    require($this->SISTEMA_['LAYOUT']."padrao/padrao.consultar.layout.php");
+  }else{
+    require($this->SISTEMA_['LAYOUT']."padrao/padrao.incluir.layout.php");
+  }
+  

@@ -5,20 +5,25 @@
  * 📦 Pacote: padrao | 📂 Subpacote: Layout
  */
 
-// 📝 Captura de Dados Obrigatórios
+/* Verifica os campos obrigatórios e seta-se os mesmo como required */
 $EntidadeCampos = $EntidadePadraoCampos;
 foreach ($EntidadeCampos as $tmpCampo => $tmpInfoCampos) {
-  $tmpRequired = $tmpCampo . "_required";
-  $$tmpRequired = $tmpInfoCampos['REQUERIDO'] ? "required" : "";
+    $tmpRequired                                  = $tmpCampo . "_required";
+    ($tmpInfoCampos['REQUERIDO']) ? $$tmpRequired = "required" : $$tmpRequired = "";
 }
 
-// 🔒 Permissões
+// -------------------- PERMISSAO -----------------//
 $PERMISSAO_ = new permissao($this->SISTEMA_);
-$btn_pesquisar = $PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'PESQUISAR') ?
-  "<a class=\"btn btn-sm btn-$SistemaLayoutCor\"><i class=\"fa fa-search\"></i></a>" : "";
+
+/* Permissão para pesquisar os Dados */
+$btn_pesquisar = "";
+if ($PERMISSAO_->ChecarPermissao($this->SISTEMA_['SESSAO']['USUARIO']['CODIGO'], 'PADRAO', 'PESQUISAR')) {
+    $btn_pesquisar = "<a href=\"javascript::;\" class=\"btn btn-sm btn-$SistemaLayoutCor\" onclick=\"PesquisaDados('.?XMLHTML=true&SysEntidade=PADRAO&SysEntidadeAcao=PESQUISAR&SID=$SistemaSessaoUID','','DIV_CONTEUDO',null)\"><i class=\"fa fa-search\"></i> <b>$SysRtl_Btn_Pesquisar</b></a>";
+}
+
 unset($PERMISSAO_);
 
-// 📦 Exibição do Layout
+/* -------------------- Layout do Formulário ----------------- */
 $this->SISTEMA_['SAIDA']['EXIBIR'] .= "
 <div class=\"col-md-8 col-sm-offset-2\">
   <div class=\"box box-$SistemaLayoutCor\" id=\"DIV_FORM_PADRAO\">
@@ -29,27 +34,25 @@ $this->SISTEMA_['SAIDA']['EXIBIR'] .= "
       </div>
     </div>
     <div class=\"box-body\">
-      <form class=\"form-horizontal\" method=\"post\" id=\"FORM_PADRAO_INCLUIR\" name=\"FORM_PADRAO_INCLUIR\" onSubmit=\"PesquisaDados('.?XMLHTML=true&SID=$SistemaSessaoUID','','DIV_CONTEUDO',this.name)\">
+      <form class=\"form-horizontal\" method=\"post\" action=\"javascript::;\" id=\"FORM_PADRAO_INCLUIR\" name=\"FORM_PADRAO_INCLUIR\" onSubmit=\"PesquisaDados('.?XMLHTML=true&SID=$SistemaSessaoUID','','DIV_CONTEUDO',this.name)\">
         <input type=\"hidden\" name=\"SysEntidade\" value=\"PADRAO\">
         <input type=\"hidden\" name=\"SysEntidadeAcao\" value=\"INCLUIR\">
         /*MONTAR_LAYOUT*/
         <div class=\"form-group\">
-          <div class=\"col-sm-offset-5 col-sm-7\">
-            <button type=\"submit\" style=\"display:none\" id=\"BTN_FORM_SUBMIT\"></button>
-            <a class=\"btn btn-$SistemaLayoutCor\" onclick=\"BTN_FORM_SUBMIT.click()\"><i class=\"fa fa-floppy-o\"></i></a>
+          <div class=\"col-sm-offset-5 col-sm-7\"><button type=\"submit\" style=\"display:none\" id=\"BTN_FORM_SUBMIT\"  name=\"BTN_FORM_SUBMIT\"></button>
+            <a href=\"javascript::;\" class=\"btn btn-$SistemaLayoutCor pull-left\" onclick=\"BTN_FORM_SUBMIT.click()\"><i class=\"fa fa-floppy-o\"></i> <b>$SysRtl_Btn_Salvar</b></a>
           </div>
         </div>
-      </form>        
+      </form>
     </div>
   </div>
 </div>";
 
-// 📜 JavaScript
+/* Layout JavaScript para manipulação do Layout */
 $this->SISTEMA_['SAIDA']['EXIBIR'] .= "
-<script>
-  LBL_TITULO.innerText = '$SysRtl_Padrao_Incluir_Cabecalho_Titulo';
-  LBL_SUBTITULO.innerText = '$SysRtl_Padrao_Incluir_Cabecalho_Subtitulo';
-  LBL_SUBTITULO_LOCAL.innerText = '$SysRtl_Padrao_Incluir_Cabecalho_Subtitulo';
-  LBL_ARVORE_LOCAL.innerHTML = '<a><i class=\"fa $SysRtl_Padrao_Incluir_Cabecalho_Icone\"></i> $SysRtl_Padrao_Incluir_Cabecalho_Titulo</a>';
+<script language=\"text/javascript\">
+  LBL_TITULO.innerText='$SysRtl_Padrao_Incluir_Cabecalho_Titulo';
+  LBL_SUBTITULO.innerText='$SysRtl_Padrao_Incluir_Cabecalho_Subtitulo';
+  LBL_SUBTITULO_LOCAL.innerText='$SysRtl_Padrao_Incluir_Cabecalho_Subtitulo';
+  LBL_ARVORE_LOCAL.innerHTML ='<a href=\"javascript::;\"><i class=\"fa $SysRtl_Padrao_Incluir_Cabecalho_Icone\"></i> $SysRtl_Padrao_Incluir_Cabecalho_Titulo</a>';
 </script>";
-?>

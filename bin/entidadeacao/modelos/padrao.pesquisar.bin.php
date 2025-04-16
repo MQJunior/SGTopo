@@ -5,29 +5,20 @@
  * 📦 Pacote: padrao | 📂 Subpacote: bin
  */
 
-// 📝 Captura de Dados
-$tmpRegInativos = isset($_REQUEST['TXT_REGISTROS_INATIVOS']) ? $_REQUEST['TXT_REGISTROS_INATIVOS'] : false;
+/* Pesquisa para registro inativos */
+(isset($_REQUEST['TXT_REGISTROS_INATIVOS'])) ? $tmpRegInativos = $_REQUEST['TXT_REGISTROS_INATIVOS'] : $tmpRegInativos = false;
 
-// 🔍 Pesquisa no Banco de Dados
+/* Realiza a pesquisa no Banco de Dados */
 $PADRAO_ = new Padrao($this->SISTEMA_);
-if (isset($_REQUEST['TXT_PADRAO_PESQUISAR'])) {
-  $PADRAO_->Pesquisar(
-    $_REQUEST['TXT_PESQUISA_CAMPO'],
-    utf8_decode($_REQUEST['TXT_PADRAO_PESQUISAR']),
-    $tmpRegInativos,
-    $_REQUEST['TXT_PADRAO_PESQUISAR']
-  );
-} else {
-  $PADRAO_->PesquisarNome(null, null, false, 20);
-}
-
+(isset($_REQUEST['TXT_PADRAO_PESQUISAR'])) ? $PADRAO_->Pesquisar($_REQUEST['TXT_PESQUISA_CAMPO'], utf8_decode($_REQUEST['TXT_PADRAO_PESQUISAR']), $tmpRegInativos, $_REQUEST['TXT_PADRAO_PESQUISAR']) : $PADRAO_->PesquisarNome(null, null, false, 20);
 $this->SISTEMA_ = $PADRAO_->getSISTEMA();
 unset($PADRAO_);
 
-// 📦 Exibição do Layout
-require(
-  isset($_REQUEST['TXT_PADRAO_PESQUISAR']) ?
-  $this->SISTEMA_['LAYOUT'] . "padrao/padrao.pesquisa.layout.php" :  // Layout Resumido
-  $this->SISTEMA_['LAYOUT'] . "padrao/padrao.pesquisar.layout.php"   // Layout Completo
-);
-?>
+if (isset($_REQUEST['TXT_PADRAO_PESQUISAR'])) {
+    require $this->SISTEMA_['LAYOUT'] . "padrao/padrao.pesquisa.layout.php";
+}
+// Layout Resumido
+else {
+    require $this->SISTEMA_['LAYOUT'] . "padrao/padrao.pesquisar.layout.php";
+}
+// Layout Completo
