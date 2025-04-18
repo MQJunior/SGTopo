@@ -68,7 +68,10 @@ Content-Type: application/json
     "LOCAL": "Local interno ou externo",
     "OBSERVACOES": "Texto livre com observações",
     "STATUS": "PENDENTE",
-    "DATACRIACAO": "YYYY-MM-DD HH:MM:SS"
+    "SESSAO": "Id da Sessao",
+    "USUARIO": "Id do Usuario",
+    "DATACRIACAO": "YYYY-MM-DD HH:MM:SS",
+    "REG_ATIVO": "1"
   },
   "sid": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   "SysMensagem": {

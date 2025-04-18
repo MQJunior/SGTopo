@@ -29,7 +29,10 @@ if (isset($_REQUEST['txtChaveRegistro'])) {
             'LOCAL'       => $item['LOCAL'],
             'OBSERVACOES' => $item['OBSERVACOES'],
             'STATUS'      => strtoupper($item['STATUS']),
+            'SESSAO'      => $item['SESSAO'],
+            'USUARIO'     => $item['USUARIO'],
             'DATACRIACAO' => $item['DATACRIACAO'],
+            'REG_ATIVO'   => $item['REG_ATIVO'],
         ];
 
         $resultado                                    = ['agendamento' => $agendamento];
