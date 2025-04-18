@@ -55,7 +55,14 @@ $SGTopo->ExecutarSistema($SISTEMA);
 //$SISTEMA = $SGTopo->getSISTEMA();
 //print_r($_REQUEST); print_r($SISTEMA); die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");  
 
-$SGTopo->ExibirSaida();
+if (isset($SISTEMA['SAIDA']['MODE']) && $SISTEMA['SAIDA']['MODE'] == 'app') {
+
+    //print_r($SISTEMA);
+    $SGTopo->ExibirSaidaApp();
+} else {
+    $SGTopo->ExibirSaida();
+}
+
 $SISTEMA = $SGTopo->getSISTEMA();
 
 unset($SGTopo);

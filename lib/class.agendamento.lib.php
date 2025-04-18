@@ -121,33 +121,59 @@ class Agendamento
         $this->SISTEMA_['MENSAGEM']['SUCESSO']['MENSAGEM'] = $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['EXCLUSAO'];
         $this->PesquisarNome();
     }
-    /**
-     * Lista os registro no Banco de Dados
-     * @param boolean $p_Inativos Seta-se true para listar registros desativados
-     * @param boolean $p_QtdeReg Seta-se a quantidade de registro exibido
-     * @access public
-     */
-    public function Listar($p_Inativos = false, $p_QtdeReg = null)
+
+/**
+ * Lista registros da entidade Agendamento.
+ *
+ * Esta função executa uma consulta SQL baseada em filtros opcionais,
+ * podendo retornar registros ativos ou inativos, com ou sem limite de quantidade.
+ *
+ * Caso não sejam fornecidos parâmetros, retorna todos os registros ativos.
+ *
+ * @param array $p_Filtros     Array associativo com campos => valores para aplicar como filtro (AND).
+ *                             Exemplo: ['STATUS' => 'PENDENTE', 'DATA' => '2025-04-17']
+ * @param bool $p_Inativos     Define se a consulta deve incluir registros inativos (REG_ATIVO=0).
+ *                             Padrão: false (retorna apenas ativos).
+ * @param int|null $p_QtdeReg  Limita a quantidade de registros retornados. Padrão: null (sem limite).
+ *
+ * @return void Os resultados são armazenados em $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['DADOS']
+ */
+
+    public function Listar($p_Filtros = [], $p_Inativos = false, $p_QtdeReg = null)
     {
         $this->ConectaDB();
+
+        // Limite de registros
         $sql_QtdReg = "";
         if ($p_QtdeReg > 0) {
-            $sql_QtdReg = " LIMIT " . $p_QtdeReg;
-        }
-        $sql_Condicao = "(Agendamento.REG_ATIVO=1)";
-        if ($p_Inativos) {
-            $sql_Condicao = "(1=1)";
+            $sql_QtdReg = " LIMIT " . intval($p_QtdeReg);
         }
 
-        $sql_Listar = "select  Agendamento.*
-      FROM  " . $this->TBL_AGENDAMENTO . " as Agendamento
-        where
-          " . $sql_Condicao . "
-      order by Agendamento.DATA " . $sql_QtdReg;
+        // Condição base: ativo ou todos
+        $sql_Condicao = $p_Inativos ? "1=1" : "Agendamento.REG_ATIVO = 1";
 
+        // Aplica filtros adicionais, se houver
+        if (! empty($p_Filtros)) {
+            foreach ($p_Filtros as $campo => $valor) {
+                $valorSanitizado = addslashes(trim($valor));
+                $sql_Condicao .= " AND Agendamento.`$campo` = '{$valorSanitizado}'";
+            }
+        }
+
+        // Monta a consulta final
+        $sql_Listar = "
+        SELECT Agendamento.*
+        FROM {$this->TBL_AGENDAMENTO} AS Agendamento
+        WHERE {$sql_Condicao}
+        ORDER BY Agendamento.DATA
+        {$sql_QtdReg}
+    ";
+
+        // Executa
         $this->DataBaseLink->Query($sql_Listar);
         $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['DADOS'] = $this->DataBaseLink->ResultConsult();
     }
+
     /**
      * Pesquisa os registro no Banco de Dados pelo CAMPO nome
      * @param string $p_NOME Seta-se o nome a ser pesquisado
