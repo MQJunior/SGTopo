@@ -22,10 +22,11 @@ $SysRtl_Btn_Pesquisar = "Pesquisar";
 $SysRtl_Btn_Salvar    = "Salvar";
 
 /** ✅ Mensagens de Sucesso */
-$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['MENSAGEM'] = "Informações salva com sucesso!";
-$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['LISTAR']   = "Listagem realizada com sucesso!";
-$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['EXCLUSAO'] = "Registro excluído com sucesso!";
-$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['TITULO']   = "Entidade agendamento";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['MENSAGEM']  = "Informações salva com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['LISTAR']    = "Listagem realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['CONSULTAR'] = "Consulta realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['EXCLUSAO']  = "Registro excluído com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['TITULO']    = "Entidade agendamento";
 
 /** 🗄️ Legendas dos Campos do Banco de Dados */
 $SysRtl_Agendamento_Campos_CODIGO       = "Código";

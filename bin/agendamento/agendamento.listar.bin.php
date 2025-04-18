@@ -45,7 +45,6 @@ if ($this->SISTEMA_['SAIDA']['MODE'] == 'app') {
                 'OBSERVACOES' => $item['OBSERVACOES'],
                 'STATUS'      => strtoupper($item['STATUS']),
                 'DATACRIACAO' => $item['DATACRIACAO'],
-                'USUARIO'     => 'supervisor@supervisor',
             ];
         }
     }
