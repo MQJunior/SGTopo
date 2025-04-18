@@ -191,6 +191,12 @@ class sistema
             $this->SISTEMA_['SAIDA']['EXIBIR'] .= $this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA'];
         }
 
+        //print_r($this->SISTEMA_['SAIDA']['APP']);
+        if (isset($this->SISTEMA_['SAIDA']['APP']) || ($this->SISTEMA_['SAIDA']['MODE'] == 'app')) {
+            echo json_encode($this->SISTEMA_['SAIDA']['APP'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+            die();
+        }
+
         $SAIDA_Sistema = trim($this->SISTEMA_['SAIDA']['EXIBIR']);
         if (isset($_REQUEST["XMLHTML"]) || ($this->SISTEMA_['SAIDA']['MODE'] == 'api')) {
             header("Content-Type: application/json");
@@ -268,15 +274,21 @@ class sistema
 
         //$SAIDA_Sistema = trim($this->SISTEMA_['SAIDA']['EXIBIR']);
         $SAIDA_SistemaArray = [];
+
         if ($this->SISTEMA_['SAIDA']['MODE'] == 'app') {
-            $TMP_SESSION_ID = null;
-            if (isset($this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'])) {
-                $TMP_SESSION_ID            = $this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'];
-                $SAIDA_SistemaArray['sid'] = $this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'];
+            // Primeiro, aplica os dados principais da resposta
+            if (isset($this->SISTEMA_['SAIDA']['APP']) && ($this->SISTEMA_['SAIDA']['MODE'] == 'app')) {
+                $SAIDA_APP          = $this->SISTEMA_['SAIDA']['APP'];
+                $SAIDA_SistemaArray = $SAIDA_APP;
             }
 
+            // Depois, adiciona o SID fora do array original
+            if (isset($this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'])) {
+                $SAIDA_SistemaArray['sid'] = $this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'];
+            }
         }
-        $SAIDA_Sistema = json_encode($SAIDA_SistemaArray);
+
+        $SAIDA_Sistema = json_encode($SAIDA_SistemaArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         if ($p_Capturar) {
             return trim($SAIDA_Sistema);
         } else {
