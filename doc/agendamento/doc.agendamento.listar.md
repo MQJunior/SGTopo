@@ -1,13 +1,13 @@
-AGENDAMENTO - LISTAR
+## AGENDAMENTO - LISTAR
 
-Entidade: AGENDAMENTO  
-Ação: LISTAR
+### Entidade: AGENDAMENTO  
+### Ação: LISTAR
 
-Descrição:
+#### Descrição:
 Executa a listagem de registros da tabela de agendamentos com base em filtros opcionais.  
 Pode retornar registros ativos ou inativos, com ou sem limite de quantidade.
 
-Parâmetros:
+#### Parâmetros:
 
 - Filtros (array) — **não obrigatório**  
   Array associativo contendo os campos e valores para filtro.  
@@ -21,7 +21,7 @@ Parâmetros:
   Quantidade máxima de registros a serem retornados.  
   Valor padrão: null (sem limite)
 
-Comportamento:
+#### Comportamento:
 
 - Se nenhum parâmetro for informado, retorna todos os registros ativos.
 - Se `Inativos = true`, ignora o filtro `REG_ATIVO = 1`.
@@ -29,7 +29,7 @@ Comportamento:
 - O resultado da consulta é armazenado em:
   `$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['DADOS']`
 
-Exemplos de uso:
+#### Exemplos de uso:
 
 1. Listar todos os agendamentos ativos:
    ```php
@@ -46,7 +46,7 @@ Exemplos de uso:
    $AGENDAMENTO->Listar(['LOCAL' => 'Campo 1'], true, 10);
    ```
 
-SQL Gerado (exemplo):
+#### SQL Gerado (exemplo):
 ```sql
 SELECT Agendamento.*
 FROM TBL_AGENDAMENTO AS Agendamento
@@ -57,7 +57,7 @@ ORDER BY Agendamento.DATA
 LIMIT 20
 ```
 
-Observações:
+#### Observações:
 
 - Campos usados nos filtros devem corresponder exatamente aos nomes no banco de dados.
 - Para segurança, os valores são sanitizados com `addslashes()`.
