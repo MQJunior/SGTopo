@@ -1,25 +1,36 @@
 ## AGENDAMENTO - LISTAR
 
 ### Entidade: AGENDAMENTO  
-### Ação: LISTAR
+### Ação: LISTAR  
+### Método: `POST`  
+### Endpoint: `/api`
 
 #### Descrição:
 Executa a listagem de registros da tabela de agendamentos com base em filtros opcionais.  
 Pode retornar registros ativos ou inativos, com ou sem limite de quantidade.
 
-#### Parâmetros:
+#### Parâmetros (JSON no corpo da requisição):
 
-- **Filtros (array)** — *não obrigatório*  
-  Array associativo contendo os campos e valores para filtro.  
-  Exemplo: `['STATUS' => 'PENDENTE', 'DATA' => '2025-04-17']`
+```json
+{
+  "SysEntidade": "AGENDAMENTO",
+  "SysEntidadeAcao": "LISTAR",
+  "Filtros": {
+    "STATUS": "PENDENTE",
+    "DATA": "2025-04-17"
+  },
+  "Inativos": false,
+  "QtdeReg": 10
+}
+```
 
-- **Inativos (boolean)** — *não obrigatório*  
-  Define se devem ser incluídos registros inativos (`REG_ATIVO = 0`).  
-  Valor padrão: `false` (retorna apenas registros ativos)
-
-- **QtdeReg (int)** — *não obrigatório*  
-  Quantidade máxima de registros a serem retornados.  
-  Valor padrão: `null` (sem limite)
+| Parâmetro          | Tipo     | Obrigatório | Descrição                                               |
+|--------------------|----------|-------------|-----------------------------------------------------------|
+| SysEntidade         | string   | ✅ Sim      | Nome da entidade (`AGENDAMENTO`)                         |
+| SysEntidadeAcao     | string   | ✅ Sim      | Nome da ação (`LISTAR`)                                  |
+| Filtros             | objeto   | ❌ Não      | Campos e valores para filtro, aplicados com `AND` no SQL |
+| Inativos            | boolean  | ❌ Não      | Define se inclui registros inativos (`REG_ATIVO = 0`)    |
+| QtdeReg             | inteiro  | ❌ Não      | Limite máximo de registros a retornar                    |
 
 #### Comportamento:
 
@@ -31,22 +42,31 @@ Pode retornar registros ativos ou inativos, com ou sem limite de quantidade.
   $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['DADOS']
   ```
 
-#### Exemplos de uso:
+#### Exemplo de Requisição:
 
-1. Listar todos os agendamentos ativos:
-   ```php
-   $AGENDAMENTO->Listar();
-   ```
+```bash
+POST /api HTTP/1.1
+Content-Type: application/json
 
-2. Listar registros filtrando por status:
-   ```php
-   $AGENDAMENTO->Listar(['STATUS' => 'PENDENTE']);
-   ```
+{
+  "SysEntidade": "AGENDAMENTO",
+  "SysEntidadeAcao": "LISTAR",
+  "Filtros": {
+    "STATUS": "PENDENTE"
+  },
+  "Inativos": false,
+  "QtdeReg": 5
+}
+```
 
-3. Listar inativos com limite:
-   ```php
-   $AGENDAMENTO->Listar(['LOCAL' => 'Campo 1'], true, 10);
-   ```
+#### Exemplo de Requisição PHP:
+
+```php
+$AGENDAMENTO->Listar([
+  'STATUS' => 'PENDENTE',
+  'DATA' => '2025-04-17'
+], false, 10);
+```
 
 #### Observações:
 
