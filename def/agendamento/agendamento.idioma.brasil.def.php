@@ -23,6 +23,7 @@ $SysRtl_Btn_Salvar    = "Salvar";
 
 /** ✅ Mensagens de Sucesso */
 $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['MENSAGEM'] = "Informações salva com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['LISTAR']   = "Listagem realizada com sucesso!";
 $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['EXCLUSAO'] = "Registro excluído com sucesso!";
 $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['TITULO']   = "Entidade agendamento";
 

@@ -50,8 +50,9 @@ if ($this->SISTEMA_['SAIDA']['MODE'] == 'app') {
         }
     }
 
-    $resultado                      = ['agendamentos' => $agendamentos];
-    $this->SISTEMA_['SAIDA']['APP'] = $resultado;
+    $resultado                                    = ['agendamentos' => $agendamentos];
+    $this->SISTEMA_['MENSAGEM']['APP']['SUCESSO'] = $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['LISTAR'];
+    $this->SISTEMA_['SAIDA']['APP']               = $resultado;
 
     // Converte para JSON
 
