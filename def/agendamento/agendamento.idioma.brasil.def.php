@@ -26,6 +26,10 @@ $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['MENSAGEM']  =
 $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['LISTAR']    = "Listagem realizada com sucesso!";
 $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['CONSULTAR'] = "Consulta realizada com sucesso!";
 $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['EXCLUSAO']  = "Registro excluído com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['ATIVAR']    = "Registro ativado com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['PENDER']    = "Informações salva com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['CONCLUIR']  = "Agendamento concluido com sucesso!";
+$this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['CANCELAR']  = "Agendamento cancelado com sucesso!";
 $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['TITULO']    = "Entidade agendamento";
 
 /** 🗄️ Legendas dos Campos do Banco de Dados */

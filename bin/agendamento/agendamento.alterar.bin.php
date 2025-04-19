@@ -1,8 +1,10 @@
 <?php
 /**
  * 📄 agendamento.alterar.bin.php - Altera um registro no sistema
- * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com> | 📅 2025-04-09 | 🏷️ v0.0.0
+ * 🧭 Sistema: SGTopo
  * 📦 Pacote: agendamento | 📂 Subpacote: bin
+ * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com>
+ * 📅 2025-04-09 | 🏷️ v0.0.1
  */
 
 $AGENDAMENTO_ = new Agendamento($this->SISTEMA_);
