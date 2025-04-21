@@ -10,15 +10,15 @@
 $PROJETO_ = new Projeto($this->SISTEMA_);
 
 /* Se for alteração de dados */
-if (isset($_REQUEST['txtChaveRegistro']) && isset($_REQUEST['TXT_PROJETOS_NOME'])) {
+if (isset($_REQUEST['txtChaveRegistro']) && isset($_REQUEST['TXT_PROJETO_NOME'])) {
 
     $PROJETO_->Alterar(
         $_REQUEST['txtChaveRegistro'],
-        $_REQUEST['TXT_PROJETOS_NOME'],
-        $_REQUEST['TXT_PROJETOS_DESCRICAO'],
-        $_REQUEST['TXT_PROJETOS_DATA_INICIO'],
-        $_REQUEST['TXT_PROJETOS_DATA_FIM'],
-        $_REQUEST['TXT_PROJETOS_CAMINHO']
+        $_REQUEST['TXT_PROJETO_NOME'],
+        $_REQUEST['TXT_PROJETO_DESCRICAO'],
+        $_REQUEST['TXT_PROJETO_DATA_INICIO'],
+        $_REQUEST['TXT_PROJETO_DATA_FIM'],
+        $_REQUEST['TXT_PROJETO_CAMINHO']
     );
 
     $this->SISTEMA_ = $PROJETO_->getSISTEMA();

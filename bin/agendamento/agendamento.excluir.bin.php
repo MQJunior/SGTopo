@@ -17,7 +17,7 @@ if (isset($_REQUEST['txtChaveRegistro'])) {
     if ($this->SISTEMA_['SAIDA']['MODE'] == 'app') {
         $this->SISTEMA_['SAIDA']['APP'] = [
             'SID'      => $this->SISTEMA_['SID'],
-            'mensagem' => $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['EXCLUSAO'],
+            'mensagem' => $this->SISTEMA_['ENTIDADE']['AGENDAMENTO']['MENSAGEM']['SUCESSO']['EXCLUIR'],
         ];
         return;
     }

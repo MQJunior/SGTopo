@@ -15,7 +15,7 @@ Pode retornar registros ativos ou inativos, e permite limitar a quantidade retor
   "SysEntidade": "PROJETO",             // Nome da entidade
   "SysEntidadeAcao": "LISTAR",          // Ação a ser executada
   "TXT_PROJETOS_NOME": "Residencial",   // (opcional) filtro por nome
-  "TXT_PROJETOS_STATUS": "ATIVO",       // (opcional) filtro por status
+  "TXT_PROJETOS_STATUS": "ANDAMENTO",   // (opcional) filtro por status
   "TXT_REGISTROS_INATIVOS": true,       // (opcional) incluir inativos (REG_ATIVO = 0)
   "TXT_QTDE_REGISTROS": 20              // (opcional) limitar número de registros retornados
 }

@@ -69,6 +69,24 @@ Exemplo de resposta para erro genérico:
 
 ---
 
+### ⏳ Sessão Expirada
+
+Se a `SID` enviada estiver expirada, removida ou inválida por tempo de inatividade, o sistema retorna o seguinte erro:
+
+```json
+{
+  "SysError": {
+    "SESSAO": {
+      "MENSAGEM": "SESSAO INVÁLIDA!"
+    }
+  }
+}
+```
+
+> 🔒 A sessão tem validade limitada. Refaça o login para obter uma nova `SID` válida.
+
+---
+
 ## 🧠 Observações
 
 - As ações são autodocumentadas: o nome da ação define o comportamento (`INCLUIR`, `ALTERAR`, `CANCELAR`, etc).

@@ -7,20 +7,20 @@
  * 📅 2025-04-10 | 🏷️ v0.0.1
  */
 
-if (isset($_REQUEST['TXT_PROJETOS_NOME'])) {
+if (isset($_REQUEST['TXT_PROJETO_NOME'])) {
 
     /* Captura os campos enviados pelo formulário */
     foreach ($_REQUEST as $tmpChave => $tmpValor);
-    (strpos($tmpChave, 'TXT_PROJETOS_') === false) ? false : $tmpDados[str_replace('TXT_PROJETOS_', '', $tmpChave)] = utf8_decode($tmpValor);
+    (strpos($tmpChave, 'TXT_PROJETO_') === false) ? false : $tmpDados[str_replace('TXT_PROJETO_', '', $tmpChave)] = utf8_decode($tmpValor);
 
     /* Realiza a inclusão */
     $PROJETO_ = new Projeto($this->SISTEMA_);
     $PROJETO_->Novo(
-        $_REQUEST['TXT_PROJETOS_NOME'],
-        $_REQUEST['TXT_PROJETOS_DESCRICAO'],
-        $_REQUEST['TXT_PROJETOS_DATA_INICIO'],
-        $_REQUEST['TXT_PROJETOS_DATA_FIM'],
-        $_REQUEST['TXT_PROJETOS_CAMINHO']
+        $_REQUEST['TXT_PROJETO_NOME'],
+        $_REQUEST['TXT_PROJETO_DESCRICAO'],
+        $_REQUEST['TXT_PROJETO_DATA_INICIO'],
+        $_REQUEST['TXT_PROJETO_DATA_FIM'],
+        $_REQUEST['TXT_PROJETO_CAMINHO']
     );
 
     $this->SISTEMA_ = $PROJETO_->getSISTEMA();

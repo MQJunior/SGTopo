@@ -24,7 +24,14 @@ $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['EXCLUSAO']  = "Re
 $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['INCLUIR']   = "Registro incluído com sucesso!";
 $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['CONSULTAR'] = "Consulta realizada com sucesso!";
 $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['ALTERAR']   = "Alteração realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['PENDER']    = "Alteração realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['CANCELAR']  = "Alteração realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['CONCLUIR']  = "Alteração realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['ANDAMENTO'] = "Alteração realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['EXCLUIR']   = "Registro excluído com sucesso!";
 $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['LISTAR']    = "Registros listado com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['ATIVAR']    = "Registros ativado com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['DESATIVAR'] = "Registros desativado com sucesso!";
 $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['TITULO']    = "Entidade projeto";
 
 /** 🗄️ Legendas dos Campos do Banco de Dados */

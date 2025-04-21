@@ -349,4 +349,36 @@ class Projeto
         $this->Consultar($this->DataBaseLink->Id());
     }
 
+    public function Cancelar($p_Codigo)
+    {
+        $this->ConectaDB();
+        $sql_Alterar = "update " . $this->TBL_PROJETO . " set STATUS='CANCELADO' where codigo='" . $p_Codigo . "'";
+        $this->DataBaseLink->Query($sql_Alterar);
+        $this->Consultar($p_Codigo);
+    }
+
+    public function Pender($p_Codigo)
+    {
+        $this->ConectaDB();
+        $sql_Alterar = "update " . $this->TBL_PROJETO . " set STATUS='PENDENTE' where codigo='" . $p_Codigo . "'";
+        $this->DataBaseLink->Query($sql_Alterar);
+        $this->Consultar($p_Codigo);
+    }
+
+    public function Concluir($p_Codigo)
+    {
+        $this->ConectaDB();
+        $sql_Alterar = "update " . $this->TBL_PROJETO . " set STATUS='CONCLUIDO' where codigo='" . $p_Codigo . "'";
+        $this->DataBaseLink->Query($sql_Alterar);
+        $this->Consultar($p_Codigo);
+    }
+
+    public function Andamento($p_Codigo)
+    {
+        $this->ConectaDB();
+        $sql_Alterar = "update " . $this->TBL_PROJETO . " set STATUS='ANDAMENTO' where codigo='" . $p_Codigo . "'";
+        $this->DataBaseLink->Query($sql_Alterar);
+        $this->Consultar($p_Codigo);
+    }
+
 }

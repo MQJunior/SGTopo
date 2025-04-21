@@ -1,6 +1,6 @@
 <?php
 /**
- * 📄 projeto.ativar.bin.php - Seta um projeto como Inativo
+ * 📄 projeto.cancelar.bin.php - Seta um projeto como Cancelado
  * 🧭 Sistema: SGTopo
  * 📦 Pacote: projeto | 📂 Subpacote: bin
  * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com>
@@ -17,7 +17,7 @@ if (! isset($_REQUEST['txtChaveRegistro'])) {
 
 /* Realiza a consulta no sistema */
 $PROJETO_ = new Projeto($this->SISTEMA_);
-$PROJETO_->Desativar($_REQUEST['txtChaveRegistro']);
+$PROJETO_->Cancelar($_REQUEST['txtChaveRegistro']);
 $this->SISTEMA_ = $PROJETO_->getSISTEMA();
 unset($PROJETO_);
 
@@ -39,7 +39,7 @@ if ($this->SISTEMA_['SAIDA']['MODE'] == 'app') {
     ];
 
     $this->SISTEMA_['MENSAGEM']['APP']['SUCESSO'] =
-    $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['DESATIVAR'];
+    $this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['CANCELAR'];
 
     $this->SISTEMA_['SAIDA']['APP'] = ['projeto' => $projeto];
 
