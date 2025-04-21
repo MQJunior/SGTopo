@@ -45,6 +45,30 @@ O corpo da requisição deve conter os dados no formato `application/json`, incl
 
 ---
 
+## ⚠️ Segurança e Tratamento de Erros
+
+Por motivos de segurança, respostas de erro podem ser padronizadas para não revelar detalhes sensíveis como:
+
+- Nome exato da entidade ou ação informada incorretamente;
+- Falta de permissão para determinada operação.
+
+Exemplo de resposta para erro genérico:
+
+```json
+{
+  "sid": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "SysError": {
+    "PERMISSAO": {
+      "MENSAGEM": "USUARIO SEM PERMISSÃO!: ENTIDADE -> ACAO"
+    }
+  }
+}
+```
+
+> ⚠️ Importante: essa resposta pode ocorrer tanto por falta de permissão quanto por ação ou entidade inválida, dificultando ataques por tentativa e erro.
+
+---
+
 ## 🧠 Observações
 
 - As ações são autodocumentadas: o nome da ação define o comportamento (`INCLUIR`, `ALTERAR`, `CANCELAR`, etc).
@@ -56,4 +80,3 @@ O corpo da requisição deve conter os dados no formato `application/json`, incl
 ## 📁 Caminhos de Referência
 
 Use este documento para construir a estrutura do seu manual interativo ou gerador automático de documentação.
-

@@ -114,6 +114,7 @@ class sistema
         $tmpAcao      = str_replace("_", ".", $tmpAcao);
         $tmpAcao_     = strtolower($tmpAcao);
         $tmpArquivo   = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['BIN'] . $tmpEntidade_ . "/" . $tmpEntidade_ . "." . $tmpAcao_ . ".bin.php";
+
         if (file_exists($tmpArquivo)) {
             $tmpArquivoConf = $this->SISTEMA_['CONFIG']['SISTEMA']['GERAL']['CONF'] . $tmpEntidade_ . "/" . $tmpEntidade_ . ".conf.php";
             if (file_exists($tmpArquivoConf)) {
@@ -268,6 +269,10 @@ class sistema
             if (isset($this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'])) {
                 $SAIDA_SistemaArray['sid'] = $this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'];
             }
+
+            if (isset($this->SISTEMA_['ERROR'])) {
+                $SAIDA_SistemaArray['SysError'] = $this->SISTEMA_['ERROR'];
+            }
         }
         if (isset($this->SISTEMA_['MENSAGEM']['APP'])) {
 
@@ -278,6 +283,7 @@ class sistema
             //$this->SISTEMA_['SAIDA']['EXIBIR'] .= $this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA'];
             $SAIDA_SistemaArray['SysMensagem'] = $this->SISTEMA_['MENSAGEM']['APP'];
         }
+        //print_r($this->SISTEMA_);
 
         $SAIDA_Sistema = json_encode($SAIDA_SistemaArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         if ($p_Capturar) {

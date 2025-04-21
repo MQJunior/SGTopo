@@ -19,9 +19,13 @@ $SysRtl_Btn_Pesquisar = "Pesquisar";
 $SysRtl_Btn_Salvar    = "Salvar";
 
 /** ✅ Mensagens de Sucesso */
-$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['MENSAGEM'] = "Informações salva com sucesso!";
-$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['EXCLUSAO'] = "Registro excluído com sucesso!";
-$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['TITULO']   = "Entidade projeto";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['MENSAGEM']  = "Informações salva com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['EXCLUSAO']  = "Registro excluído com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['INCLUIR']   = "Registro incluído com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['CONSULTAR'] = "Consulta realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['ALTERAR']   = "Alteração realizada com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['LISTAR']    = "Registros listado com sucesso!";
+$this->SISTEMA_['ENTIDADE']['PROJETO']['MENSAGEM']['SUCESSO']['TITULO']    = "Entidade projeto";
 
 /** 🗄️ Legendas dos Campos do Banco de Dados */
 $SysRtl_Projeto_Campos_CODIGO       = "Código";
@@ -31,13 +35,13 @@ $SysRtl_Projeto_Campos_USUARIO      = "Usuário";
 $SysRtl_Projeto_Campos_USUARIO_NOME = "Criado por";
 $SysRtl_Projeto_Campos_REG_ATIVO    = "Ativo";
 
-$SysRtl_Projeto_Campos_NOME ="Nome";
-$SysRtl_Projeto_Campos_DESCRICAO ="Descricao";
-$SysRtl_Projeto_Campos_DATA_INICIO ="Data_inicio";
-$SysRtl_Projeto_Campos_DATA_FIM ="Data_fim";
-$SysRtl_Projeto_Campos_STATUS ="Status";
-$SysRtl_Projeto_Campos_PAGAMENTO ="Pagamento";
-$SysRtl_Projeto_Campos_CAMINHO ="Caminho";
+$SysRtl_Projeto_Campos_NOME        = "Nome";
+$SysRtl_Projeto_Campos_DESCRICAO   = "Descricao";
+$SysRtl_Projeto_Campos_DATA_INICIO = "Data_inicio";
+$SysRtl_Projeto_Campos_DATA_FIM    = "Data_fim";
+$SysRtl_Projeto_Campos_STATUS      = "Status";
+$SysRtl_Projeto_Campos_PAGAMENTO   = "Pagamento";
+$SysRtl_Projeto_Campos_CAMINHO     = "Caminho";
 
 /** 🔍 Legendas do Formulário Pesquisar */
 $SysRtl_Projeto_Pesquisar_Cabecalho_Titulo    = "projeto";

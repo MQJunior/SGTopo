@@ -1,8 +1,10 @@
 <?php
 /**
  * 📄 agendamento.listar.bin.php - Realiza a listagem de registros no Banco de Dados pelos campos informados
- * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com> | 📅 2025-04-16 | 🏷️ v0.0.0
+ * 🧭 Sistema: SGTopo
  * 📦 Pacote: agendamento | 📂 Subpacote: bin
+ * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com>
+ * 📅 2025-04-09 | 🏷️ v0.0.1
  */
 
 /* Pesquisa para registro inativos */
