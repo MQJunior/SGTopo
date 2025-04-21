@@ -40,8 +40,8 @@ $SysRtl_Projeto_Campos_DESCRICAO   = "Descricao";
 $SysRtl_Projeto_Campos_DATA_INICIO = "Data_inicio";
 $SysRtl_Projeto_Campos_DATA_FIM    = "Data_fim";
 $SysRtl_Projeto_Campos_STATUS      = "Status";
-$SysRtl_Projeto_Campos_PAGAMENTO   = "Pagamento";
-$SysRtl_Projeto_Campos_CAMINHO     = "Caminho";
+//$SysRtl_Projeto_Campos_PAGAMENTO   = "Pagamento";
+$SysRtl_Projeto_Campos_CAMINHO = "Caminho";
 
 /** 🔍 Legendas do Formulário Pesquisar */
 $SysRtl_Projeto_Pesquisar_Cabecalho_Titulo    = "projeto";
