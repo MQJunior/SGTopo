@@ -18,7 +18,7 @@ $EntidadeProjetoCampos['TXT_PROJETO_DESCRICAO']=array('NOME' =>'DESCRICAO'     ,
 $EntidadeProjetoCampos['TXT_PROJETO_DATA_INICIO']=array('NOME' =>'DATA_INICIO'     , 'TIPO'=>'DATA'    , 'EXIBIR'=>true , 'PESQUISAR'=>true , 'REQUERIDO'=>false , 'TAMANHO'=>20);
 $EntidadeProjetoCampos['TXT_PROJETO_DATA_FIM']=array('NOME' =>'DATA_FIM'     , 'TIPO'=>'DATA'    , 'EXIBIR'=>true , 'PESQUISAR'=>true , 'REQUERIDO'=>false , 'TAMANHO'=>20);
 $EntidadeProjetoCampos['TXT_PROJETO_STATUS']=array('NOME' =>'STATUS'     , 'TIPO'=>'NOME'    , 'EXIBIR'=>true , 'PESQUISAR'=>true , 'REQUERIDO'=>true , 'TAMANHO'=>100);
-$EntidadeProjetoCampos['TXT_PROJETO_PAGAMENTO']=array('NOME' =>'PAGAMENTO'     , 'TIPO'=>'NOME'    , 'EXIBIR'=>true , 'PESQUISAR'=>true , 'REQUERIDO'=>false , 'TAMANHO'=>100);
+//$EntidadeProjetoCampos['TXT_PROJETO_PAGAMENTO']=array('NOME' =>'PAGAMENTO'     , 'TIPO'=>'NOME'    , 'EXIBIR'=>true , 'PESQUISAR'=>true , 'REQUERIDO'=>false , 'TAMANHO'=>100);
 $EntidadeProjetoCampos['TXT_PROJETO_CAMINHO']=array('NOME' =>'CAMINHO'     , 'TIPO'=>'NOME'    , 'EXIBIR'=>true , 'PESQUISAR'=>true , 'REQUERIDO'=>false , 'TAMANHO'=>100);
 
 $EntidadeProjetoCampos['TXT_PROJETO_SESSAO']       = ['NOME' => 'SESSAO', 'TIPO' => 'CODIGO_LINK', 'EXIBIR' => false, 'PESQUISAR' => false, 'REQUERIDO' => false, 'TAMANHO' => 0];

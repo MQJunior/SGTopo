@@ -1,22 +1,12 @@
+
 <?php
 /**
- * Sistema
- *
- * Classe interpretadora de comandos
- * API para manipula��o de Comandos
- *
- * @author Marcio Queiroz Jr <mqjunior@gmail.com>
- * @version 1.0
- * @copyright Copyright � 2006, Marcio Queiroz Jr.
- * @package sistema
- * @date 2015-07-09
- *
- * @Update 2017-09-25
- *
- * @todo
- *   -
+ * 📄 class.sistema.lib.php - Classe interpretadora de comandos e execução de ações no SGSis
+ * 🧭 Sistema: SGSis
+ * 📦 Pacote: core | 📂 Subpacote: principal
+ * 👤 Autor: Márcio Queiroz Jr <mqjunior@gmail.com>
+ * 📅 2025-04-26 | 🏷️ v1.0
  */
-
 class sistema
 {
     private $SISTEMA_;
@@ -34,9 +24,6 @@ class sistema
     public function __construct($p_SISTEMA)
     {
         $this->SISTEMA_ = $p_SISTEMA;
-        //$this->ExecutarSistema($p_SISTEMA);
-        //print_r($this->SISTEMA_);
-        //die("\nArquivo: ".__FILE__." Linha: ".__LINE__."\n");
         $this->setEntradainSistema();
     }
 
@@ -172,7 +159,7 @@ class sistema
 
     }
 
-    /////////////////////////////////////////////////////////////////
+    /** 📌 Exibe a saída em JSON ou HTML. */
     public function ExibirSaida($p_Capturar = false)
     {
 
@@ -183,16 +170,14 @@ class sistema
         if (isset($this->SISTEMA_['MENSAGEM']['SUCESSO'])) {
             $SysRtl_Mensagem_Sucesso_Titulo = $this->SISTEMA_['MENSAGEM']['SUCESSO']['TITULO'];
             $SysRtl_Mensagem_Sucesso        = $this->SISTEMA_['MENSAGEM']['SUCESSO']['MENSAGEM'];
-            //die(print_r($this->SISTEMA_['MENSAGEM']['SUCESSO'],false));
+           
             $this->SISTEMA_['MENSAGEM']['LAYOUT']['SUCESSO'] = str_replace('{SysRtl_Mensagem_Sucesso_Titulo}', $SysRtl_Mensagem_Sucesso_Titulo, $this->SISTEMA_['MENSAGEM']['LAYOUT']['SUCESSO']);
             $this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA']  = str_replace('{SaidaInformacaoSucesso}', $SysRtl_Mensagem_Sucesso, $this->SISTEMA_['MENSAGEM']['LAYOUT']['SUCESSO']);
-            //$this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA'] = $this->SISTEMA_['MENSAGEM']['LAYOUT']['SUCESSO'];
-            //eval("\$this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA'] = \"".$this->SISTEMA_['MENSAGEM']['LAYOUT']['SUCESSO']."\";");
-            //die($this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA']);
+           
             $this->SISTEMA_['SAIDA']['EXIBIR'] .= $this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA'];
         }
 
-        //print_r($this->SISTEMA_['SAIDA']['APP']);
+        
         if (isset($this->SISTEMA_['SAIDA']['APP']) || ($this->SISTEMA_['SAIDA']['MODE'] == 'app')) {
             echo json_encode($this->SISTEMA_['SAIDA']['APP'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
             die();
@@ -207,7 +192,7 @@ class sistema
             header("Cache-Control: post-check=0, pre-check=0", false);
             header("Pragma: no-cache");
             header("Access-Control-Allow-Origin: *");
-            //$SAIDA_Sistema = GerarXMLAjax($SAIDA_Sistema);
+            
             $TMP_SESSION_ID = null;
             if (isset($this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'])) {
                 $TMP_SESSION_ID = $this->SISTEMA_['SESSAO']['SAIDA_UID']['SESSAO_UID'];
@@ -226,7 +211,7 @@ class sistema
         }
 
     }
-    ///////////////////////////////////////////////////  
+    /** 📌 Importa configurações e libs da entidade. */
     public function ImportarEntidade($p_Entidade)
     {
         $p_Entidade     = strtolower($p_Entidade);
@@ -247,7 +232,7 @@ class sistema
 
     }
 
-    /////////////////////////////////////////////////////////////////
+    /** 📌 Exibe a saída no formato app (JSON com SID). */
     public function ExibirSaidaApp($p_Capturar = false)
     {
 
@@ -255,7 +240,7 @@ class sistema
             $this->SISTEMA_['SAIDA']['EXIBIR'] = $this->SISTEMA_['ERROR']['PERMISSAO']['MENSAGEM'];
         }
 
-        //$SAIDA_Sistema = trim($this->SISTEMA_['SAIDA']['EXIBIR']);
+        
         $SAIDA_SistemaArray = [];
 
         if ($this->SISTEMA_['SAIDA']['MODE'] == 'app') {
@@ -283,7 +268,7 @@ class sistema
             //$this->SISTEMA_['SAIDA']['EXIBIR'] .= $this->SISTEMA_['MENSAGEM']['SUCESSO']['SAIDA'];
             $SAIDA_SistemaArray['SysMensagem'] = $this->SISTEMA_['MENSAGEM']['APP'];
         }
-        //print_r($this->SISTEMA_);
+        
 
         $SAIDA_Sistema = json_encode($SAIDA_SistemaArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         if ($p_Capturar) {
